@@ -1,0 +1,59 @@
+.pricing-table {
+  font-family: Helvetica;
+  font-size: 24px;
+  margin: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pricing-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-title {
+  font-weight: bold;
+}
+
+.minimum-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.pricing-grid {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.pricing-grid-row {
+  display: flex;
+  width: 100%;
+}
+
+.pricing-grid-row.header {
+  background-color: #0D84D1;
+  color: white;
+  font-weight: bold;
+}
+
+.pricing-grid-row .cell {
+  flex: 1;
+  text-align: center;
+  padding: 12px 8px;
+}
+
+.pricing-grid-row .cell:last-child {
+  border-right: none;
+}
+
+.pricing-grid-row:not(.header) {
+  background-color: white;
+}
+
+.pricing-grid-row:not(.header) .label {
+  font-weight: 500;
+}

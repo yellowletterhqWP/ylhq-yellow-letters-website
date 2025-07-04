@@ -1,0 +1,193 @@
+.homepage-container-1 {
+  position: relative;
+  text-align: center;
+}
+
+.homepage-container-1-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.inner2 {
+    padding-bottom: 255px;
+}
+
+.homepage-header-image {
+	width: 100%;
+	z-index: 0;
+	position: absolute;
+	top: -65px;
+}
+
+.homepage-header-image img {
+	width: 100%;
+}
+
+.homepage-header1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 190px;
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+}
+
+.homepage-header-title-group {
+  justify-content: start;
+  display: flex;
+  flex-flow: column;
+}
+
+.homepage-header-title {
+	z-index: 1;
+	position: relative;
+}
+
+.homepage-header-title1 {
+	font-family: "Helvetica", Sans-serif;
+	font-size: 65px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	color: #0D84D1;
+    z-index: 1;
+    position: relative;
+}
+
+.homepage-header-title2 {
+	font-family: "Helvetica", Sans-serif;
+	font-size: 65px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	word-spacing: 0px;
+	color: #2D2D2D;
+    z-index: 1;
+    position: relative;
+}
+
+.homepage-header-title2b {
+	font-family: "Helvetica", Sans-serif;
+	font-size: 40px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	word-spacing: 0px;
+	color: #2D2D2D;
+    z-index: 1;
+    position: relative;
+    margin-top: 120px;
+}
+
+.homepage-header-title3 {
+	font-family: "Helvetica", Sans-serif;
+	font-size: 65px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	color: #0D84D1;
+	z-index: 1;
+	position: relative;
+	margin-top: -20px;
+}
+
+.homepage-header-title4 {
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.2;
+	position: relative;
+	z-index: 1;
+	width: 60%;
+}
+
+.homepage-grid-header {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  gap: 35px;
+}
+
+.homepage-campaign {
+    position: relative;
+    width: 100%;
+    background-color: #FAF7F3;
+    padding: 70px 30px 150px 30px;
+    display: flex;
+    flex-flow: column;
+}
+
+.homepage-campaign p {
+    font-size: 30px;
+    line-height: 40px;
+    color: #2D2D2D;
+    font-family: "Helvetica";
+}
+
+.homepage-grid-product {
+    display: grid;
+    grid-template-columns: repeat(2, 35%);
+    gap: 5% 20%;
+    margin: 0 auto;
+    justify-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.homepage-effortlessmail {
+    position: relative;
+    width: 100%;
+    padding: 70px 30px;
+}
+
+.homepage-effortlessmail p {
+    font-size: 30px;
+    line-height: 40px;
+    color: #2D2D2D;
+    font-family: Helvetica;
+}
+
+.homepage-grid-header-effrortlessmail {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-bottom: 100px;
+    gap: 35px;
+}
+
+.rating {
+    font-family: Helvetica;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+    position: relative;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.stars {
+    color: #0D84D1;
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.divider {
+    color: #999;
+    margin: 0 4px;
+}
+
+.review-count {
+    color: #555;
+}
+
+.homepage-campaign .homepage-header-button {
+    position: absolute;
+    right: 40px;
+}

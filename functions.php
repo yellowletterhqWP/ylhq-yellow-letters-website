@@ -141,6 +141,17 @@ function ylhq_yellow_letter_website_scripts() {
 	wp_enqueue_style( 'ylhq-yellow-letter-website-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'ylhq-yellow-letter-website-style', 'rtl', 'replace' );
 
+	// ambil semua CSS di assets/css
+    $css_dir = get_template_directory() . '/assets/css';
+    $css_uri = get_template_directory_uri() . '/assets/css';
+
+    if ( is_dir( $css_dir ) ) {
+        foreach ( glob( $css_dir . '/*.css' ) as $css_file ) {
+            $handle = basename( $css_file, '.css' );
+            wp_enqueue_style( $handle, $css_uri . '/' . basename($css_file), array('ylhq-yellow-letter-website-style') );
+        }
+    }
+	
 	wp_enqueue_script( 'ylhq-yellow-letter-website-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

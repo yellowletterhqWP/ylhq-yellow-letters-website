@@ -1,0 +1,22 @@
+.homepage-header-button {
+	margin-top: 50px;
+	display: flex;
+	background-color: #0D84D1;
+	border-radius: 50px 50px 50px 50px;
+	padding: 10px 25px 10px 25px;
+	gap: 10px;
+	width: max-content;
+	z-index: 1;
+  position: relative;
+}
+
+.homepage-header-button a {
+	font-family: "Helvetica", Sans-serif;
+	font-size: 28px;
+	font-weight: 500;
+	color: #fff;
+}
+
+.homepage-header-button img {
+	width: 28px;
+}

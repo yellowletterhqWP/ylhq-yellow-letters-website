@@ -44,11 +44,11 @@
 			</button>
 
 			<div class="login-navigations">
-				<div><a href="#">Home</a></div>
-				<div><a href="#">Shop</a></div>
-				<div><a href="#">My Orders</a></div>
-				<div><a href="#">FAQ</a></div>
-				<div><a href="#">Contact us</a></div>                  
+				<div class="wrapper"><a href="#"><span>Home</span></a></div>
+				<div class="wrapper"><a href="#"><span>Shop</span></a></div>
+				<div class="wrapper"><a href="#"><span>My Orders</a></div>
+				<div class="wrapper"><a href="#"><span>FAQ</span></a></div>
+				<div class="wrapper"><a href="#"><span>Contact us<span></a></div>                  
 			</div>
 		</div>
 	</div>

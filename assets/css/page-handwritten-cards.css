@@ -1,0 +1,175 @@
+.handwritten-page-container-1 {
+  position: relative;
+  text-align: center;
+}
+
+.handwritten-page-container-1-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  min-height: 700px;
+}
+
+.inner2 {
+    padding-bottom: 255px;
+}
+
+.handwritten-page-header-image {
+	width: 100%;
+	z-index: 0;
+	position: absolute;
+	top: -65px;
+}
+
+.handwritten-page-header-image img {
+	width: 100%;
+}
+
+.handwritten-page-header-title-group {
+  justify-content: start;
+  display: flex;
+  flex-flow: column;
+}
+
+.handwritten-page-header-title {
+	z-index: 1;
+	position: relative;
+    margin-top: 165px;
+}
+
+.handwritten-page-header-title1 {
+	font-family: "Helvetica", Sans-serif;
+	font-size: 65px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	color: #0D84D1;
+    z-index: 1;
+    position: relative;
+}
+
+.handwritten-page-header-title2 {
+	font-family: "Helvetica", Sans-serif;
+	font-size: 65px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	word-spacing: 0px;
+	color: #2D2D2D;
+    z-index: 1;
+    position: relative;
+}
+
+.handwritten-page-header-title2b {
+	font-family: "Helvetica", Sans-serif;
+	font-size: 40px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	word-spacing: 0px;
+	color: #2D2D2D;
+    z-index: 1;
+    position: relative;
+    margin-top: 120px;
+}
+
+.handwritten-page-header-title3 {
+	font-size: 20px;
+    font-family: Helvetica;
+	line-height: 1.5;
+	position: relative;
+	z-index: 1;
+    color: #2D2D2D;
+	width: 45%;
+}
+
+.handwritten-page-grid-header {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  gap: 35px;
+}
+
+.handwritten-page-campaign {
+    position: relative;
+    width: 100%;
+    padding: 70px 30px 150px 30px;
+    display: flex;
+    flex-flow: column;
+}
+
+.handwritten-page-campaign p {
+    font-size: 30px;
+    line-height: 40px;
+    color: #2D2D2D;
+    font-family: "Helvetica";
+}
+
+.handwritten-page-grid-product {
+    display: grid;
+    grid-template-columns: repeat(2, 35%);
+    gap: 5% 20%;
+    margin: 0 auto;
+    justify-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.handwritten-page-effortlessmail {
+    position: relative;
+    width: 100%;
+    padding: 70px 30px;
+}
+
+.handwritten-page-effortlessmail p {
+    font-size: 30px;
+    line-height: 40px;
+    color: #2D2D2D;
+    font-family: Helvetica;
+}
+
+.handwritten-page-grid-header-effrortlessmail {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-bottom: 100px;
+    gap: 35px;
+}
+
+.rating {
+    font-family: Helvetica;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+    position: relative;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.stars {
+    color: #0D84D1;
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.divider {
+    color: #999;
+    margin: 0 4px;
+}
+
+.review-count {
+    color: #555;
+}
+
+.handwritten-page-campaign .handwritten-page-header-button {
+    position: absolute;
+    right: 40px;
+}

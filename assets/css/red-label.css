@@ -1,0 +1,19 @@
+.box-red-label {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.box-red-label img {
+  position: absolute;
+  top: -22px;
+  left: 30%;
+}
+
+.box-red-label span {
+  font-weight: 600;
+  z-index: 1;
+  position: relative;
+  color: #fff;
+  font-size: 2.5rem;
+}
