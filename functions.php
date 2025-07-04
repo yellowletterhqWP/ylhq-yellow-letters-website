@@ -152,13 +152,29 @@ function ylhq_yellow_letter_website_scripts() {
         }
     }
 	
-	wp_enqueue_script( 'ylhq-yellow-letter-website-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	// ambil semua JS di /js
+    $js_dir = get_template_directory() . '/js';
+    $js_uri = get_template_directory_uri() . '/js';
+
+    if ( is_dir( $js_dir ) ) {
+        foreach ( glob( $js_dir . '/*.js' ) as $js_file ) {
+            $handle = basename( $js_file, '.js' );
+            wp_enqueue_script(
+                $handle,
+                $js_uri . '/' . basename($js_file),
+                array(),
+                _S_VERSION,
+                true
+            );
+        }
+    }
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ylhq_yellow_letter_website_scripts' );
+
 
 /**
  * Implement the Custom Header feature.

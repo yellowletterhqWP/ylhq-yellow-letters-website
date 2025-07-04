@@ -1,0 +1,26 @@
+.button-radio {
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button-radio input {
+  display: none;
+}
+
+.button-style {
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: #e6f3fc;
+  border: none;  
+  border-radius: 30px;
+  color: #2D2D2D;
+  font-family: Helvetica;
+  font-size: 28px;
+  transition: all 0.3s ease;
+  width: 100%;
+  min-width: 100px;
+}
+
+.button-radio input:checked + .button-style {
+  border: 2px solid #0D84D1;
+}

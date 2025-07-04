@@ -38,6 +38,7 @@
   width: 100%;
   height: 100%;
   background: rgba(15, 30, 50, 0.9);
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,14 +69,6 @@
 }
 
 .overlay-content .shop-button {
-  /* background: rgba(255, 255, 255, 0.5);
-  border: 1px solid #fff;
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: 0.3s;
-  color: #fff; */
-
   display: inline-block;
   background: rgba(255, 255, 255, 0.5);
   border: 1px solid #fff;

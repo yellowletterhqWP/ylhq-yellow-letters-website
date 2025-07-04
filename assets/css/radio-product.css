@@ -1,0 +1,36 @@
+.product-radio-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  cursor: pointer;
+}
+
+.product-radio-box-img {
+  background-color: #0D84D1;
+  border-radius: 15px;
+  height: 460px;
+  width: 530px;
+  position: relative;
+}
+
+.product-radio-box span.product-radio-box-title {
+  color: #2D2D2D;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.product-radio-box:hover span.box-title {
+  opacity: 0;
+}
+
+.product-radio-box img {
+  margin-top: 90px;
+  margin-bottom: 60px;
+}
+
+.product-radio-box input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
