@@ -105,9 +105,15 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-	box-sizing: content-box;
+	/* box-sizing: content-box;
 	height: 0;
-	overflow: visible;
+	overflow: visible; */
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin: 1.5em 0;
+	z-index: 999;
+	width: 100%;
 }
 
 /**
@@ -1178,7 +1184,23 @@ textarea {
   display: none;
 }
 
-/* Add from elementor------------------------------------------- */
+/* form group------------------------------------------- */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.form-group .required {
+  color: #0D84D1;
+}
 
 /* optional mobile responsive, if you want to preserve */
 @media screen and (max-width: 768px) {

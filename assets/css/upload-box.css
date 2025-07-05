@@ -1,0 +1,43 @@
+.uploadbox {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  background-color: #fafafa;
+  position: relative;
+}
+
+.uploadbox input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+.uploadbox-instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+.uploadbox-instructions .upload-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #bbb;
+}
+
+.uploadgroup .homepage-header-button {
+  margin-top: 20px;
+}
+
+.uploadbox span {
+  color: #ccc;
+  font-size: 20px;
+}
+
+.upload-instructions {
+  color: #2D2D2D;
+  font-size: 20px;
+  text-align: left;
+}

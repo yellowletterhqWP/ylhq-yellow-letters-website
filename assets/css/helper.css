@@ -1,0 +1,8 @@
+.helper-text {
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  color: #0D84D1;
+  font-size: 18px;
+  z-index: 2;
+}

@@ -1,0 +1,9 @@
+.inputbox {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 25px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 20px;
+  resize: vertical;
+}

@@ -1,0 +1,53 @@
+.segmented-radio {
+  display: inline-flex;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  overflow: hidden;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.segment {
+  flex: 1;
+  cursor: pointer;
+  position: relative;
+}
+
+.segment input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.segment span {
+  display: block;
+  padding: 10px 20px;
+  text-align: center;
+  transition: all 0.3s;
+  color: #333;
+  background-color: #fff;
+  width: max-content;
+}
+
+/* highlight checked */
+.segment input[type="radio"]:checked + span {
+  background-color: #0D84D1;
+  color: #fff;
+}
+
+/* style sudut */
+.segment.first span {
+  border-radius: 999px 0 0 999px;
+}
+
+.segment.last span {
+  border-radius: 0 999px 999px 0;
+}
+
+.segment.middle span {
+  border-radius: 0;
+}
+
+.segment:not(:first-child) span {
+  border-left: 1px solid #ddd;
+}

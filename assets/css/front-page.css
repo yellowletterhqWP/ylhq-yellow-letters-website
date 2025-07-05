@@ -76,7 +76,7 @@
 	color: #2D2D2D;
     z-index: 1;
     position: relative;
-    margin-top: 120px;
+    margin-top: 65px;
 }
 
 .homepage-header-title3 {
@@ -94,6 +94,7 @@
 	font-size: 2rem;
 	font-weight: bold;
 	line-height: 1.2;
+    margin-bottom: 20px;
 	position: relative;
 	z-index: 1;
 	width: 60%;
@@ -190,4 +191,5 @@
 .homepage-campaign .homepage-header-button {
     position: absolute;
     right: 40px;
+    top: 90px;
 }
