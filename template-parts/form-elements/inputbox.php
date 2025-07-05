@@ -3,6 +3,7 @@ $id = $args['id'] ?? 'inputbox';
 $name = $args['name'] ?? $id;
 $label = $args['label'] ?? '';
 $placeholder = $args['placeholder'] ?? '';
+$required = $args['required'] ?? false;
 ?>
 
 <div class="form-group">
