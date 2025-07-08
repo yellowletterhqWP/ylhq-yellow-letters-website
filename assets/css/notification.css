@@ -1,0 +1,30 @@
+.form-messages {
+  /* margin-bottom: 20px; */
+}
+
+.message {
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.message-success {
+    background-color: #e8ffe9;
+    color: #138617;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 30px;
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+.message-error {
+    background-color: #ffebeb;
+    color: #F52E01;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 30px;
+    font-size: 1.125rem;
+    text-align: center;
+}

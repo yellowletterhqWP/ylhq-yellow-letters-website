@@ -7,7 +7,7 @@
 	gap: 10px;
 	width: max-content;
 	z-index: 1;
-  position: relative;
+	position: relative;
 }
 
 .homepage-header-button a {
@@ -15,8 +15,67 @@
 	font-size: 28px;
 	font-weight: 500;
 	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
 }
 
 .homepage-header-button img {
 	width: 28px;
+}
+
+.homepage-header-button.is-disabled {
+  pointer-events: none; /* prevent click */
+  cursor: default;
+  background-color: #DFDFDF;
+}
+
+.homepage-header-button.is-disabled a {
+  color: #2D2D2D;
+  pointer-events: none;
+}
+
+.homepage-header-button a:focus,
+.homepage-header-button a:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.homepage-header-button button,
+.homepage-header-button a {
+  font-family: "Helvetica", Sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.homepage-header-button button:focus,
+.homepage-header-button button:active,
+.homepage-header-button a:focus,
+.homepage-header-button a:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.homepage-header-button.is-disabled {
+  pointer-events: none;
+  background-color: #DFDFDF;
+}
+
+.homepage-header-button.is-disabled a,
+.homepage-header-button.is-disabled button {
+  color: #2D2D2D;
+  pointer-events: none;
 }

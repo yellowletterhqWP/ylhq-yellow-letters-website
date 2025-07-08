@@ -175,6 +175,49 @@ function ylhq_yellow_letter_website_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'ylhq_yellow_letter_website_scripts' );
 
+function ylhq_handle_custom_login() {
+    $login    = sanitize_text_field($_POST['log'] ?? '');
+    $password = $_POST['pwd'] ?? '';
+
+    // Coba dapatkan user dari email atau username
+    $user = get_user_by('email', $login);
+    if (!$user) {
+        $user = get_user_by('login', $login);
+    }
+
+    if (!$user) {
+        wp_redirect(home_url('/login/?login=failed'));
+        exit;
+    }
+
+    $creds = array(
+        'user_login'    => $user->user_login, // pastikan ini username
+        'user_password' => $password,
+        'remember'      => true,
+    );
+
+    $user = wp_signon($creds, false);
+
+    if (is_wp_error($user)) {
+        // Redirect back with error
+        wp_redirect(get_permalink(get_page_by_path('login')) . '?login=failed');
+        exit;
+    }
+
+    // Login success
+    wp_redirect(home_url());
+    exit;
+}
+add_action('admin_post_nopriv_custom_user_login', 'ylhq_handle_custom_login');
+add_action('admin_post_custom_user_login', 'ylhq_handle_custom_login'); // Optional: if login page accessed from logged in user
+
+function redirect_logged_in_users_from_login_page() {
+    if (is_user_logged_in() && is_page('login')) {
+        wp_redirect(home_url());
+        exit;
+    }
+}
+add_action('template_redirect', 'redirect_logged_in_users_from_login_page');
 
 /**
  * Implement the Custom Header feature.
