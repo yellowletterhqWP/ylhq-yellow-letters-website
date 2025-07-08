@@ -72,10 +72,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 
     <?php
-    get_template_part('template-parts/form-elements/notification', null, [
-      'success_message' => $success_message,
-      'errors' => $errors,
-    ]);
+    if(isset($success_message) || isset($errors)){
+      get_template_part('template-parts/form-elements/notification', null, [
+        'success_message' => $success_message,
+        'errors' => $errors,
+      ]);
+    }
     ?>
 
     <form action="<?php echo esc_url( $_SERVER['REQUEST_URI'] ); ?>" method="post" autocomplete="off" class="register-form">

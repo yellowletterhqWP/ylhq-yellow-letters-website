@@ -44,5 +44,6 @@
 
     setupFormValidation('.register-form', '#register-button');
     setupFormValidation('.login-form', '#login-button');
+    setupFormValidation('.forgot-password-form', '#forgot-password-button');
   });
 })();

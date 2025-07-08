@@ -219,6 +219,39 @@ function redirect_logged_in_users_from_login_page() {
 }
 add_action('template_redirect', 'redirect_logged_in_users_from_login_page');
 
+function ylhq_handle_forgot_password() {
+    if ( empty($_POST['user_email']) || ! is_email($_POST['user_email']) ) {
+        wp_redirect( home_url('/index.php/forgot-password?reset=invalid') );
+        exit;
+    }
+
+    $user_data = get_user_by( 'email', sanitize_email($_POST['user_email']) );
+
+    if ( ! $user_data ) {
+        wp_redirect( home_url('../forgot-password?reset=notfound') );
+        exit;
+    }
+
+    // Generate reset key and URL
+    $reset_key = get_password_reset_key( $user_data );
+    $reset_url = network_site_url("wp-login.php?action=rp&key=$reset_key&login=" . rawurlencode($user_data->user_login), 'login');
+
+    // Send email manually
+    $to = $user_data->user_email;
+    $subject = 'Password Reset Request';
+    $message = "Hi " . $user_data->display_name . ",\n\n";
+    $message .= "Click the link below to reset your password:\n";
+    $message .= $reset_url . "\n\n";
+    $message .= "If you didn't request this, please ignore this email.";
+
+    wp_mail( $to, $subject, $message );
+
+    wp_redirect( home_url('../forgot-password?reset=success') );
+    exit;
+}
+add_action('admin_post_nopriv_ylhq_forgot_password', 'ylhq_handle_forgot_password');
+
+
 /**
  * Implement the Custom Header feature.
  */

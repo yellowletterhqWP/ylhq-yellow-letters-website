@@ -14,3 +14,74 @@
   bottom: 130px;
   background-color: #fff;
 }
+
+.login-password-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 30px 15px 30px;
+}
+
+.login-remembermecontainer {
+  gap: 12px;
+  width: 163px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.login-check {
+  width: 18px;
+  height: 18px;
+  border-color: rgba(45, 45, 45, 0.25);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+.login-rememberme-text {
+  color: rgba(45, 45, 45, 0.5);
+  width: 133px;
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Helvetica;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.login-forgotpasswordcontainer {
+  gap: 12px;
+  width: 124px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.login-link-text {
+  color: rgba(13, 132, 209, 1);
+  width: 133px;
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Helvetica;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+
+
+
+.forgot-password-wrapper {
+  padding: 0 30px 30px 30px;
+}
+
+div.forgot-page {
+  height: 577px;
+}

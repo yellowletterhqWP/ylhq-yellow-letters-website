@@ -70,6 +70,19 @@ get_header();
           ]);
           ?>
       </div>
+
+      <div class="login-password-options">
+        <div class="login-remembermecontainer">
+          <input type="checkbox" class="login-check" />
+          <span class="login-rememberme-text">Remember me</span>
+        </div>
+        <div class="login-forgotpasswordcontainer">
+          <a href="../forgot-password" class="login-link-text">
+            forget password?
+          </a>
+        </div>
+      </div>
+
       <div class="register-button">
       <?php
       get_template_part( 'template-parts/button', null, array(
