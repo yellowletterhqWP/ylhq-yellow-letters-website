@@ -12,7 +12,7 @@ $label = $args['label'] ?? 'Upload your files';
       <div class="upload-icon">
         <img
 				alt="Upload icon"
-				src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/upload-icon.svg"
+				src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/upload-icon.svg"
 				class="uploadbox-icon"
 			/>
       </div>
