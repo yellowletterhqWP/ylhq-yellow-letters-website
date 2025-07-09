@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php
+/* Template Name: Handwritten Cards Iteration 1 */
+get_header();
+?>
 
 <main id="main" class="site-main">
     <div class="handwritten-page-container-1">
