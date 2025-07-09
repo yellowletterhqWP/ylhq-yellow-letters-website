@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Handwritten Cards */
+/* Template Name: Letters Iteration */
 get_header();
 ?>
 
