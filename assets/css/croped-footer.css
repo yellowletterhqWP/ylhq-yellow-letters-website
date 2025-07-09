@@ -1,0 +1,29 @@
+.register-croped-helper {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  left: 0;
+  background-color: #fff;
+  bottom: 200px;
+  z-index: 1;
+}
+
+.register-croped-helper2 {
+  position: absolute;
+  width: 5px;
+  height: 153px;
+  background-color: #fff;
+  left: 0px;
+  z-index: 1;
+}
+
+.register-croped-footer {
+  width: 980px !important;
+  margin-left: 2px;
+}
+
+img.register-footer-croped-image {
+    margin-bottom: -20px;
+    position: relative;
+    z-index: 0;
+}
