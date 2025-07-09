@@ -5,7 +5,7 @@
         
         <div class="handwritten-page-container-1-inner">
             <div class="handwritten-page-header-image">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/header-image.png" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/hero-bg.png" />
             </div>
             
             <div class="handwritten-page-header-title-container">
@@ -74,6 +74,7 @@
                 ?>
             </div>
 
+            <div class="handwritten-category-wrapper">
             <div class="handwritten-category-grid">
                 <?php
                     get_template_part( 'template-parts/softblue-radio', null, array(
@@ -106,6 +107,7 @@
                         'name'  => 'category_choice'
                     ) );
                 ?>
+            </div>
             </div>
 
             <div class="handwritten-page-radio3">
