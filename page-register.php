@@ -40,126 +40,130 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<div class="register-hero-background"></div>
+<main id="main" class="site-main">
 
-<div class="custom-register-wrapper">  
+  <div class="register-hero-background"></div>
 
-  <h1>My Account</h1>
-  <span class="register-header-desc">Create an Account and Explore Yellow Letters’ Benefits.</span>
-  <img
-    alt="RightImage6672"
-    src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/rightimage6672-cck6-300w.png"
-    class="register-right-image"
-  />
-  <img
-    alt="LeftImage6672"
-    src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/leftimage6672-vfcz-300w.png"
-    class="register-left-image"
-  />
+  <div class="custom-register-wrapper">  
 
-  <div class="register-register-form">
-    <div class="register-asset-header"></div>
-    <div class="register-header-form">
-      <span class="register-text-header">
-        Create Account
-      </span>
-      <span class="register-text-desc">
-        Add your details to create an account.
-      </span>
-    </div>
-    <div class="register-line-social-register">
-      <img alt="Line116672" src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/line116672-7mz.svg">
-    </div>
+    <h1>My Account</h1>
+    <span class="register-header-desc">Create an Account and Explore Yellow Letters’ Benefits.</span>
+    <img
+      alt="RightImage6672"
+      src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/rightimage6672-cck6-300w.png"
+      class="register-right-image"
+    />
+    <img
+      alt="LeftImage6672"
+      src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/leftimage6672-vfcz-300w.png"
+      class="register-left-image"
+    />
 
-    <?php
-    if(isset($success_message) || isset($errors)){
-      get_template_part('template-parts/form-elements/notification', null, [
-        'success_message' => $success_message,
-        'errors' => $errors,
-      ]);
-    }
-    ?>
+    <div class="register-register-form">
+      <div class="register-asset-header"></div>
+      <div class="register-header-form">
+        <span class="register-text-header">
+          Create Account
+        </span>
+        <span class="register-text-desc">
+          Add your details to create an account.
+        </span>
+      </div>
+      <div class="register-line-social-register">
+        <img alt="Line116672" src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/line116672-7mz.svg">
+      </div>
 
-    <form action="<?php echo esc_url( $_SERVER['REQUEST_URI'] ); ?>" method="post" autocomplete="off" class="register-form">
-      <div class="register-form-wrapper">
-        <?php
-          get_template_part('template-parts/form-elements/inputbox', null, [
-            'id' => 'full_name',
-            'label' => 'Full Name',
-            'placeholder' => 'Your full name',
-            'required' => true
-          ]);
+      <?php
+      if(isset($success_message) || isset($errors)){
+        get_template_part('template-parts/form-elements/notification', null, [
+          'success_message' => $success_message,
+          'errors' => $errors,
+        ]);
+      }
+      ?>
 
-          get_template_part('template-parts/form-elements/inputbox', null, [
-            'id' => 'email_address',
-            'label' => 'Email Address',
-            'placeholder' => 'Your Email Address',
-            'required' => true
-          ]);
+      <form action="<?php echo esc_url( $_SERVER['REQUEST_URI'] ); ?>" method="post" autocomplete="off" class="register-form">
+        <div class="register-form-wrapper">
+          <?php
+            get_template_part('template-parts/form-elements/inputbox', null, [
+              'id' => 'full_name',
+              'label' => 'Full Name',
+              'placeholder' => 'Your full name',
+              'required' => true
+            ]);
+
+            get_template_part('template-parts/form-elements/inputbox', null, [
+              'id' => 'email_address',
+              'label' => 'Email Address',
+              'placeholder' => 'Your Email Address',
+              'required' => true
+            ]);
+            ?>
+        </div>
+        <div class="register-form-wrapper">
+          <?php
+            get_template_part('template-parts/form-elements/inputbox', null, [
+              'id' => 'phone_number',
+              'label' => 'Phone Number',
+              'placeholder' => 'Your Phone Number',
+              'required' => true
+            ]);
+
+            get_template_part('template-parts/form-elements/inputbox', null, [
+              'id' => 'password',
+              'label' => 'Password',
+              'placeholder' => 'Your Password',
+              'type' => 'password',
+              'required' => true,
+              'strength' => true
+            ]);
           ?>
-      </div>
-      <div class="register-form-wrapper">
-        <?php
-          get_template_part('template-parts/form-elements/inputbox', null, [
-            'id' => 'phone_number',
-            'label' => 'Phone Number',
-            'placeholder' => 'Your Phone Number',
-            'required' => true
-          ]);
+        </div>
 
-          get_template_part('template-parts/form-elements/inputbox', null, [
-            'id' => 'password',
-            'label' => 'Password',
-            'placeholder' => 'Your Password',
-            'type' => 'password',
-            'required' => true,
-            'strength' => true
-          ]);
-        ?>
-      </div>
-
-      <div class="register-button">
-        <?php
-        get_template_part( 'template-parts/button', null, array(
-            'id' => 'register-button',
-            'title' => 'Create Account',
-            'type' => 'submit',
-            'disabled' => false,
-            'icon' => '',
-        ) );
-        ?>
-        <span class="register-under-button">
-          <span class="register-already-have-an-account">
-            Already have an account?
+        <div class="register-button">
+          <?php
+          get_template_part( 'template-parts/button', null, array(
+              'id' => 'register-button',
+              'title' => 'Create Account',
+              'type' => 'submit',
+              'disabled' => false,
+              'icon' => '',
+          ) );
+          ?>
+          <span class="register-under-button">
+            <span class="register-already-have-an-account">
+              Already have an account?
+            </span>
+            <span><a href="../login" class="login-link-text">Login</a></span>
           </span>
-          <span><a href="../login" class="login-link-text">Login</a></span>
-        </span>
+        </div>
+      </form>
+
+      <div class="register-line-social-register">
+        <img alt="Line116672" src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/line116672-7mz.svg">
       </div>
-    </form>
 
-    <div class="register-line-social-register">
-      <img alt="Line116672" src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/line116672-7mz.svg">
+      <div class="register-social-links">
+        <button class="register-socialcontainer">
+          <img alt="Google Icon" src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/google-icon.png" class="vector-sociallink">
+          <span class="register-text40">
+            Login with Google
+          </span>
+        </button>
+        <button class="register-socialcontainer">
+          <img alt="Vector6672" src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/facebook-icon.png" class="vector-sociallink">
+          <span class="register-text41">
+            Login with facebook
+          </span>
+        </button>
+      </div>
+      <div class="register-croped-helper"></div>
+      <div class="register-croped-helper2"></div>
+      <div class="register-croped-footer">
+        <img alt="FooterLogoImage6672" src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/croped.svg" class="register-footer-croped-image">
+      </div>
     </div>
 
-    <div class="register-social-links">
-      <button class="register-socialcontainer">
-        <img alt="Google Icon" src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/google-icon.png" class="vector-sociallink">
-        <span class="register-text40">
-          Login with Google
-        </span>
-      </button>
-      <button class="register-socialcontainer">
-        <img alt="Vector6672" src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/facebook-icon.png" class="vector-sociallink">
-        <span class="register-text41">
-          Login with facebook
-        </span>
-      </button>
-    </div>
-    <div class="register-croped-helper"></div>
-    <div class="register-croped-helper2"></div>
-    <div class="register-croped-footer">
-      <img alt="FooterLogoImage6672" src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/croped.svg" class="register-footer-croped-image">
-    </div>
-  </div>
+</main>
 
 <?php get_footer(); ?>

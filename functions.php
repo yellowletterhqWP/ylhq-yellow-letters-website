@@ -228,7 +228,7 @@ function ylhq_handle_forgot_password() {
     $user_data = get_user_by( 'email', sanitize_email($_POST['user_email']) );
 
     if ( ! $user_data ) {
-        wp_redirect( home_url('../forgot-password?reset=notfound') );
+        wp_redirect( home_url('/index.php/forgot-password?reset=notfound') );
         exit;
     }
 
@@ -246,7 +246,7 @@ function ylhq_handle_forgot_password() {
 
     wp_mail( $to, $subject, $message );
 
-    wp_redirect( home_url('../forgot-password?reset=success') );
+    wp_redirect( home_url('/index.php/forgot-password?reset=success') );
     exit;
 }
 add_action('admin_post_nopriv_ylhq_forgot_password', 'ylhq_handle_forgot_password');

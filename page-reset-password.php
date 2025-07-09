@@ -1,10 +1,11 @@
 <?php
-/* Template Name: Custom Forgot Password */
+/* Template Name: Custom Reset Password */
 
 get_header();
 ?>
 
 <main id="main" class="site-main">
+  
   <div class="register-hero-background"></div>
 
   <div class="custom-register-wrapper">  
@@ -58,24 +59,22 @@ get_header();
         <div class="forgot-password-wrapper">
         <?php
           get_template_part('template-parts/form-elements/inputbox', null, [
-            'id' => 'email_address',
-            'name' => 'user_email',
-            'label' => 'Email Address',
-            'placeholder' => 'Your Email Address',
-            'required' => true
-          ]);
-        ?>
-        </div>
-
-        <div class="register-button">
-        <?php
-          get_template_part( 'template-parts/button', null, array(
-              'icon' => '',
-              'title' => 'Send Reset Password Link',
-              'type' => 'submit',
-              'disabled' => 'true',
-              'id' => 'forgot-password-button'
-          ) );
+              'id' => 'password1',
+              'label' => 'New Password',
+              'placeholder' => 'New Password',
+              'type' => 'password',
+              'required' => true,
+              'strength' => true
+            ]);
+        
+          get_template_part('template-parts/form-elements/inputbox', null, [
+              'id' => 'password2',
+              'label' => 'Confirm New Password',
+              'placeholder' => 'Confirm New Password',
+              'type' => 'password',
+              'required' => true,
+              'strength' => false
+            ]);
         ?>
         </div>
       </form>
@@ -85,10 +84,7 @@ get_header();
       <div class="register-croped-footer">
         <img alt="FooterLogoImage6672" src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/croped.svg" class="register-footer-croped-image">
       </div>
-
     </div>
-  </div>
-  
 </main>
 
 <?php get_footer(); ?>
