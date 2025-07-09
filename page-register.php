@@ -157,11 +157,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </span>
         </button>
       </div>
-      <div class="register-croped-helper"></div>
-      <div class="register-croped-helper2"></div>
-      <div class="register-croped-footer">
-        <img alt="FooterLogoImage6672" src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/croped.svg" class="register-footer-croped-image">
-      </div>
+      <?php
+        get_template_part( 'template-parts/croped-footer');
+      ?>
     </div>
 
 </main>

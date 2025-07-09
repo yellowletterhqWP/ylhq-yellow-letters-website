@@ -34,7 +34,7 @@
   background-color: #fff;
   margin-top: 30px;
   width: 873px;
-  height: 908px;
+  /* height: 908px; */
   display: flex;
   flex-flow: column;
   position: relative;
@@ -185,28 +185,6 @@ button.register-socialcontainer {
   justify-content: center;
   cursor: pointer;
   background-color: transparent;
-}
-
-.register-croped-helper {
-  position: absolute;
-  width: 100%;
-  height: 10px;
-  bottom: 141px;
-  background-color: #fff;
-}
-
-.register-croped-helper2 {
-  position: absolute;
-  width: 10px;
-  height: 163px;
-  bottom: -11px;
-  background-color: #fff;
-  left: 0px;
-}
-
-.register-croped-footer {
-  width: 980px;
-  margin-left: 2px;
 }
 
 .vector-sociallink {
