@@ -6,6 +6,7 @@ $placeholder = $args['placeholder'] ?? '';
 $type = $args['type'] ?? 'text';
 $required = $args['required'] ?? false;
 $strength = $args['strength'] ?? false;
+$extra_class = ($type === 'date') ? 'datepicker' : '';
 ?>
 
 <div class="form-group inputbox-group">
@@ -16,7 +17,7 @@ $strength = $args['strength'] ?? false;
 
     <div class="inputbox-container">
         <input
-            class="inputbox"
+            class="inputbox <?php echo esc_attr($extra_class); ?>"
             id="<?php echo esc_attr($id); ?>"
             name="<?php echo esc_attr($name); ?>"
             placeholder="<?php echo esc_attr($placeholder); ?>"
@@ -25,7 +26,7 @@ $strength = $args['strength'] ?? false;
             autocomplete="new-password"
         />
 
-        <?php if ($type!=='text'): ?>
+        <?php if ($type=='password'): ?>
             <span class="toggle-password" onclick="togglePassword('<?php echo esc_attr($id); ?>', this)">
                 <img
                 alt="Vector6672"

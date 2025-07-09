@@ -50,59 +50,80 @@ get_header();
             <div class="letters-product-radio">
                 <?php
                 get_template_part( 'template-parts/radio-product', null, array(
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/check-letter.png',
+                    'title' => 'Check Letter',
+                    'id'    => 'check_letter',
+                    'name'  => 'template_product_choice'
+                ) );
+
+                get_template_part( 'template-parts/radio-product', null, array(
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/letter-inside.png',
+                    'title' => 'Letter Inside #10 Envelope',
+                    'id'    => 'letter-inside',
+                    'name'  => 'template_product_choice'
+                ) );
+
+                get_template_part( 'template-parts/radio-product', null, array(
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/envelope-letter.png',
+                    'title' => 'A6 Envelope Letter - Invitation',
+                    'id'    => 'a6-envelope-letter',
+                    'name'  => 'template_product_choice'
+                ) );
+
+                get_template_part( 'template-parts/radio-product', null, array(
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/letter-inside-2.png',
+                    'title' => 'Letter Inside Windowed Envelope',
+                    'id'    => 'letter-inside-windowed-envelope',
+                    'name'  => 'template_product_choice'
+                ) );
+
+                get_template_part( 'template-parts/radio-product', null, array(
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
+                    'title' => 'Full View Letter',
+                    'id'    => 'full-view-letter',
+                    'name'  => 'template_product_choice'
+                ) );
+
+                get_template_part( 'template-parts/radio-product', null, array(
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/tri-fold.png',
+                    'title' => 'Tri - Fold Letter',
+                    'id'    => 'tir-fold-letter',
+                    'name'  => 'template_product_choice'
+                ) );
+
+                get_template_part( 'template-parts/radio-product', null, array(
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/digital-greeting.png',
+                    'title' => 'Digital Greeting Cards',
+                    'id'    => 'digital-greeting-card',
+                    'name'  => 'template_product_choice'
+                ) );
+
+                get_template_part( 'template-parts/radio-product', null, array(
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/digital-folded.png',
+                    'title' => 'Digital Folded Notes',
+                    'id'    => 'digital-folded-notes',
+                    'name'  => 'template_product_choice'
+                ) );
+
+                get_template_part( 'template-parts/radio-product', null, array(
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/digital-folded.png',
+                    'title' => 'Jumbo Letter',
+                    'id'    => 'jumbo-letter',
+                    'name'  => 'template_product_choice'
+                ) );
+
+                get_template_part( 'template-parts/radio-product', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/letters-icon.png',
-                    'title' => 'Handwritten Greeting Cards',
-                    'id'    => 'greeting',
-                    'name'  => 'template_choice'
+                    'title' => 'Sealed Letter',
+                    'id'    => 'sealed-letter',
+                    'name'  => 'template_product_choice'
                 ) );
 
                 get_template_part( 'template-parts/radio-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
-                    'title' => 'Handwritten Folded Notes',
-                    'id'    => 'folded',
-                    'name'  => 'template_choice'
-                ) );
-
-                get_template_part( 'template-parts/radio-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
-                    'title' => 'Handwritten Folded Notes',
-                    'id'    => 'folded',
-                    'name'  => 'template_choice'
-                ) );
-
-                get_template_part( 'template-parts/radio-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
-                    'title' => 'Handwritten Folded Notes',
-                    'id'    => 'folded',
-                    'name'  => 'template_choice'
-                ) );
-
-                get_template_part( 'template-parts/radio-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
-                    'title' => 'Handwritten Folded Notes',
-                    'id'    => 'folded',
-                    'name'  => 'template_choice'
-                ) );
-
-                get_template_part( 'template-parts/radio-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
-                    'title' => 'Handwritten Folded Notes',
-                    'id'    => 'folded',
-                    'name'  => 'template_choice'
-                ) );
-
-                get_template_part( 'template-parts/radio-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
-                    'title' => 'Handwritten Folded Notes',
-                    'id'    => 'folded',
-                    'name'  => 'template_choice'
-                ) );
-
-                get_template_part( 'template-parts/radio-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
-                    'title' => 'Handwritten Folded Notes',
-                    'id'    => 'folded',
-                    'name'  => 'template_choice'
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/custom-icon.png',
+                    'title' => 'All Templates',
+                    'id'    => 'all-templates',
+                    'name'  => 'template_product_choice'
                 ) );
                 ?>
             </div>
@@ -113,50 +134,107 @@ get_header();
             ) );
             ?>
 
+            <span class="blue-simple-title">Browse by Category</span>
+
+            <div class="handwritten-category-grid">
+                <?php
+                    get_template_part( 'template-parts/softblue-radio', null, array(
+                        'title' => 'All',
+                        'id'    => 'category-all',
+                        'name'  => 'category_choice'
+                    ) );
+
+                    get_template_part( 'template-parts/softblue-radio', null, array(
+                        'title' => 'Custom / Business',
+                        'id'    => 'category-custom-business',
+                        'name'  => 'category_choice'
+                    ) );
+
+                    get_template_part( 'template-parts/softblue-radio', null, array(
+                        'title' => 'General Greetings',
+                        'id'    => 'category-general-greetings',
+                        'name'  => 'category_choice'
+                    ) );
+
+                    get_template_part( 'template-parts/softblue-radio', null, array(
+                        'title' => 'Holiday / Seasonal',
+                        'id'    => 'category-holiday-seasonal',
+                        'name'  => 'category_choice'
+                    ) );
+
+                    get_template_part( 'template-parts/softblue-radio', null, array(
+                        'title' => 'Christmas - Specific',
+                        'id'    => 'category-christmas-specific',
+                        'name'  => 'category_choice'
+                    ) );
+                ?>
+            </div>
+
             <div class="handwritten-page-radio3">
                 <?php
                 get_template_part( 'template-parts/radio-templates', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/template-sample.png',
                     'title' => 'New Custom Design Postcard ($65)',
                     'id'    => 'greeting',
-                    'name'  => 'template_choice'
+                    'name'  => 'template_product_choice'
                 ) );
 
                 get_template_part( 'template-parts/radio-templates', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/template-sample.png',
                     'title' => 'Letter on File',
                     'id'    => 'folded',
-                    'name'  => 'template_choice'
+                    'name'  => 'template_product_choice'
                 ) );
                 ?>
             </div>
         </div>
 
         <div class="handwritten-page-forms">
-            <div class="handwritten-page-forms1">
+            <div class="letters-iteration-page-divide-left">
+                <div class="handwritten-page-form-mail-info">
                 <?php
-                get_template_part('template-parts/segmented-radio', null, [
-                    'name' => 'style_choice',
-                    'selected' => 'C',
-                    'options' => [
-                        ['value'=>'A', 'label'=>'Style A'],
-                        ['value'=>'B', 'label'=>'Style B'],
-                        ['value'=>'C', 'label'=>'Style C'],
-                        ['value'=>'D', 'label'=>'Style D'],
-                        ['value'=>'E', 'label'=>'Style E'],
-                    ]
-                ]);
+                    get_template_part('template-parts/form-elements/selectbox', null, [
+                        'id' => 'easy-offer-system',
+                        'label' => 'Easy Offer System?',
+                        'required' => false,
+                        'placeholder' => '',
+                        'selected' => 'yes',
+                        'options' => [
+                            ['value'=>'yes', 'label'=>'Yes (add 3 cents each)'],
+                            ['value'=>'no', 'label'=>'No'],
+                        ]
+                    ]);
+                ?>
+                </div>
+
+                <?php
+                    get_template_part('template-parts/form-elements/checkbox', null, array(
+                        'name' => 'only_land',
+                        'label' => 'Only Land',
+                        'checked' => false
+                    ));
+
+                    get_template_part('template-parts/form-elements/checkbox', null, array(
+                        'name' => 'show_percentages',
+                        'label' => 'I want to see all the percentages',
+                        'checked' => true
+                    ));
+
+                    get_template_part('template-parts/form-elements/checkbox', null, array(
+                        'name' => 'my_own_offer_ammount',
+                        'label' => 'I have my own offer amounts',
+                        'checked' => false
+                    ));
+
+                    get_template_part('template-parts/form-elements/checkbox', null, array(
+                        'name' => 'already_know_my_percentage',
+                        'label' => 'I already know my percentage',
+                        'checked' => true
+                    ));
                 ?>
             </div>
 
-            <?php
-            get_template_part('template-parts/form-elements/textarea', null, [
-                'id' => 'message',
-                'label' => 'Message',
-                'placeholder' => 'Hey (FirstName),I am very interested in (Property Address) and I would like to make you a cash offer. I was hoping you would have time to discuss this as I can be reached anytime at (Phone), Best Name',
-                'required' => true
-            ]);
-            ?>
+            <hr />
 
             <div class="handwritten-page-divide2">
                 <div class="handwritten-page-form-mail-info">
@@ -209,36 +287,47 @@ get_header();
                             ['value'=>'asap', 'label'=>'ASAP'],
                         ]
                     ]);
-                    get_template_part('template-parts/form-elements/helper', null, [
-                        'text' => 'Handwritten products are ready in 5 days after proof approval.'
-                    ]);
                     ?>
                 </div>
                 <?php
-                    get_template_part('template-parts/form-elements/selectbox', null, [
-                        'id' => 'mail_to_send',
-                        'label' => 'How much mail do you want to send out?',
+                    get_template_part('template-parts/form-elements/inputbox', null, [
+                        'id' => 'date_begin',
+                        'label' => 'Pick d date for your campaign to begin',
+                        'placeholder' => '05/07/2025',
                         'required' => true,
-                        'placeholder' => '',
-                        'selected' => 'mail_at_once',
-                        'options' => [
-                            ['value'=>'mail_at_once', 'label'=>'Mail at once'],
-                            ['value'=>'mail_per_week', 'label'=>'Mail per week'],
-                        ]
+                        'extra_class' => 'date'
                     ]);
                 ?>
             </div>
 
             <hr />
 
-            <?php
-            get_template_part('template-parts/form-elements/inputbox', null, [
-                'id' => 'order_name',
-                'label' => 'Your Order Name',
-                'placeholder' => 'Enter your order name...',
-                'required' => false
-            ]);
-            ?>
+            <div class="handwritten-page-divide2">
+                <div class="handwritten-page-form-mail-info">
+                    <?php
+                        get_template_part('template-parts/form-elements/selectbox', null, [
+                            'id' => 'mail_to_send',
+                            'label' => 'How much mail do you want to send out?',
+                            'required' => true,
+                            'placeholder' => '',
+                            'selected' => 'mail_at_once',
+                            'options' => [
+                                ['value'=>'mail_at_once', 'label'=>'Mail at once'],
+                                ['value'=>'mail_per_week', 'label'=>'Mail per week'],
+                            ]
+                        ]);
+                    ?>
+                </div>
+
+                <?php
+                get_template_part('template-parts/form-elements/inputbox', null, [
+                    'id' => 'order_name',
+                    'label' => 'Your Order Name',
+                    'placeholder' => 'Enter your order name...',
+                    'required' => false
+                ]);
+                ?>
+            </div>
 
             <hr />
             

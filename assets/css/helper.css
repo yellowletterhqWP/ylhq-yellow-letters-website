@@ -3,6 +3,6 @@
   bottom: -7px;
   left: 0;
   color: #0D84D1;
-  font-size: 18px;
+  font-size: clamp(1rem, 1.125vw, 3rem);
   z-index: 2;
 }

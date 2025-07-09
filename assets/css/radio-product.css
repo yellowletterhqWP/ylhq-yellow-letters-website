@@ -9,15 +9,17 @@
 .product-radio-box-img {
   background-color: #FFF7E6;
   border-radius: 15px;
-  height: 460px;
-  width: 530px;
+  height: 33vh;
+  aspect-ratio: 4 / 3;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .product-radio-box span.product-radio-box-title {
   color: #2D2D2D;
   font-weight: bold;
-  font-size: 30px;
+  font-size: clamp(1rem, 1.875vh, 3rem);
 }
 
 .product-radio-box:hover span.box-title {
@@ -25,8 +27,8 @@
 }
 
 .product-radio-box img {
-  margin-top: 90px;
-  margin-bottom: 60px;
+  object-fit: contain;
+  margin: 30px;
 }
 
 .product-radio-box input {

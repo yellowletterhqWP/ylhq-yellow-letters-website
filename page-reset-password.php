@@ -40,6 +40,7 @@ get_header();
       </div>
 
       <?php
+      $success_message = null;
       if (isset($_GET['key']) && isset($_GET['login'])) {
         $reset_key = sanitize_text_field($_GET['key']);
         $login     = sanitize_text_field($_GET['login']);

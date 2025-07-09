@@ -16,7 +16,7 @@
   border-radius: 30px;
   color: #2D2D2D;
   font-family: Helvetica;
-  font-size: 28px;
+  font-size: clamp(1rem, 1.75vw, 3rem);
   width: 100%;
   min-width: 100px;
   margin: 14px 0;

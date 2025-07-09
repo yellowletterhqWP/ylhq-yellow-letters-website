@@ -281,6 +281,20 @@ function ylhq_handle_reset_password() {
 }
 add_action('admin_post_nopriv_ylhq_reset_password', 'ylhq_handle_reset_password');
 
+function enqueue_datepicker_assets() {
+    wp_enqueue_style('flatpickr-css', 'https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css');
+    wp_enqueue_script('flatpickr-js', 'https://cdn.jsdelivr.net/npm/flatpickr', [], null, true);
+
+    wp_add_inline_script('flatpickr-js', "
+        document.addEventListener('DOMContentLoaded', function() {
+            flatpickr('.datepicker', {
+                dateFormat: 'Y-m-d'
+            });
+        });
+    ");
+}
+add_action('wp_enqueue_scripts', 'enqueue_datepicker_assets');
+
 
 /**
  * Implement the Custom Header feature.
