@@ -51,6 +51,7 @@
   font-weight: 600;
   letter-spacing: 0.5px;
   color: #0D84D1;
+  z-index: 1;
 }
 
 .handwritten-page-header-title2 {

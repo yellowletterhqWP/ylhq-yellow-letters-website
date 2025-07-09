@@ -64,7 +64,7 @@
             <div class="homepage-grid-product">
                 <?php
                     get_template_part( 'template-parts/product', null, array(
-                        'icon' => get_stylesheet_directory_uri() . '/public/external/letters-icon.svg',
+                        'icon' => get_stylesheet_directory_uri() . '/public/external/letters-icon.png',
                         'title' => 'Letters',
                         'price' => '0.723',
                         'link' => site_url('/index.php/letters')
@@ -72,7 +72,7 @@
                 ?>
                 <?php
                     get_template_part( 'template-parts/product', null, array(
-                        'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.svg',
+                        'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
                         'title' => 'Postcards',
                         'price' => '0.509',
                         'link' => site_url('/index.php/postcards/')
@@ -80,7 +80,7 @@
                 ?>
                 <?php
                     get_template_part( 'template-parts/product', null, array(
-                        'icon' => get_stylesheet_directory_uri() . '/public/external/handwritten-icon.svg',
+                        'icon' => get_stylesheet_directory_uri() . '/public/external/handwritten-icon.png',
                         'title' => 'Handwritten Cards',
                         'price' => '1.051',
                         'link' => site_url('/index.php/handwritten-cards')
@@ -88,7 +88,7 @@
                 ?>
                 <?php
                     get_template_part( 'template-parts/product', null, array(
-                        'icon' => get_stylesheet_directory_uri() . '/public/external/custom-icon.svg',
+                        'icon' => get_stylesheet_directory_uri() . '/public/external/custom-icon.png',
                         'title' => 'Custom Templates',
                         'price' => '1.051',
                         'link' => site_url('/index.php/custom-templates')

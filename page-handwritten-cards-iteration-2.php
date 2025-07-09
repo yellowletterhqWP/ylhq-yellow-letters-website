@@ -41,14 +41,14 @@
                 <div class="handwritten-page-radio2">
                 <?php
                 get_template_part( 'template-parts/radio-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/letters-icon.svg',
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/letters-icon.png',
                     'title' => 'Handwritten Greeting Cards',
                     'id'    => 'greeting',
                     'name'  => 'template_choice'
                 ) );
 
                 get_template_part( 'template-parts/radio-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.svg',
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
                     'title' => 'Handwritten Folded Notes',
                     'id'    => 'folded',
                     'name'  => 'template_choice'

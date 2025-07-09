@@ -1,26 +1,31 @@
+<?php
+$headers = $args['headers'] ?? [];       // Kolom header
+$title   = $args['title'] ?? 'Untitled'; // Judul produk
+$minimum = $args['minimum'] ?? '';       // Tautan minimum
+$rows    = $args['rows'] ?? [];          // Baris data
+?>
+
 <div class="pricing-table">
   <div class="pricing-header">
-    <span class="product-title">Handwritten Cards</span>
-    <a href="#" class="minimum-link">200/minimum</a>
+    <span class="product-title"><?php echo esc_html($title); ?></span>
+    <?php if ($minimum): ?>
+      <a href="#" class="minimum-link"><?php echo esc_html($minimum); ?></a>
+    <?php endif; ?>
   </div>
+
   <div class="pricing-grid">
     <div class="pricing-grid-row header">
-      <div class="cell">Quantity</div>
-      <div class="cell">200-499</div>
-      <div class="cell">500-999</div>
-      <div class="cell">1000-2999</div>
-      <div class="cell">3000-4999</div>
-      <div class="cell">5000-9999</div>
-      <div class="cell">10000-∞</div>
+      <?php foreach ($headers as $header): ?>
+        <div class="cell"><?php echo esc_html($header); ?></div>
+      <?php endforeach; ?>
     </div>
-    <div class="pricing-grid-row">
-      <div class="cell label">Cursive writing - price per mailer</div>
-      <div class="cell">$1.371</div>
-      <div class="cell">$1.331</div>
-      <div class="cell">$1.151</div>
-      <div class="cell">$1.131</div>
-      <div class="cell">$1.111</div>
-      <div class="cell">$1.051</div>
-    </div>
+
+    <?php foreach ($rows as $row): ?>
+      <div class="pricing-grid-row">
+        <?php foreach ($row as $cell): ?>
+          <div class="cell"><?php echo esc_html($cell); ?></div>
+        <?php endforeach; ?>
+      </div>
+    <?php endforeach; ?>
   </div>
 </div>

@@ -1,27 +1,27 @@
 <?php
-/* Template Name: Handwritten Cards Iteration 1 */
+/* Template Name: Handwritten Cards */
 get_header();
 ?>
 
 <main id="main" class="site-main">
-    <div class="handwritten-page-container-1">
-        
-        <div class="handwritten-page-container-1-inner">
-            <div class="handwritten-page-header-image">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/hero-bg.png" />
-            </div>
-            
-            <div class="handwritten-page-header-title-container">
-                <div class="handwritten-page-header-title">
-                    <span class="handwritten-page-header-title1">Handwritten</span>                        
-                    <span class="handwritten-page-header-title2">Cards</span>                      
-                </div>
+    <div class="register-hero-background"></div>
 
-                <span class="handwritten-page-header-title3">Handwritten cards often double postcard response rates, 
-                    allowing you to tell your story and showcase your process. We offer options for every budget, 
-                    including windowed envelopes, trifold self-mailers, and invitation envelopes.
-                </span>
-            </div>
+    <div class="letter-iteration-page-container-1">        
+        
+        <img
+        alt="RightImage6672"
+        src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/rightimage6672-cck6-300w.png"
+        class="register-right-image"
+        />
+        <img
+        alt="LeftImage6672"
+        src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/leftimage6672-vfcz-300w.png"
+        class="register-left-image"
+        />
+
+        <div class="letters-iteration-page-header-title-container">
+            <span class="handwritten-page-header-title1">Letters</span>
+            <span class="handwritten-page-header-title3">At Yellow Letters, we offer a variety of options to suit every budget, including windowed envelopes, trifold self-mailers, street view full window letters, unique envelopes, and invitation-style envelopes.</span>
         </div>
 
         <div class="handwritten-page-radio">
@@ -30,18 +30,24 @@ get_header();
                     'title' => 'Pricing',
                 ) );
             
-                get_template_part( 'template-parts/table', null, array(
-                    //'title' => 'Pricing',
-                ) );
+                get_template_part('template-parts/table', null, array(
+                    'title' => 'Letters',
+                    'minimum' => '200/minimum',
+                    'headers' => array(
+                        'Quantity', '200-499', '500-999', '1000-2999', '2500-9999', '10000-∞'
+                    ),
+                    'rows' => array(
+                        array('Price', '$1.033', '$0.923', '$0.733', '$0.713', '$0.633'),
+                        /* array('Printed message only', '$0.831', '$0.781', '$0.731', '$0.711', '$0.691', '$0.651'), */
+                    )
+                ));
             
                 get_template_part( 'template-parts/red-label', null, array(
                     'title' => 'Choose a Product',
                 ) );
             ?>
             
-            <div class="handwritten-radio1">
-
-                <div class="handwritten-page-radio2">
+            <div class="letters-product-radio">
                 <?php
                 get_template_part( 'template-parts/radio-product', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/letters-icon.png',
@@ -56,62 +62,56 @@ get_header();
                     'id'    => 'folded',
                     'name'  => 'template_choice'
                 ) );
-                ?>
-                </div>
-            </div>
 
+                get_template_part( 'template-parts/radio-product', null, array(
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
+                    'title' => 'Handwritten Folded Notes',
+                    'id'    => 'folded',
+                    'name'  => 'template_choice'
+                ) );
+
+                get_template_part( 'template-parts/radio-product', null, array(
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
+                    'title' => 'Handwritten Folded Notes',
+                    'id'    => 'folded',
+                    'name'  => 'template_choice'
+                ) );
+
+                get_template_part( 'template-parts/radio-product', null, array(
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
+                    'title' => 'Handwritten Folded Notes',
+                    'id'    => 'folded',
+                    'name'  => 'template_choice'
+                ) );
+
+                get_template_part( 'template-parts/radio-product', null, array(
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
+                    'title' => 'Handwritten Folded Notes',
+                    'id'    => 'folded',
+                    'name'  => 'template_choice'
+                ) );
+
+                get_template_part( 'template-parts/radio-product', null, array(
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
+                    'title' => 'Handwritten Folded Notes',
+                    'id'    => 'folded',
+                    'name'  => 'template_choice'
+                ) );
+
+                get_template_part( 'template-parts/radio-product', null, array(
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
+                    'title' => 'Handwritten Folded Notes',
+                    'id'    => 'folded',
+                    'name'  => 'template_choice'
+                ) );
+                ?>
+            </div>
 
             <?php
             get_template_part( 'template-parts/red-label', null, array(
                 'title' => 'Choose a Template',
             ) );
             ?>
-
-            <div class="handwritten-page-radio1">
-                <?php
-                get_template_part( 'template-parts/softblue-radio', null, array(
-                    'title' => 'Choose by Category',
-                    'id'    => 'browse-by-category',
-                    'name'  => 'template_choice'
-                ) );
-                ?>
-            </div>
-
-            <div class="handwritten-category-wrapper">
-            <div class="handwritten-category-grid">
-                <?php
-                    get_template_part( 'template-parts/softblue-radio', null, array(
-                        'title' => 'All',
-                        'id'    => 'category-all',
-                        'name'  => 'category_choice'
-                    ) );
-
-                    get_template_part( 'template-parts/softblue-radio', null, array(
-                        'title' => 'Custom / Business',
-                        'id'    => 'category-custom-business',
-                        'name'  => 'category_choice'
-                    ) );
-
-                    get_template_part( 'template-parts/softblue-radio', null, array(
-                        'title' => 'General Greetings',
-                        'id'    => 'category-general-greetings',
-                        'name'  => 'category_choice'
-                    ) );
-
-                    get_template_part( 'template-parts/softblue-radio', null, array(
-                        'title' => 'Holiday / Seasonal',
-                        'id'    => 'category-holiday-seasonal',
-                        'name'  => 'category_choice'
-                    ) );
-
-                    get_template_part( 'template-parts/softblue-radio', null, array(
-                        'title' => 'Christmas - Specific',
-                        'id'    => 'category-christmas-specific',
-                        'name'  => 'category_choice'
-                    ) );
-                ?>
-            </div>
-            </div>
 
             <div class="handwritten-page-radio3">
                 <?php
