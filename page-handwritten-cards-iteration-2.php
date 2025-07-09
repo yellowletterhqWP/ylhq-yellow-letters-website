@@ -64,7 +64,9 @@
             ) );
             ?>
 
-            <div class="handwritten-page-radio1">
+        </div>
+
+        <div class="handwritten-page-iteration-2">
                 <?php
                 get_template_part( 'template-parts/softblue-radio', null, array(
                     'title' => 'Browse by Category',
@@ -72,10 +74,8 @@
                     'name'  => 'template_choice'
                 ) );
                 ?>
-            </div>
 
-            <div class="handwritten-category-wrapper">
-            <div class="handwritten-category-grid">
+            <div class="handwritten-category-grid-iteration-2">
                 <?php
                     get_template_part( 'template-parts/softblue-radio', null, array(
                         'title' => 'All',
@@ -108,9 +108,8 @@
                     ) );
                 ?>
             </div>
-            </div>
 
-            <div class="handwritten-page-radio3">
+            <div class="handwritten-page-radio3 iteration-2">
                 <?php
                 get_template_part( 'template-parts/radio-templates', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/template-sample.png',
@@ -271,7 +270,6 @@
             ?>
             </div>
 
-        </div>
     </div>
 </main>
 
