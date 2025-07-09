@@ -37,15 +37,6 @@
             ?>
             
             <div class="handwritten-radio1">
-                <div class="handwritten-page-radio1">
-                <?php
-                get_template_part( 'template-parts/softblue-radio', null, array(
-                    'title' => 'Choose All Templates',
-                    'id'    => 'choose-all-templates',
-                    'name'  => 'template_choice'
-                ) );
-                ?>
-                </div>
 
                 <div class="handwritten-page-radio2">
                 <?php
@@ -66,11 +57,22 @@
                 </div>
             </div>
 
+
             <?php
             get_template_part( 'template-parts/red-label', null, array(
-                'title' => 'Choose a Category',
+                'title' => 'Choose a Template',
             ) );
             ?>
+
+            <div class="handwritten-page-radio1">
+                <?php
+                get_template_part( 'template-parts/softblue-radio', null, array(
+                    'title' => 'Browse by Category',
+                    'id'    => 'browse-by-category',
+                    'name'  => 'template_choice'
+                ) );
+                ?>
+            </div>
 
             <div class="handwritten-category-grid">
                 <?php
@@ -105,12 +107,6 @@
                     ) );
                 ?>
             </div>
-
-            <?php
-            get_template_part( 'template-parts/red-label', null, array(
-                'title' => 'Choose a Template',
-            ) );
-            ?>
 
             <div class="handwritten-page-radio3">
                 <?php
