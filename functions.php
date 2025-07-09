@@ -251,6 +251,36 @@ function ylhq_handle_forgot_password() {
 }
 add_action('admin_post_nopriv_ylhq_forgot_password', 'ylhq_handle_forgot_password');
 
+function ylhq_handle_reset_password() {
+    $login       = sanitize_text_field($_POST['login'] ?? '');
+    $reset_key   = sanitize_text_field($_POST['reset_key'] ?? '');
+    $new_pass    = $_POST['new_password'] ?? '';
+    $confirm     = $_POST['confirm_password'] ?? '';
+
+    if (empty($new_pass) || empty($confirm)) {
+        wp_redirect(home_url('/index.php/reset-password?reset=empty'));
+        exit;
+    }
+
+    if ($new_pass !== $confirm) {
+        wp_redirect(home_url('/index.php/reset-password?reset=nomatch'));
+        exit;
+    }
+
+    $user = check_password_reset_key($reset_key, $login);
+
+    if (is_wp_error($user)) {
+        wp_redirect(home_url('/index.php/reset-password?reset=invalid'));
+        exit;
+    }
+
+    reset_password($user, $new_pass);
+
+    wp_redirect(home_url('/index.php/login?reset=success'));
+    exit;
+}
+add_action('admin_post_nopriv_ylhq_reset_password', 'ylhq_handle_reset_password');
+
 
 /**
  * Implement the Custom Header feature.

@@ -61,6 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <div class="register-register-form">
       <div class="register-asset-header"></div>
+    
       <div class="register-header-form">
         <span class="register-text-header">
           Create Account
@@ -157,6 +158,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </span>
         </button>
       </div>
+
       <?php
         get_template_part( 'template-parts/croped-footer');
       ?>

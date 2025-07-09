@@ -24,6 +24,7 @@ get_header();
 
     <div class="register-register-form forgot-page">
       <div class="register-asset-header"></div>
+    
       <div class="register-header-form">
         <span class="register-text-header">
           Forget Password

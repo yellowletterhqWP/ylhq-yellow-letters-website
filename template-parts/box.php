@@ -4,8 +4,9 @@ $title = $args['title'] ?? '';
 $description = $args['description'] ?? '';
 ?>
 
-<div class="header-gird-box">
+<div class="header-grid-box">
     <div class="box-asset13"></div>
+    
     <div class="box-content">
         <img src="<?php echo esc_html($icon); ?>" />
         <div class="box-content-inner">
@@ -13,8 +14,7 @@ $description = $args['description'] ?? '';
             <span><?php echo esc_html($description); ?></span>
         </div>
     </div>
-    <div class="box-croped-footer">
-        <div class="box-helper"></div>
-        <img decoding="async" alt="FooterLogoImage6672" src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/croped.svg" class="login-footer-croped-image">
-    </div>
+    <?php
+        get_template_part( 'template-parts/croped-footer');
+    ?>
 </div>

@@ -25,12 +25,13 @@ get_header();
 
     <div class="register-register-form forgot-page">
       <div class="register-asset-header"></div>
+    
       <div class="register-header-form">
         <span class="register-text-header">
-          Forget Password
+          New Password
         </span>
         <span class="register-text-desc">
-          Enter your email, and we'll send you a password reset link..
+          Your password should be strong and easy to remember.
         </span>
       </div>
 
@@ -39,27 +40,30 @@ get_header();
       </div>
 
       <?php
-      if (isset($_GET['reset'])) {
-        if ($_GET['reset'] === 'success') {
-          $success_message = "We've sent you a password reset link. Please check your email.";
-        } elseif ($_GET['reset'] === 'invalid') {
-          $errors = ["Please enter a valid email address."];
-        } elseif ($_GET['reset'] === 'notfound') {
-          $errors = ["No user found with that email."];
-        }
-        get_template_part('template-parts/form-elements/notification', null, [
-          'success_message' => $success_message,
-          'errors' => $errors,
-        ]);
+      if (isset($_GET['key']) && isset($_GET['login'])) {
+        $reset_key = sanitize_text_field($_GET['key']);
+        $login     = sanitize_text_field($_GET['login']);
+      } else {
+        $errors = ["Invalid password reset link."];
       }
+
+      get_template_part('template-parts/form-elements/notification', null, [
+        'success_message' => $success_message,
+        'errors' => $errors,
+      ]);
       ?>
 
-      <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="POST" class="forgot-password-form" autocomplete="off">
-        <input type="hidden" name="action" value="ylhq_forgot_password">
+      <?php if (isset($_GET['key']) && isset($_GET['login'])) : ?>
+      <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="POST" class="reset-password-form" autocomplete="off">
+        <input type="hidden" name="action" value="ylhq_reset_password">
+        <input type="hidden" name="reset_key" value="<?php echo esc_attr($reset_key); ?>">
+        <input type="hidden" name="login" value="<?php echo esc_attr($login); ?>">
+        
         <div class="forgot-password-wrapper">
         <?php
           get_template_part('template-parts/form-elements/inputbox', null, [
               'id' => 'password1',
+              'name' => 'new_password',
               'label' => 'New Password',
               'placeholder' => 'New Password',
               'type' => 'password',
@@ -69,6 +73,7 @@ get_header();
         
           get_template_part('template-parts/form-elements/inputbox', null, [
               'id' => 'password2',
+              'name' => 'confirm_password',
               'label' => 'Confirm New Password',
               'placeholder' => 'Confirm New Password',
               'type' => 'password',
@@ -77,7 +82,20 @@ get_header();
             ]);
         ?>
         </div>
+        
+        <div class="register-button">
+        <?php
+          get_template_part( 'template-parts/button', null, array(
+              'icon' => '',
+              'title' => 'Save New Password',
+              'type' => 'submit',
+              'disabled' => 'true',
+              'id' => 'save-new-password-button'
+          ) );
+        ?>
+        </div>
       </form>
+      <?php endif; ?>
 
       <?php
         get_template_part( 'template-parts/croped-footer');

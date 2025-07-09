@@ -1,0 +1,15 @@
+.grid-box-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 30px;
+    width: 75%;
+}
+
+.grid-box-3 > div.header-gird-box {
+    flex: 1;
+}
+
+.my-account-logout-button {
+  justify-self: right;
+}
