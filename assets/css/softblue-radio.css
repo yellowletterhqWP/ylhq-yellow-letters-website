@@ -7,6 +7,7 @@
   display: none;
 }
 
+
 .button-style {
   display: inline-block;
   padding: 15px 20px;
@@ -19,6 +20,11 @@
   width: 100%;
   min-width: 100px;
   margin: 14px 0;
+}
+
+.handwritten-page-radio1 .button-style{
+    color: #0D84D1;
+    font-weight: bold;
 }
 
 .button-radio input:checked + .button-style {
