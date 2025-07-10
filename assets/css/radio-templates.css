@@ -6,6 +6,7 @@
   position: relative;
   cursor: pointer;
   border: 2px solid #ccc;
+  background-color: #fff;
   border-radius: 8px;
   margin-top: 10px;
   width: 315px;
@@ -25,6 +26,7 @@
 
 .radio-templates-image-content {
   border: 2px solid #ccc;
+  background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
   position: relative;

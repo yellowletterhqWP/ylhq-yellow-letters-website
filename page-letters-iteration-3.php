@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Letters Iteration 2 */
+/* Template Name: Letters Iteration 3 */
 get_header();
 ?>
 
@@ -128,16 +128,25 @@ get_header();
                 ?>
             </div>
 
-            <?php
-            get_template_part( 'template-parts/red-label', null, array(
-                'title' => 'Choose a Template',
-            ) );
-            ?>
+            <div class="letters-iteration-3-template">
+                <?php
+                get_template_part( 'template-parts/red-label', null, array(
+                    'title' => 'Choose a Template',
+                ) );
 
-            <div class="letters-iteration-2">
-                <div class="section-title-with-lines">
-                    <span class="black-simple-title">Sort by Category</span>
-                </div>
+                get_template_part( 'template-parts/toggle-button', null, array(
+                    'id' => 'filters-toggle',
+                    'title' => 'Filters',
+                    'disabled' => false,
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/filters-icon.png',
+                    'initial' => false,
+                    'badge' => '4'
+                ) );
+                ?>
+            </div>
+
+            <div id="letters-iteration-3-category" class="letters-iteration-2">
+                <span class="black-simple-title-iteration-3">Pick a Category</span>
 
                 <div class="handwritten-category-grid">
                     <?php
@@ -172,8 +181,9 @@ get_header();
                         ) );
                     ?>
                 </div>
+            </div>
 
-                <div class="handwritten-page-radio3">
+            <div class="handwritten-page-radio3">
                     <?php
                     get_template_part( 'template-parts/radio-templates', null, array(
                         'icon' => get_stylesheet_directory_uri() . '/public/external/template-sample.png',
@@ -190,7 +200,6 @@ get_header();
                     ) );
                     ?>
                 </div>
-            </div>
         </div>
 
         <div class="handwritten-page-forms">

@@ -1,0 +1,11 @@
+.handwritten-page-radio1 .button-style {
+    color: #2D2D2D;
+    background-color: #fff;
+    border: none;
+    font-weight: normal;
+}
+
+.handwritten-page-iteration-2 > label > span.button-style {
+    background-color: #FFF7E6;
+    border: none;
+}

@@ -22,12 +22,12 @@
   margin: 14px 0;
 }
 
-.handwritten-page-radio1 .button-style{
+.button-style{
     color: #0D84D1;
     font-weight: bold;
 }
 
-.handwritten-page-iteration-2 > label > span.button-style {
+span.button-style {
     background-color: #FFF7E6;
     border: none;
 }

@@ -1,0 +1,46 @@
+.letter-iteration-page-container-2 {
+  position: relative;
+  text-align: center;
+}
+
+.letter-iteration-page-container-2 .handwritten-category-grid {
+  width: calc(100% + 60px);
+  padding: 15px 0;
+  margin-left: -30px;
+}
+
+.section-title-with-lines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background-color: #FFF7E6;
+  padding: 0 30px;
+}
+
+span.black-simple-title {
+    color: #2D2D2D;
+    font-weight: bold;
+    font-size: clamp(1rem, 1.75vw, 3rem);
+    margin-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.section-title-with-lines::before,
+.section-title-with-lines::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.letters-iteration-2 {
+  background-color: #FFF7E6;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: -30px;
+  margin-right: -30px;
+}

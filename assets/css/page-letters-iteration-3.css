@@ -1,0 +1,21 @@
+.letters-iteration-3-template {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+
+#filters-toggle {
+  position: absolute;
+  right: 30px;
+}
+
+.black-simple-title-iteration-3 {
+    color: #2D2D2D;
+    font-size: clamp(1rem, 1.75vw, 3rem);
+    font-style: italic;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
+    white-space: nowrap;
+}

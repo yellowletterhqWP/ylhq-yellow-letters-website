@@ -136,7 +136,7 @@ get_header();
 
             <span class="blue-simple-title">Browse by Category</span>
 
-            <div class="handwritten-category-grid">
+            <div class="handwritten-category-grid letters-iteration-1-style">
                 <?php
                     get_template_part( 'template-parts/softblue-radio', null, array(
                         'title' => 'All',
@@ -196,7 +196,7 @@ get_header();
                     get_template_part('template-parts/form-elements/selectbox', null, [
                         'id' => 'easy-offer-system',
                         'label' => 'Easy Offer System?',
-                        'required' => false,
+                        'required' => true,
                         'placeholder' => '',
                         'selected' => 'yes',
                         'options' => [

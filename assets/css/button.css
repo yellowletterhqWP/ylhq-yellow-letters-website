@@ -59,6 +59,7 @@
   border: none;
   text-decoration: none;
   cursor: pointer;
+  padding: 0;
 }
 
 .homepage-header-button button:focus,

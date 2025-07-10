@@ -40,3 +40,10 @@ span.blue-simple-title {
   display: flex;
   gap: 30px;
 }
+
+.letters-iteration-2 span.button-style, .letters-iteration-1-style span.button-style {
+    color: #2D2D2D;
+    background-color: #fff;
+    border: none;
+    font-weight: normal;
+}
