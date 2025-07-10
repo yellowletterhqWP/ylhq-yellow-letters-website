@@ -1,9 +1,20 @@
 .testimonial-wrapper {
+  /* display: flex;
+  justify-content: center;
+  margin: 40px 0 100px 0;
+  gap: 20px; */
   display: flex;
   justify-content: center;
   margin: 40px 0 100px 0;
   gap: 20px;
+  width: 100%;
+  overflow-x: hidden;
+  height: 555px;
+  box-sizing: border-box;
+  min-width: calc(3 * 300px + 2 * 20px);
+  overflow-y: visible;
 }
+
 .testimonial {
   position: relative;
 }
@@ -36,7 +47,8 @@
 }
 
 .minibox {
-  width: 100%;
+  /* width: 100%; */
+  width: 540px;
   max-width: 450px;
   min-height: 288px;
 }
@@ -118,7 +130,8 @@
 }
 
 .mainboxwrapper .testimonial-avatar {
-  bottom: -210px;
+  /* bottom: -210px; */
+  bottom: 0;
   left: 51%;
   width: 150px;
   height: 150px;
@@ -127,7 +140,8 @@
 }
 
 .miniboxwrapper .testimonial-avatar {
-  bottom: -70px;
+  /* bottom: -70px; */
+  bottom: 110px;
   left: 51%;
   width: 84px;
   height: 84px;

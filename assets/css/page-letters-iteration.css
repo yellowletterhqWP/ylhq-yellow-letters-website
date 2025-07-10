@@ -1,6 +1,9 @@
 .letters-page-page-template {
   position: relative;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .letters-iteration-page-header-title-container{

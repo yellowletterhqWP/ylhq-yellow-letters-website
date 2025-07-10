@@ -1,4 +1,4 @@
-.box-blue-box {
+.box-yellow-box {
   background-color: #0D84D1;
   border-radius: 15px;
   height: 460px;
@@ -8,7 +8,7 @@
   justify-content: center;
 }
 
-.box-blue-box span.box-title {
+.box-yellow-box span.box-title {
     position: absolute;
     right: 45px;
     top: 40px;
@@ -22,21 +22,21 @@
     transition: opacity 0.4s ease;
 }
 
-.box-blue-box:hover span.box-title {
+.box-yellow-box:hover span.box-title {
   opacity: 0;
 }
 
-.box-blue-box img {
+.box-yellow-box img {
     margin-top: 90px;
     margin-bottom: 60px;
 }
 
-.box-overlay {
+.box-yellow-overlay {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 50%;
   background: #2D2D2D8C;
   border-radius: 15px;
   display: flex;
@@ -47,7 +47,7 @@
   color: white;
 }
 
-.box-blue-box:hover .box-overlay {
+.box-yellow-box:hover .box-yellow-overlay {
   opacity: 1;
 }
 

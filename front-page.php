@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main id="main" class="site-main">
-    <div class="homepage-container-1">
+    <div class="homepage-container-1 letters-page-page-template">
         
         <div class="homepage-container-1-inner">
             <div class="homepage-header-image">
@@ -149,7 +149,7 @@
             ?>
         </div>
 
-        <div class="homepage-campaign">
+        <div class="homepage-campaign homepage-testimony-div">
             <?php
                 get_template_part( 'template-parts/form-elements/button', null, array(
                     'icon' => '',

@@ -112,7 +112,7 @@
     position: relative;
     width: 100%;
     background-color: #FAF7F3;
-    padding: 70px 30px 150px 30px;
+    padding: 30px 30px 100px 30px;
     display: flex;
     flex-flow: column;
 }
@@ -137,7 +137,7 @@
 .homepage-effortlessmail {
     position: relative;
     width: 100%;
-    padding: 70px 30px;
+    padding: 0 30px;
 }
 
 .homepage-effortlessmail p {
@@ -191,4 +191,10 @@
     position: absolute;
     right: 40px;
     top: 90px;
+}
+
+.homepage-testimony-div {
+    padding-top: 30px;
+    padding-bottom: 135px;
+    margin-bottom: 30px;
 }
