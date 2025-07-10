@@ -18,7 +18,7 @@ $label = $args['label'] ?? 'Upload your files';
       </div>
       <span>Drop or Drag your list here. Add as many lists as you want to make one large list:</span>
       <?php
-      get_template_part( 'template-parts/button', null, array(
+      get_template_part( 'template-parts/form-elements/button', null, array(
           'icon' => '',
           'title' => 'Upload files',
       ) );

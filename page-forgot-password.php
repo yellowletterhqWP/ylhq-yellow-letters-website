@@ -70,7 +70,7 @@ get_header();
 
         <div class="register-button">
         <?php
-          get_template_part( 'template-parts/button', null, array(
+          get_template_part( 'template-parts/form-elements/button', null, array(
               'icon' => '',
               'title' => 'Send Reset Password Link',
               'type' => 'submit',

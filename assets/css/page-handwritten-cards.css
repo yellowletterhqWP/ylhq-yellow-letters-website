@@ -116,6 +116,7 @@
   padding: 70px 30px 50px 30px;
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
 
 .handwritten-page-radio1 {
@@ -137,7 +138,6 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
-  margin-top: 50px;
 }
 
 .handwritten-page-radio3 .iteration-2{

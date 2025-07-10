@@ -28,6 +28,8 @@
   border: 2px solid #ccc;
   background-color: #fff;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   position: relative;
   width: 315px;

@@ -65,7 +65,7 @@ get_header();
         <div></div>
         <div class="my-account-logout-button">
         <?php
-            get_template_part( 'template-parts/button', null, array(
+            get_template_part( 'template-parts/form-elements/button', null, array(
                 'icon' => get_stylesheet_directory_uri() . '/public/external/logout.svg',
                 'title' => 'Logout',
             ) );

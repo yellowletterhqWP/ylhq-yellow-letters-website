@@ -19,7 +19,7 @@
             <span class="homepage-header-title4">We save your budget and your bandwidth with premium direct mail that drives immediate response.</span>
             
             <?php
-                get_template_part( 'template-parts/button', null, array(
+                get_template_part( 'template-parts/form-elements/button', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/Vector.svg',
                     'title' => 'See Mail Options',
                 ) );
@@ -52,7 +52,7 @@
 
         <div class="homepage-campaign">
             <?php
-                get_template_part( 'template-parts/red-label', null, array(
+                get_template_part( 'template-parts/form-elements/red-label', null, array(
                     'title' => 'Pick Your Mailer Type',
                 ) );
             ?>
@@ -99,7 +99,7 @@
 
         <div class="homepage-effortlessmail">
             <?php
-                get_template_part( 'template-parts/red-label', null, array(
+                get_template_part( 'template-parts/form-elements/red-label', null, array(
                     'title' => 'Effortless Mail. Real Results.',
                 ) );
             ?>
@@ -142,7 +142,7 @@
             <span class="homepage-header-title4">Yellow Letters makes direct mail marketing quic and easy</span>
             
             <?php
-                get_template_part( 'template-parts/button', null, array(
+                get_template_part( 'template-parts/form-elements/button', null, array(
                     'icon' => '',
                     'title' => 'Get Started',
                 ) );
@@ -151,13 +151,13 @@
 
         <div class="homepage-campaign">
             <?php
-                get_template_part( 'template-parts/button', null, array(
+                get_template_part( 'template-parts/form-elements/button', null, array(
                     'icon' => '',
                     'title' => 'Rate us',
                 ) );
             ?>
             <?php
-                get_template_part( 'template-parts/red-label', null, array(
+                get_template_part( 'template-parts/form-elements/red-label', null, array(
                     'title' => 'Smilling Customers',
                 ) );
             ?>

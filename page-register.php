@@ -123,7 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <div class="register-button">
           <?php
-          get_template_part( 'template-parts/button', null, array(
+          get_template_part( 'template-parts/form-elements/button', null, array(
               'id' => 'register-button',
               'title' => 'Create Account',
               'type' => 'submit',

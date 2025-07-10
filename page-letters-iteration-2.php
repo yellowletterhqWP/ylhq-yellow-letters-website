@@ -26,11 +26,11 @@ get_header();
 
         <div class="handwritten-page-radio">
             <?php
-                get_template_part( 'template-parts/red-label', null, array(
+                get_template_part( 'template-parts/form-elements/red-label', null, array(
                     'title' => 'Pricing',
                 ) );
             
-                get_template_part('template-parts/table', null, array(
+                get_template_part('template-parts/form-elements/table', null, array(
                     'title' => 'Letters',
                     'minimum' => '200/minimum',
                     'headers' => array(
@@ -42,7 +42,7 @@ get_header();
                     )
                 ));
             
-                get_template_part( 'template-parts/red-label', null, array(
+                get_template_part( 'template-parts/form-elements/red-label', null, array(
                     'title' => 'Choose a Product',
                 ) );
             ?>
@@ -129,7 +129,7 @@ get_header();
             </div>
 
             <?php
-            get_template_part( 'template-parts/red-label', null, array(
+            get_template_part( 'template-parts/form-elements/red-label', null, array(
                 'title' => 'Choose a Template',
             ) );
             ?>
@@ -141,31 +141,31 @@ get_header();
 
                 <div class="handwritten-category-grid">
                     <?php
-                        get_template_part( 'template-parts/softblue-radio', null, array(
+                        get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
                             'title' => 'All',
                             'id'    => 'category-all',
                             'name'  => 'category_choice'
                         ) );
 
-                        get_template_part( 'template-parts/softblue-radio', null, array(
+                        get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
                             'title' => 'Custom / Business',
                             'id'    => 'category-custom-business',
                             'name'  => 'category_choice'
                         ) );
 
-                        get_template_part( 'template-parts/softblue-radio', null, array(
+                        get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
                             'title' => 'General Greetings',
                             'id'    => 'category-general-greetings',
                             'name'  => 'category_choice'
                         ) );
 
-                        get_template_part( 'template-parts/softblue-radio', null, array(
+                        get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
                             'title' => 'Holiday / Seasonal',
                             'id'    => 'category-holiday-seasonal',
                             'name'  => 'category_choice'
                         ) );
 
-                        get_template_part( 'template-parts/softblue-radio', null, array(
+                        get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
                             'title' => 'Christmas - Specific',
                             'id'    => 'category-christmas-specific',
                             'name'  => 'category_choice'
@@ -176,7 +176,7 @@ get_header();
                 <div class="handwritten-page-radio3">
                     <?php
                     get_template_part( 'template-parts/radio-templates', null, array(
-                        'icon' => get_stylesheet_directory_uri() . '/public/external/template-sample.png',
+                        'icon' => get_stylesheet_directory_uri() . '/public/external/letter-edit.jpg',
                         'title' => 'New Custom Design Postcard ($65)',
                         'id'    => 'greeting',
                         'name'  => 'template_product_choice'
@@ -360,7 +360,7 @@ get_header();
                 'max' => 10000,
                 'value' => 200
             ]);
-            get_template_part( 'template-parts/button', null, array(
+            get_template_part( 'template-parts/form-elements/button', null, array(
                 'icon' => '',
                 'title' => 'Add to cart',
             ) );

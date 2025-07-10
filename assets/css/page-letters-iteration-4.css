@@ -1,0 +1,23 @@
+.letter-iteration-page-container-4 {
+  position: relative;
+  text-align: center;
+}
+
+.letter-iteration-page-container-4 .blue-simple-title {
+    margin-top: 0;
+    font-weight: normal;
+}
+
+.letters-iteration-category-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.letters-iteration-category-wrapper span.button-style {
+    background-color: #FFF;
+    border-radius: 50px;
+    border: 1px solid #2D2D2D36;
+    color: #2D2D2DAB;
+    font-weight: normal;
+}

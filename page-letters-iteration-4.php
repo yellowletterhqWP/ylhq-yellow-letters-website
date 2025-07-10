@@ -1,12 +1,12 @@
 <?php
-/* Template Name: Letters Iteration 3 */
+/* Template Name: Letters Iteration 4 */
 get_header();
 ?>
 
 <main id="main" class="site-main">
     <div class="register-hero-background"></div>
 
-    <div class="letter-iteration-page-container-2">        
+    <div class="letter-iteration-page-container-4">        
         
         <img
         alt="RightImage6672"
@@ -128,71 +128,63 @@ get_header();
                 ?>
             </div>
 
-            <div class="letters-iteration-3-template">
-                <?php
-                get_template_part( 'template-parts/form-elements/red-label', null, array(
-                    'title' => 'Choose a Template',
-                ) );
+            
+            <?php
+            get_template_part( 'template-parts/form-elements/red-label', null, array(
+                'title' => 'Choose a Template',
+            ) );
 
-                get_template_part( 'template-parts/form-elements/toggle-button', null, array(
-                    'id' => 'filters-toggle',
-                    'title' => 'Filters',
-                    'disabled' => false,
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/filters-icon.png',
-                    'initial' => false,
-                    'badge' => '4'
-                ) );
-                ?>
-            </div>
+            ob_start(); ?>
+            <?php get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
+                'title' => 'All',
+                'id'    => 'category-all',
+                'name'  => 'category_choice'
+            )); ?>
 
-            <div id="letters-iteration-3-category" class="letters-iteration-2">
-                <span class="black-simple-title-iteration-3">Pick a Category</span>
+            <?php get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
+                'title' => 'Custom / Business',
+                'id'    => 'category-custom-business',
+                'name'  => 'category_choice'
+            )); ?>
 
-                <div class="handwritten-category-grid">
-                    <?php
-                        get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
-                            'title' => 'All',
-                            'id'    => 'category-all',
-                            'name'  => 'category_choice'
-                        ) );
+            <?php get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
+                'title' => 'General Greetings',
+                'id'    => 'category-general-greetings',
+                'name'  => 'category_choice'
+            )); ?>
 
-                        get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
-                            'title' => 'Custom / Business',
-                            'id'    => 'category-custom-business',
-                            'name'  => 'category_choice'
-                        ) );
+            <?php get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
+                'title' => 'Holiday / Seasonal',
+                'id'    => 'category-holiday-seasonal',
+                'name'  => 'category_choice'
+            )); ?>
 
-                        get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
-                            'title' => 'General Greetings',
-                            'id'    => 'category-general-greetings',
-                            'name'  => 'category_choice'
-                        ) );
+            <?php get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
+                'title' => 'Christmas - Specific',
+                'id'    => 'category-christmas-specific',
+                'name'  => 'category_choice'
+            ));
+            $content = '<div class="letters-iteration-category-wrapper">' . ob_get_clean() . '</div>';
 
-                        get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
-                            'title' => 'Holiday / Seasonal',
-                            'id'    => 'category-holiday-seasonal',
-                            'name'  => 'category_choice'
-                        ) );
+            get_template_part('template-parts/form-elements/collapsible-toggle', null, array(
+                'id' => 'category-collapsible',
+                'label' => 'View By Category',
+                'content' => $content
+            ));
+            ?>
 
-                        get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
-                            'title' => 'Christmas - Specific',
-                            'id'    => 'category-christmas-specific',
-                            'name'  => 'category_choice'
-                        ) );
-                    ?>
-                </div>
-            </div>
+            <span class="blue-simple-title">Select Templates</span>
 
             <div class="handwritten-page-radio3">
                     <?php
-                    get_template_part( 'template-parts/radio-templates', null, array(
+                    get_template_part( 'template-parts/radio-templates-simple', null, array(
                         'icon' => get_stylesheet_directory_uri() . '/public/external/letter-edit.jpg',
                         'title' => 'New Custom Design Postcard ($65)',
                         'id'    => 'greeting',
                         'name'  => 'template_product_choice'
                     ) );
 
-                    get_template_part( 'template-parts/radio-templates', null, array(
+                    get_template_part( 'template-parts/radio-templates-simple', null, array(
                         'icon' => get_stylesheet_directory_uri() . '/public/external/template-sample.png',
                         'title' => 'Letter on File',
                         'id'    => 'folded',
