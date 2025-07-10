@@ -1,11 +1,13 @@
 .register-hero-background {
   background-color: rgb(255, 247, 230);
-  height: 625px;
+  height: 710px;
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 110%;
   z-index: 0;
-  border-radius: 0 0 800px 800px;
+  border-radius: 0 0 1000px 1000px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .custom-register-wrapper {
@@ -111,17 +113,17 @@
 }
 
 .register-left-image {
-  top: 0;
+  top: clamp(0px, 15vh, 50px);
   left: -24.97px;
-  width: 300px;
+  width: clamp(200px, 20vw, 300px);
   position: absolute;
   filter: grayscale(100%);
   opacity: 0.6;
 }
 
 .register-right-image {
-  top: 0;
-  width: 300px;
+  top: clamp(0px, 15vh, 50px);
+  width: clamp(200px, 20vw, 300px);
   position: absolute;
   right: 0;
   opacity: 0.6;

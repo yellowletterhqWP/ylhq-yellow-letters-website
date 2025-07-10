@@ -1,0 +1,55 @@
+.home-concept2-header-title-container {
+  position: relative;
+  padding-top: clamp(10px, 10vh, 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-concept2-header1 {
+  font-size: clamp(1rem, 1.5vw, 3rem);
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+  color: #0D84D1;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 30px;
+  border: 1px solid #0D84D1;
+}
+
+.homepage-concept2-grid-header {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    gap: 35px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.home-concept-2 .homepage-campaign {
+    background-color: #fff;
+}
+
+.home-concept-2 .box-blue-box {
+    background-color: #FFF7E6;
+    border-radius: 15px;
+    height: 460px;
+    width: clamp(100px, 45vw, 436px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.home-concept-2 .homepage-grid-product {
+    display: flex;
+    gap: 17px;
+    margin: 0 auto;
+    justify-items: center;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+}

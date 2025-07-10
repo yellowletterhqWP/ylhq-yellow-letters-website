@@ -2,7 +2,7 @@
   background-color: #0D84D1;
   border-radius: 15px;
   height: 460px;
-  width: 530px;
+  width: clamp(100px, 45vw, 570px);
   position: relative;
   display: flex;
   justify-content: center;
