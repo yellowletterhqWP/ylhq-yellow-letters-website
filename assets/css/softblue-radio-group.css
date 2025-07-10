@@ -1,0 +1,44 @@
+.softblue-radio-group {
+    display: flex;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 9999px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: max-content;
+    margin: 0 auto;
+}
+
+.white-button-style {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background-color: #2D2D2D0A;
+    color: #2D2D2DD6;
+    cursor: pointer;
+    font-size: 24px;
+    border: 2px solid transparent;
+    white-space: nowrap;
+}
+
+.softblue-radio-option input {
+    display: none;
+}
+
+.softblue-radio-option input:checked + span.white-button-style {
+    color: #0D84D1;
+    background-color: white;
+    border: 2px solid #0D84D1;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 999px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.softblue-radio-option span {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 999px;
+    transition: all 0.2s ease;
+}

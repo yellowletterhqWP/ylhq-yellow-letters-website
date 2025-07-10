@@ -1,4 +1,4 @@
-.letter-iteration-page-container-1 {
+.letters-page-page-template {
   position: relative;
   text-align: center;
 }
@@ -29,7 +29,7 @@
 span.blue-simple-title {
     color: #0D84D1;
     font-weight: bold;
-    font-size: clamp(1rem, 1.75vw, 3rem);
+    font-size: clamp(1rem, 1.5vw, 3rem);
     margin-top: 30px;
 }
 

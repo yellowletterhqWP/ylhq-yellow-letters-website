@@ -9,9 +9,12 @@ $name = $args['name'] ?? 'product-radio-box-simple[]';
   <input type="radio" name="<?php echo esc_attr($name); ?>" value="<?php echo esc_attr($id); ?>">
   
   <div class="radio-templates-title-wrapper-simple">
+
+    <?php if($icon!=='') : ?>
     <div class="radio-templates-image-content-simple">
       <img src="<?php echo esc_html($icon); ?>" alt="<?php echo esc_attr($title); ?>" />
     </div>
+    <?php endif; ?>
 
     <span class="radio-templates-title-simple"><?php echo esc_html($title); ?></span>
     <span class="radio-templates-checkmark-simple">&#10003;</span>

@@ -1,12 +1,12 @@
 <?php
-/* Template Name: Letters Iteration */
+/* Template Name: Letters Iteration 5 */
 get_header();
 ?>
 
 <main id="main" class="site-main">
     <div class="register-hero-background"></div>
 
-    <div class="letter-iteration-page-container-1 letters-page-page-template">        
+    <div class="letter-iteration-page-container-5 letters-page-page-template">        
         
         <img
         alt="RightImage6672"
@@ -128,65 +128,44 @@ get_header();
                 ?>
             </div>
 
+            <span class="blue-simple-title">Template Categories</span>
+
             <?php
-            get_template_part( 'template-parts/form-elements/red-label', null, array(
-                'title' => 'Choose a Template',
-            ) );
+            get_template_part('template-parts/form-elements/softblue-radio-group', null, array(
+                'id' => 'category-choice',
+                'name' => 'category_choice',
+                'selected' => 'custom',
+                'options' => array(
+                    'all' => 'All',
+                    'custom' => 'Custom / Business',
+                    'greetings' => 'General Greetings',
+                    'holiday' => 'Holiday / Seasonal',
+                    'christmas' => 'Christmas - Specific'
+                )
+            ));
             ?>
 
-            <span class="blue-simple-title">Browse by Category</span>
+            <span class="blue-simple-title">Select Templates</span>
 
-            <div class="handwritten-category-grid letters-iteration-1-style">
-                <?php
-                    get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
-                        'title' => 'All',
-                        'id'    => 'category-all',
-                        'name'  => 'category_choice'
-                    ) );
-
-                    get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
-                        'title' => 'Custom / Business',
-                        'id'    => 'category-custom-business',
-                        'name'  => 'category_choice'
-                    ) );
-
-                    get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
-                        'title' => 'General Greetings',
-                        'id'    => 'category-general-greetings',
-                        'name'  => 'category_choice'
-                    ) );
-
-                    get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
-                        'title' => 'Holiday / Seasonal',
-                        'id'    => 'category-holiday-seasonal',
-                        'name'  => 'category_choice'
-                    ) );
-
-                    get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
-                        'title' => 'Christmas - Specific',
-                        'id'    => 'category-christmas-specific',
-                        'name'  => 'category_choice'
-                    ) );
-                ?>
-            </div>
+            <hr />
 
             <div class="handwritten-page-radio3">
-                <?php
-                get_template_part( 'template-parts/radio-templates', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/letter-edit.jpg',
-                    'title' => 'New Custom Design Postcard ($65)',
-                    'id'    => 'greeting',
-                    'name'  => 'template_product_choice'
-                ) );
+                    <?php
+                    get_template_part( 'template-parts/radio-templates-simple', null, array(
+                        'icon' => '',
+                        'title' => 'New Custom Design Postcard ($65)',
+                        'id'    => 'greeting',
+                        'name'  => 'template_product_choice'
+                    ) );
 
-                get_template_part( 'template-parts/radio-templates', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/template-sample.png',
-                    'title' => 'Letter on File',
-                    'id'    => 'folded',
-                    'name'  => 'template_product_choice'
-                ) );
-                ?>
-            </div>
+                    get_template_part( 'template-parts/radio-templates-simple', null, array(
+                        'icon' => '',
+                        'title' => 'Letter on File',
+                        'id'    => 'folded',
+                        'name'  => 'template_product_choice'
+                    ) );
+                    ?>
+                </div>
         </div>
 
         <div class="handwritten-page-forms">

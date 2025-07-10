@@ -1,8 +1,3 @@
-.letter-iteration-page-container-2 {
-  position: relative;
-  text-align: center;
-}
-
 .letter-iteration-page-container-2 .handwritten-category-grid {
   width: calc(100% + 60px);
   padding: 15px 0;

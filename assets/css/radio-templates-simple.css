@@ -7,14 +7,14 @@
   cursor: pointer;
   border: 1px solid #ccc;
   background-color: #fff;
-  border-radius: 15px;
-  width: 365px;
+  border-radius: 30px;
+  width: 370px;
   height: 55px;
   justify-content: left;
   display: flex;
   gap: 5px;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .radio-templates-image-box-simple input[type="radio"] {
