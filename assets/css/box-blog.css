@@ -31,3 +31,13 @@
     width: 100%;
     position: relative;
 }
+
+.date-post {
+  width: max-content;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 30px;
+}

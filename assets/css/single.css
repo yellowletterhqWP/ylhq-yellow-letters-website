@@ -1,0 +1,127 @@
+.blog-post-detail-view-page {
+  position: relative;
+  padding-top: clamp(10px, 10vh, 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: clamp(371px, 5vh, 500px);
+  height: max-content;
+}
+
+.blog-posts-detail-wrapper {
+  display: flex;
+  height: max-content;
+  position: relative;
+  margin-top: 30px;
+}
+
+.leftsidebar {
+  padding: 0 30px;
+}
+
+.mainpost {
+  padding: 0 30px;
+  border-left: 1px solid #ccc;
+}
+
+.featured-image-top {
+    width: 100%;
+    position: relative;
+    padding: 0 30px;
+    margin-top: 150px;
+}
+
+.post-thumbnail {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  min-height: 400px;
+  max-height: 550px;
+}
+
+img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    width: 100%;
+    height: auto;
+}
+
+.blog-post-detail-view-page .entry-title {
+  font-size: 52px;
+}
+
+.blog-post-detail-view-page .entry-content p {
+  font-size: 22px;
+  text-align: left;
+}
+
+/* left nav */
+
+#wp-block-search__input-1 {
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.wp-block-group__inner-container.is-layout-flow.wp-block-group-is-layout-flow {
+  text-align: left;
+}
+
+.wp-block-latest-posts__list.wp-block-latest-posts {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.wp-block-latest-posts.wp-block-latest-posts__list li {
+  margin: 10px 0;
+}
+
+a.wp-block-latest-posts__post-title, a.wp-block-latest-posts__post-title:visited {
+  color: #2D2D2DC2;
+}
+
+.wp-block-latest-comments {
+  padding-left: 0;
+}
+
+.wp-block-latest-comments__comment-author {
+  color: #2D2D2DC2 !important;
+}
+
+.wp-block-latest-comments__comment-link {
+  color: #2D2D2DC2 !important;
+}
+
+.wp-block-archives-list.wp-block-archives {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.wp-block-archives-list.wp-block-archives li {
+  list-style: none;
+}
+
+.wp-block-archives-list.wp-block-archives li a {
+  color: #2D2D2DC2 !important;
+}
+
+.widget.widget_meta ul {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.widget.widget_meta ul li {
+  list-style: none;
+}
+
+.widget.widget_meta ul li a {
+  color: #2D2D2DC2 !important;
+}
+
+.tag-cloud-link {
+  padding: 10px 15px;
+  background-color: #0D84D1;
+  border-radius: 20px;
+  color: #FFF;
+}
+
+.tags-title {
+  text-align: left;
+}

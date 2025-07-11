@@ -29,7 +29,9 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php ylhq_yellow_letter_website_post_thumbnail(); ?>
+	<!-- <div class="header-post-image">
+	<?php /* ylhq_yellow_letter_website_post_thumbnail(); */ ?>
+	</div> -->
 
 	<div class="entry-content">
 		<?php
