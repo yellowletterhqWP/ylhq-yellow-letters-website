@@ -142,7 +142,7 @@ get_header();
     
     </div>
 
-     <div class="handwritten-page-iteration-2 category-sort" style="display:none;">
+        <div class="handwritten-page-iteration-2 category-sort" style="display:none;">
                 <?php
                 get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
                     'title' => 'Sort by Category',
@@ -203,7 +203,7 @@ get_header();
                 ?>
             </div>
         </div>
-        
+
         <div class="handwritten-page-forms">
             <div class="handwritten-page-forms1">
                 <?php

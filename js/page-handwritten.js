@@ -25,8 +25,11 @@ document.addEventListener("DOMContentLoaded", function() {
     addToCartButtons.forEach(function (button) {
       button.addEventListener("click", function () {
         const categorySortSection = document.querySelector(".handwritten-page-iteration-2.category-sort");
+        const categoryBrowseSection = document.querySelector(".handwritten-page-radio .category-browse");
+
         if (categorySortSection) {
           categorySortSection.style.display = "block";
+          categoryBrowseSection.style.display = "none";
         }
       });
     });
