@@ -3,19 +3,19 @@
 }
 
 .radio-templates-title-wrapper {
-  position: relative;
-  cursor: pointer;
-  border: 2px solid #ccc;
-  background-color: #fff;
-  border-radius: 8px;
-  margin-top: 10px;
-  width: 315px;
-  height: 65px;
-  justify-content: center;
-  display: flex;
-  flex-flow: column;
-  align-items: start;
-  padding-left: 20px;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    border-radius: 125px;
+    /* margin-top: 10px; */
+    width: 430px;
+    height: 65px;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    padding: 27px;
 }
 
 .radio-templates-image-box input[type="radio"] {
@@ -43,22 +43,22 @@
 }
 
 .radio-templates-title {
-  font-size: 16px;
+  font-size: 20px;
   position: relative;
 }
 
 .radio-templates-checkmark {
-  position: absolute;
-  right: 10px;
-  background: #fff;
-  border: 2px solid #ccc;
-  border-radius: 50%;
-  color: #ccc;
-  width: 24px;
-  height: 24px;
-  line-height: 20px;
-  text-align: center;
-  font-size: 14px;
+    position: absolute;
+    right: 27px;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    color: #ccc;
+    width: 24px;
+    height: 24px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
 }
 
 .radio-templates-image-box input[type="radio"]:checked + .radio-templates-image-content {
@@ -72,7 +72,9 @@
 }
 
 .radio-templates-image-box input[type="radio"]:checked ~ .radio-templates-title-wrapper {
-  border-color: #0D84D1;
+  /* border-color: #0D84D1; */
+  border: 2px solid #0D84D1;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
 }
 
 .radio-templates-image-box input[type="radio"]:checked ~ .radio-templates-title-wrapper .radio-templates-checkmark {
@@ -84,5 +86,9 @@
 
 .radio-templates-image-box input[type="radio"]:checked ~ .radio-templates-title-wrapper .radio-templates-title {
   color: #0D84D1;
+  font-weight: bold;
+  /* border: 2px solid #0D84D1;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25); */
+
 }
 
