@@ -22,13 +22,12 @@
   margin: 14px 0;
 }
 
-.button-style{
-    color: #0D84D1;
-    font-weight: bold;
+.handwritten-page-iteration-2 .button-style{
+   width: unset;
 }
 
 span.button-style {
-    background-color: #FFF7E6;
+    background-color: #FFFFFF;
     border: none;
 }
 

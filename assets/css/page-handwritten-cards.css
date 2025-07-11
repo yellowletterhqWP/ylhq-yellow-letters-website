@@ -156,12 +156,13 @@
 }
 
 .product-radio-box.active .product-radio-box-img {
-  outline: 5px solid #c2e6ff;
+  outline: 7px solid #0D84D1;
 }
 
 .product-radio-box.active .product-radio-box-title {
   color: #0D84D1;
 }
+
 
 .handwritten-radio1 {
     margin-bottom: 50px;;
@@ -171,10 +172,13 @@
     width: 100vw;
     background-color: #FFF7E6;
     margin-left: calc(-50vw + 50%);
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-bottom: 30px;
 }
 
+.handwritten-page-radio3.iteration-2{
+  margin: 33px 0;
+}
 .handwritten-category-grid {
   display: flex;
   width: 100%;

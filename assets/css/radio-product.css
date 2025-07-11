@@ -19,7 +19,9 @@
 .product-radio-box span.product-radio-box-title {
   color: #2D2D2D;
   font-weight: bold;
-  font-size: clamp(1rem, 1.875vh, 3rem);
+  /* font-size: clamp(1rem, 1.875vh, 3rem); */
+  font-size: 28px;
+  line-height: 2.5em;
 }
 
 .product-radio-box:hover span.box-title {

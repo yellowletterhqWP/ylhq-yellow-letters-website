@@ -27,9 +27,17 @@
                     'title' => 'Pricing',
                 ) );
             
-                get_template_part( 'template-parts/form-elements/table', null, array(
-                    //'title' => 'Pricing',
-                ) );
+                 get_template_part('template-parts/form-elements/table', null, array(
+                    'title' => 'Handwritten Cards',
+                    'minimum' => '200/minimum',
+                    'headers' => array(
+                        'Quantity', '200-499', '500-999', '1000-2999', '3000-4999', '5000-9999', '10000-∞'
+                    ),
+                    'rows' => array(
+                        array('Cursive writing - price per mailer', '$1.371', '$1.331', '$1.151', '$1.131', '$1.111', '$1.051'),
+                        /* array('Printed message only', '$0.831', '$0.781', '$0.731', '$0.711', '$0.691', '$0.651'), */
+                    )
+                ));
             
                 get_template_part( 'template-parts/form-elements/red-label', null, array(
                     'title' => 'Choose a Product',
@@ -69,8 +77,8 @@
         <div class="handwritten-page-iteration-2">
                 <?php
                 get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
-                    'title' => 'Browse by Category',
-                    'id'    => 'browse-by-category',
+                    'title' => 'Sort by Category',
+                    'id'    => 'sort-by-category',
                     'name'  => 'template_choice'
                 ) );
                 ?>

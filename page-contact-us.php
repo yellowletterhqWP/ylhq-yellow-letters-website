@@ -20,7 +20,7 @@ get_header();
         />
 
         <div class="contact-us-header-title-container">
-            <span class="hero-header-title-blue">Contact Us</span>
+            <span class="hero-header-title-blue">Contact</span>
             <span class="hero-header-desc-black">We're happy to help with any questions.</span>
             
             <?php

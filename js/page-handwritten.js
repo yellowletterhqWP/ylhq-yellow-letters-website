@@ -17,3 +17,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 }() );
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+    addToCartButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        const categorySortSection = document.querySelector(".handwritten-page-iteration-2.category-sort");
+        if (categorySortSection) {
+          categorySortSection.style.display = "block";
+        }
+      });
+    });
+  });

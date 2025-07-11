@@ -15,7 +15,7 @@ $type = $args['type'] ?? 'button'; // 'button', 'submit', or 'link'
             <?php echo esc_html($title); ?>
         </a>
     <?php else : ?>
-        <button type="<?php echo esc_attr($type); ?>"
+        <button class="add-to-cart" type="<?php echo esc_attr($type); ?>"
                 <?php echo $disabled ? 'disabled tabindex="-1"' : ''; ?>>
             <?php echo esc_html($title); ?>
         </button>
