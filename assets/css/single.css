@@ -120,10 +120,14 @@ a.wp-block-latest-posts__post-title, a.wp-block-latest-posts__post-title:visited
   padding: 10px 15px;
   background-color: #0D84D1;
   border-radius: 20px;
-  color: #FFF;
-  margin-right: 5px;
+  color: #FFF !important;
+  margin-bottom: 5px;
 }
 
 .tags-title {
   text-align: left;
+}
+
+.meta-sidebar {
+  background-color: red;
 }

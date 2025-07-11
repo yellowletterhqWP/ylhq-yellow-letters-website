@@ -13,21 +13,22 @@
   padding: 15px 20px;
   background-color: #e6f2fa;
   border: none;  
-  border-radius: 130px;
+  border-radius: 30px;
   color: #2D2D2D;
   font-family: Helvetica;
-  font-size: 24px;
+  font-size: clamp(1rem, 1.75vw, 3rem);
   width: 100%;
-  /* min-width: 100px; */
-  /* margin: 14px 0; */
+  min-width: 100px;
+  margin: 14px 0;
 }
 
-.handwritten-page-iteration-2 .button-style{
-   width: unset;
+.button-style{
+    color: #0D84D1;
+    font-weight: bold;
 }
 
 span.button-style {
-    background-color: #2d2d2d0d;
+    background-color: #FFF7E6;
     border: none;
 }
 
