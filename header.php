@@ -44,11 +44,12 @@
 			</button>
 
 			<div class="login-navigations">
-				<div class="wrapper"><a href="#"><span>Home</span></a></div>
-				<div class="wrapper"><a href="#"><span>Shop</span></a></div>
-				<div class="wrapper"><a href="#"><span>My Orders</a></div>
-				<div class="wrapper"><a href="#"><span>FAQ</span></a></div>
-				<div class="wrapper"><a href="#"><span>Contact us<span></a></div>                  
+				<div class="wrapper"><a href="<?php echo site_url(); ?>"><span>Home</span></a></div>
+				<div class="wrapper"><a href="<?php echo site_url('/shop'); ?>"><span>Shop</span></a></div>
+				<div class="wrapper"><a href="<?php echo site_url('/my-orders'); ?>"><span>My Orders</span></a></div>
+				<div class="wrapper"><a href="<?php echo site_url('/faq'); ?>"><span>FAQ</span></a></div>
+				<div class="wrapper"><a href="<?php echo site_url('/contact-us'); ?>"><span>Contact us</span></a></div>
 			</div>
+
 		</div>
 	</div>
