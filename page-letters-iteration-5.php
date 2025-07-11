@@ -6,7 +6,7 @@ get_header();
 <main id="main" class="site-main">
     <div class="register-hero-background"></div>
 
-    <div class="letter-iteration-page-container-5 letters-page-page-template">        
+    <div class="letter-iteration-page-container-5 global-page-wrapper">        
         
         <img
         alt="RightImage6672"

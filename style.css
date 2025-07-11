@@ -1189,7 +1189,10 @@ textarea {
   content: "|";
   position: absolute;
   right: -18px;
-  color: black;
+}
+
+.login-navigations > div.wrapper a {
+	color: #2D2D2D;
 }
 
 .menu-toggle {
@@ -1205,8 +1208,8 @@ textarea {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  font-size: clamp(1rem, 1.25rem, 1.5rem);
-  font-family: Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-family: Helvetica;
 }
 
 .form-group label {
@@ -1218,8 +1221,21 @@ textarea {
   color: #0D84D1;
 }
 
+
+@media (max-width: 1200px) {
+
+	.form-group {
+		font-size: 1rem;
+	}
+}
+
 /* optional mobile responsive, if you want to preserve */
 @media screen and (max-width: 768px) {
+
+.form-group {
+	font-size: 0.5rem;
+}
+
   .menu-toggle {
     display: block;
   }

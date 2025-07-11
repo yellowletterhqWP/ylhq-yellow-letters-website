@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main id="main" class="site-main">
-    <div class="homepage-container-1 letters-page-page-template">
+    <div class="homepage-container-1 global-page-wrapper">
         
         <div class="homepage-container-1-inner">
             <div class="homepage-header-image">
@@ -133,20 +133,35 @@
             </div>
         </div>
 
-        <div class="homepage-container-1-inner inner2">
+        <!-- <div class="homepage-container-1-inner inner2">
             <div class="homepage-header-image">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/header2.svg" />
+                <img src="<?php /* echo get_stylesheet_directory_uri(); */ ?>/public/external/header2.svg" />
             </div>
             
             <span class="homepage-header-title2b">Start Your Campaign Today</span>
             <span class="homepage-header-title4">Yellow Letters makes direct mail marketing quic and easy</span>
             
             <?php
-                get_template_part( 'template-parts/form-elements/button', null, array(
+                /* get_template_part( 'template-parts/form-elements/button', null, array(
                     'icon' => '',
                     'title' => 'Get Started',
-                ) );
+                ) ); */
             ?>
+        </div> -->
+
+        <div class="homepage-concept2-header-image">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/header2.svg" />
+            <div class="campaign-wrapper">
+                <span class="campaign-header-1">Start Your Campaign Today</span>
+                <span class="campaign-header-2">Yellow Letters makes direct mail marketing quic and easy</span>
+                
+                <?php
+                    get_template_part( 'template-parts/form-elements/button', null, array(
+                        'icon' => '',
+                        'title' => 'Get Started',
+                    ) );
+                ?>
+            </div>
         </div>
 
         <div class="homepage-campaign homepage-testimony-div">

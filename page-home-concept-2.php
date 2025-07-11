@@ -6,7 +6,7 @@ get_header();
 <main id="main" class="site-main">
     <div class="register-hero-background"></div>
 
-    <div class="home-concept-2 letters-page-page-template">        
+    <div class="home-concept-2 global-page-wrapper">        
         
         <img
         alt="RightImage6672"
@@ -144,21 +144,20 @@ get_header();
                 ?>
             </div>
         </div>
-
-        <div class="homepage-container-1-inner inner2">
-            <div class="homepage-header-image">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/header2.svg" />
+        
+        <div class="homepage-concept2-header-image">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/home-concept2-campaign.png" />
+            <div class="campaign-wrapper">
+                <span class="campaign-header-1">Start Your Campaign Today</span>
+                <span class="campaign-header-2">Yellow Letters makes direct mail marketing quic and easy</span>
+                
+                <?php
+                    get_template_part( 'template-parts/form-elements/button', null, array(
+                        'icon' => '',
+                        'title' => 'Get Started',
+                    ) );
+                ?>
             </div>
-            
-            <span class="homepage-header-title2b">Start Your Campaign Today</span>
-            <span class="homepage-header-title4">Yellow Letters makes direct mail marketing quic and easy</span>
-            
-            <?php
-                get_template_part( 'template-parts/form-elements/button', null, array(
-                    'icon' => '',
-                    'title' => 'Get Started',
-                ) );
-            ?>
         </div>
 
         <div class="testimony-helper">
