@@ -1,0 +1,21 @@
+.faq-page-forms {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.faq-page-grid-divide2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .faq-page-grid-divide2 {
+    grid-template-columns: 1fr; /* Jadi 1 kolom di layar kecil */
+  }
+}

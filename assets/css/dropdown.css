@@ -1,0 +1,71 @@
+.component-dropdown {
+  border: 1px solid #D9D9D9;
+  border-radius: 24px;
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: white;
+  overflow: hidden;
+  height: max-content;
+  position: relative;
+}
+
+.component-dropdown.is-open {
+  border-color: #0D84D1;
+}
+
+.component-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+}
+
+.component-title {
+  font-size: 18px;
+  color: #2D2D2D;
+}
+
+.component-dropdown.is-open .component-title {
+  color: #0D84D1;
+}
+
+.component-content {
+  margin-top: 15px;
+  color: #555;
+  font-size: 18px;
+  text-align: left;
+}
+
+.component-dropdown .dropdown-menu .component-content {
+  display: none;
+}
+
+.component-dropdown.is-open .dropdown-menu .component-content {
+  display: block;
+}
+
+.component-icon {
+  font-size: 24px;
+  transition: transform 0.2s ease;
+}
+
+.component-dropdown.is-open .component-icon {
+  transform: rotate(45deg);
+}
+
+.component-dropdown.is-open .dropdown-menu .component-header .component-title {
+  color: #0D84D1;
+}
+
+.component-content hr {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
