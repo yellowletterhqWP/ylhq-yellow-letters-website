@@ -1,0 +1,33 @@
+.header-grid-box-blog {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 450px;
+}
+
+.box-blog-header-asset {
+  height: 10px;
+  background-color: #0D84D1;
+}
+
+.box-content-blog {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.box-blog-content-image {
+    min-height: 150px;
+}
+
+.box-content-inner-blog {
+  min-height: 200px;
+  padding: 0 15px 15px 15px;
+  text-align: left;
+}
+
+.box-blog-cropped-footer {
+    width: 100%;
+    position: relative;
+}

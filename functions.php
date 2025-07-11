@@ -295,6 +295,12 @@ function enqueue_datepicker_assets() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_datepicker_assets');
 
+function custom_excerpt_more($more) {
+    global $post;
+    return '... <a class="read-more-link" href="' . get_permalink($post->ID) . '">Read more</a>';
+}
+add_filter('excerpt_more', 'custom_excerpt_more');
+
 
 /**
  * Implement the Custom Header feature.

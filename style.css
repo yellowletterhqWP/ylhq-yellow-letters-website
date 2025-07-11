@@ -1222,6 +1222,10 @@ textarea {
   color: #0D84D1;
 }
 
+.read-more-link {
+  color: #0D84D1; /* Biru WordPress default */
+  text-decoration: none;
+}
 
 @media (max-width: 1200px) {
 
