@@ -6,7 +6,7 @@ $open = $args['open'] ?? false;
 ?>
 
 <div class="component-dropdown">
-  <input type="checkbox" id="<?php echo esc_attr($input_id); ?>" class="dropdown-toggle" hidden <?php echo $checked; ?>>
+  <input type="checkbox" id="<?php echo esc_attr($input_id); ?>" class="dropdown-toggle" hidden >
 
     <div class="dropdown-menu">
         <div class="component-header">
