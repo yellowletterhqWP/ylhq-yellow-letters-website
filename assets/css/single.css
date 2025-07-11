@@ -107,6 +107,7 @@ a.wp-block-latest-posts__post-title, a.wp-block-latest-posts__post-title:visited
   margin-left: 0;
 }
 
+/* meta */
 .widget.widget_meta ul li {
   list-style: none;
 }
@@ -120,6 +121,7 @@ a.wp-block-latest-posts__post-title, a.wp-block-latest-posts__post-title:visited
   background-color: #0D84D1;
   border-radius: 20px;
   color: #FFF;
+  margin-right: 5px;
 }
 
 .tags-title {
