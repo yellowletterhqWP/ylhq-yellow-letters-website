@@ -84,14 +84,18 @@ get_header();
                 ) );
                 ?>
             </div>
-<hr>
+
+            <hr>
+            
             <div class="handwritten-category-grid">
           
                 <?php
                     get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
                         'title' => 'All',
                         'id'    => 'category-all',
-                        'name'  => 'category_choice'
+                        'name'  => 'category_choice',
+                        'checked' => true
+
                     ) );
 
                     get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
@@ -121,33 +125,39 @@ get_header();
             </div>
 
             <div class="handwritten-page-radio3">
+  <div class="handwritten-page-radio1 template-select">
+    <?php
+    get_template_part('template-parts/form-elements/softblue-radio', null, array(
+        'title' => 'Select Template',
+        'id'    => 'select-template',
+        'name'  => 'select_template'
+    ));
+    ?>
+  </div>
 
-            <div class="handwritten-page-radio1 template-select">
-                <?php
-                get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
-                    'title' => 'Select Template',
-                    'id'    => 'select-template',
-                    'name'  => 'select_template'
-                ) );
-                ?>
-            </div>
-<hr class="template-selection">
-                <?php
-                get_template_part( 'template-parts/radio-templates', null, array(
-                    // 'icon' => get_stylesheet_directory_uri() . '/public/external/letter-edit.jpg',
-                    'title' => 'New Custom Design Postcard ($65)',
-                    'id'    => 'greeting',
-                    'name'  => 'template_choice'
-                ) );
+  <hr class="template-selection">
 
-                get_template_part( 'template-parts/radio-templates', null, array(
-                    // 'icon' => get_stylesheet_directory_uri() . '/public/external/template-sample.png',
-                    'title' => 'Letter on File',
-                    'id'    => 'folded',
-                    'name'  => 'template_choice'
-                ) );
-                ?>
-            </div>
+  <div class="template-options template-greeting" data-show-for="category-all,category-custom-business">
+    <?php
+    get_template_part('template-parts/radio-templates', null, array(
+        'title' => 'New Custom Design Postcard ($65)',
+        'id'    => 'greeting',
+        'name'  => 'template_choice'
+    ));
+    ?>
+  </div>
+
+  <div class="template-options template-letter" data-show-for="category-all,category-general-greetings">
+    <?php
+    get_template_part('template-parts/radio-templates', null, array(
+        'title' => 'Letter on File',
+        'id'    => 'folded',
+        'name'  => 'template_choice'
+    ));
+    ?>
+  </div>
+</div>
+       
         </div>
     
     </div>
