@@ -151,3 +151,23 @@ img.login-footer-logo-image.cart-footer-logo-image {
     position: relative;
     min-height: 550px;
 }
+
+.custom-template-subtitle{
+    width: 72%;
+}
+
+.form-heading, .product-subtitle{
+    font-size: 48px;
+    color: #2d2d2d;
+    font-weight: normal;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.product-subtitle{
+    font-size: 28px;
+    margin: 0;
+}
+
+.product-subtitle a{
+    color: #0d84d1;
+}
