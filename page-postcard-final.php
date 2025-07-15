@@ -12,10 +12,10 @@ get_header();
             
             <div class="handwritten-page-header-title-container">
                 <div class="handwritten-page-header-title">
-                    <span class="handwritten-page-header-title1">Letters</span>                        
+                    <span class="handwritten-page-header-title1">Postcards</span>                        
                 </div>
 
-                <span class="handwritten-page-header-title3">At Yellow Letters, we offer a variety of options to suit every budget, including windowed envelopes, trifold self-mailers, street view full window letters, unique envelopes, and invitation-style envelopes.
+                <span class="handwritten-page-header-title3">Postcards are a cost-effective way to share your message! Choose a template, upload your list, and add details in the order notes. Need something custom? We’ll recreate it. You’ll get a proof within 24 hours to approve before we mail.
                 </span>
             </div>
         </div>
@@ -45,77 +45,28 @@ get_header();
             <div class="letters-product-radio">
                 <?php
                 get_template_part( 'template-parts/choose-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/check-letter.png',
-                    'title' => 'Check Letter',
-                    'id'    => 'check_letter',
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/first-class.png',
+                    'title' => 'First Class Postcard (4.25 x 5.5)',
+                    'id'    => 'first_class',
                     'name'  => 'template_product_choice'
                 ) );
 
                 get_template_part( 'template-parts/choose-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/letter-inside.png',
-                    'title' => 'Letter Inside #10 Envelope',
-                    'id'    => 'letter-inside',
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/first-class-half-page.png',
+                    'title' => 'First Class Half Page Postcard (8.5 x 5.5)',
+                    'id'    => 'first-class-half-page',
                     'name'  => 'template_product_choice'
                 ) );
 
                 get_template_part( 'template-parts/choose-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/envelope-letter.png',
-                    'title' => 'A6 Envelope Letter - Invitation',
-                    'id'    => 'a6-envelope-letter',
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/handwritten-half-page.png',
+                    'title' => 'Handwritten Half Page Postcard (8.5 x 5.5)',
+                    'id'    => 'handwritten-half-page',
                     'name'  => 'template_product_choice'
                 ) );
 
                 get_template_part( 'template-parts/choose-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/letter-inside-2.png',
-                    'title' => 'Letter Inside Windowed Envelope',
-                    'id'    => 'letter-inside-windowed-envelope',
-                    'name'  => 'template_product_choice'
-                ) );
-
-                get_template_part( 'template-parts/choose-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
-                    'title' => 'Full View Letter',
-                    'id'    => 'full-view-letter',
-                    'name'  => 'template_product_choice'
-                ) );
-
-                get_template_part( 'template-parts/choose-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/tri-fold.png',
-                    'title' => 'Tri - Fold Letter',
-                    'id'    => 'tir-fold-letter',
-                    'name'  => 'template_product_choice'
-                ) );
-
-                get_template_part( 'template-parts/choose-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/digital-greeting.png',
-                    'title' => 'Digital Greeting Cards',
-                    'id'    => 'digital-greeting-card',
-                    'name'  => 'template_product_choice'
-                ) );
-
-                get_template_part( 'template-parts/choose-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/digital-folded.png',
-                    'title' => 'Digital Folded Notes',
-                    'id'    => 'digital-folded-notes',
-                    'name'  => 'template_product_choice'
-                ) );
-
-                get_template_part( 'template-parts/choose-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/digital-folded.png',
-                    'title' => 'Jumbo Letter',
-                    'id'    => 'jumbo-letter',
-                    'name'  => 'template_product_choice'
-                ) );
-
-                get_template_part( 'template-parts/choose-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/letters-icon.png',
-                    'title' => 'Sealed Letter',
-                    'id'    => 'sealed-letter',
-                    'name'  => 'template_product_choice'
-                ) );
-
-                get_template_part( 'template-parts/choose-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/custom-icon.png',
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/all-templates.png',
                     'title' => 'All Templates',
                     'id'    => 'all-templates',
                     'name'  => 'template_product_choice'
@@ -152,25 +103,25 @@ get_header();
                     ) );
 
                     get_template_part( 'template-parts/form-elements/template-select', null, array(
-                        'title' => 'Custom / Business',
+                        'title' => 'Bulk Mailing',
                         'id'    => 'category-custom-business',
                         'name'  => 'category_choice'
                     ) );
 
                     get_template_part( 'template-parts/form-elements/template-select', null, array(
-                        'title' => 'General Greetings',
+                        'title' => 'Fresh Listing',
                         'id'    => 'category-general-greetings',
                         'name'  => 'category_choice'
                     ) );
 
                     get_template_part( 'template-parts/form-elements/template-select', null, array(
-                        'title' => 'Holiday / Seasonal',
+                        'title' => 'Urgent Mailers',
                         'id'    => 'category-holiday-seasonal',
                         'name'  => 'category_choice'
                     ) );
 
                     get_template_part( 'template-parts/form-elements/template-select', null, array(
-                        'title' => 'Christmas - Specific',
+                        'title' => 'Seasonal Greetings',
                         'id'    => 'category-christmas-specific',
                         'name'  => 'category_choice'
                     ) );
