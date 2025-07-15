@@ -125,38 +125,38 @@ get_header();
             </div>
 
             <div class="handwritten-page-radio3 select-template-wrapper">
-  <div class="handwritten-page-radio1 template-select">
-    <?php
-    get_template_part('template-parts/form-elements/template-select', null, array(
-        'title' => 'Select Template',
-        'id'    => 'select-template',
-        'name'  => 'select_template'
-    ));
-    ?>
-  </div>
+                    <div class="handwritten-page-radio1 template-select">
+                        <?php
+                        get_template_part('template-parts/form-elements/template-select', null, array(
+                            'title' => 'Select Template',
+                            'id'    => 'select-template',
+                            'name'  => 'select_template'
+                        ));
+                        ?>
+                  </div>
 
-  <hr class="template-selection">
+                <hr class="template-selection">
 
-  <div class="template-options template-greeting" data-show-for="category-all,category-custom-business">
-    <?php
-    get_template_part('template-parts/selected-template', null, array(
-        'title' => 'New Custom Design Postcard ($65)',
-        'id'    => 'greeting',
-        'name'  => 'template_choice'
-    ));
-    ?>
-  </div>
+                <div class="template-options template-greeting" data-show-for="category-all,category-custom-business">
+                    <?php
+                    get_template_part('template-parts/selected-template', null, array(
+                        'title' => 'New Custom Design Postcard ($65)',
+                        'id'    => 'greeting',
+                        'name'  => 'template_choice'
+                    ));
+                    ?>
+                </div>
 
-  <div class="template-options template-letter" data-show-for="category-all,category-general-greetings">
-    <?php
-    get_template_part('template-parts/selected-template', null, array(
-        'title' => 'Letter on File',
-        'id'    => 'folded',
-        'name'  => 'template_choice'
-    ));
-    ?>
-  </div>
-</div>
+                <div class="template-options template-letter" data-show-for="category-all,category-general-greetings">
+                    <?php
+                    get_template_part('template-parts/selected-template', null, array(
+                        'title' => 'Letter on File',
+                        'id'    => 'folded',
+                        'name'  => 'template_choice'
+                    ));
+                    ?>
+                </div>
+            </div>
        
         </div>
     
