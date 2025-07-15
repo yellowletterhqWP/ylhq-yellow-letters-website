@@ -264,19 +264,16 @@ get_header();
 
             <hr />
             
-            <div class="handwritten-page-last">
+            <div class="handwritten-page-last custom-tenplate-last">
             <?php
-            get_template_part('template-parts/form-elements/number-input', null, [
-                'id' => 'pieces',
-                'label' => 'How many pieces?',
-                'required' => true,
-                'min' => 200,
-                'max' => 10000,
-                'value' => 200
-            ]);
+            // get_template_part( 'template-parts/form-elements/button', null, array(
+            //     'icon' => '',
+            //     'title' => 'Discard Changes',
+            // ) );
+
             get_template_part( 'template-parts/form-elements/button', null, array(
                 'icon' => '',
-                'title' => 'Add to cart',
+                'title' => 'Add to Cart',
             ) );
             ?>
             </div>
