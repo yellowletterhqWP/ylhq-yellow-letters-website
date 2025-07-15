@@ -18,7 +18,7 @@
 			<img
 				alt="FooterLogoImage6672"
 				src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/footerlogoimage6672-7zox-200h.png"
-				class="login-footer-logo-image"
+				class="login-footer-logo-image <?php echo is_cart() ? 'cart-footer-logo-image' : ''; ?>"
 			/>
 			</div>
 			<div class="footer-menus">
