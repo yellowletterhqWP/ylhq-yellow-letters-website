@@ -1,0 +1,83 @@
+.product-wrapper{
+    gap: 15px;
+}
+.product-radio-box.active .product-radio-box-title.product-title{
+        font-weight: bold;
+}
+.product-radio-box span.product-radio-box-title.product-title {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.product-radio-box-img.product-image{
+    border-radius: 13px;
+}
+.product-radio-box.active .product-radio-box-img.product-image {
+    outline: 6px solid #2d2d2d;
+}
+
+.handwritten-page-radio3.select-template-wrapper {
+  justify-content: start;
+  gap: 25px;
+}
+
+hr.template-selection {
+    margin: 0;
+}
+
+.category-grid {
+  justify-content: space-between;
+  border-radius: 125px;
+  padding: 5px;
+  border: 0.5px solid rgba(80, 80, 80, 0.5);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
+}
+
+.handwritten-page-radio1.template-select{
+  margin-top: 30px;
+}
+
+.handwritten-page-radio1 .button-style.tenplate-categories-label {
+    font-weight: normal;
+    padding: 0;
+}
+
+.radio-templates-title-wrapper.selected-templates-title-wrapper {
+    border-radius: 125px;
+    width: 430px;
+    padding: 27px;
+}
+
+.radio-templates-image-box input[type="radio"]:checked ~ .radio-templates-title-wrapper.selected-templates-title-wrapper {
+    border: 2px solid #0D84D1;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+}
+
+.radio-templates-image-box input[type="radio"]:checked ~ .radio-templates-title-wrapper.selected-templates-title-wrapper .radio-templates-title {
+    font-weight: bold;
+}
+
+span.button-style.tenplate-categories-label {  
+  border-radius: 130px;
+  font-size: 24px;
+  margin: 0;
+  background-color: #2d2d2d0d;
+
+}
+.handwritten-page-radio1 .button-style.tenplate-categories-label{
+ background-color: #ffffff;
+ color: #0D84D1;
+}
+
+.button-radio input:checked + .button-style.tenplate-categories-label {
+    background-color: #0D84D11A;
+}
+
+.selected-templates-title-wrapper span.radio-templates-checkmark{
+    background: #2D2D2D40;
+    color: #ffffff;
+}
+.category-grid .tenplate-categories-label{
+    color: #2D2D2DBF;
+    font-weight: normal;
+}

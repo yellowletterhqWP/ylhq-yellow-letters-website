@@ -51,14 +51,14 @@ get_header();
 
                 <div class="handwritten-page-radio2">
                 <?php
-                get_template_part( 'template-parts/radio-product', null, array(
+                get_template_part( 'template-parts/choose-product', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/letters-icon.png',
                     'title' => 'Handwritten Greeting Cards',
                     'id'    => 'greeting',
                     'name'  => 'template_choice'
                 ) );
 
-                get_template_part( 'template-parts/radio-product', null, array(
+                get_template_part( 'template-parts/choose-product', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
                     'title' => 'Handwritten Folded Notes',
                     'id'    => 'folded',
@@ -71,13 +71,13 @@ get_header();
 
             <?php
             get_template_part( 'template-parts/form-elements/red-label', null, array(
-                'title' => 'Choose by Template',
+                'title' => 'Choose By Template',
             ) );
             ?>
         <div class="category-browse">
             <div class="handwritten-page-radio1">
                 <?php
-                get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
+                get_template_part( 'template-parts/form-elements/template-select', null, array(
                     'title' => 'Template Categories',
                     'id'    => 'template-categories',
                     'name'  => 'template_choice'
@@ -87,10 +87,10 @@ get_header();
 
             <hr>
             
-            <div class="handwritten-category-grid">
+            <div class="handwritten-category-grid category-grid ">
           
                 <?php
-                    get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
+                    get_template_part( 'template-parts/form-elements/template-select', null, array(
                         'title' => 'All',
                         'id'    => 'category-all',
                         'name'  => 'category_choice',
@@ -98,25 +98,25 @@ get_header();
 
                     ) );
 
-                    get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
+                    get_template_part( 'template-parts/form-elements/template-select', null, array(
                         'title' => 'Custom / Business',
                         'id'    => 'category-custom-business',
                         'name'  => 'category_choice'
                     ) );
 
-                    get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
+                    get_template_part( 'template-parts/form-elements/template-select', null, array(
                         'title' => 'General Greetings',
                         'id'    => 'category-general-greetings',
                         'name'  => 'category_choice'
                     ) );
 
-                    get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
+                    get_template_part( 'template-parts/form-elements/template-select', null, array(
                         'title' => 'Holiday / Seasonal',
                         'id'    => 'category-holiday-seasonal',
                         'name'  => 'category_choice'
                     ) );
 
-                    get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
+                    get_template_part( 'template-parts/form-elements/template-select', null, array(
                         'title' => 'Christmas - Specific',
                         'id'    => 'category-christmas-specific',
                         'name'  => 'category_choice'
@@ -124,10 +124,10 @@ get_header();
                 ?>
             </div>
 
-            <div class="handwritten-page-radio3">
+            <div class="handwritten-page-radio3 select-template-wrapper">
   <div class="handwritten-page-radio1 template-select">
     <?php
-    get_template_part('template-parts/form-elements/softblue-radio', null, array(
+    get_template_part('template-parts/form-elements/template-select', null, array(
         'title' => 'Select Template',
         'id'    => 'select-template',
         'name'  => 'select_template'
@@ -139,7 +139,7 @@ get_header();
 
   <div class="template-options template-greeting" data-show-for="category-all,category-custom-business">
     <?php
-    get_template_part('template-parts/radio-templates', null, array(
+    get_template_part('template-parts/selected-template', null, array(
         'title' => 'New Custom Design Postcard ($65)',
         'id'    => 'greeting',
         'name'  => 'template_choice'
@@ -149,7 +149,7 @@ get_header();
 
   <div class="template-options template-letter" data-show-for="category-all,category-general-greetings">
     <?php
-    get_template_part('template-parts/radio-templates', null, array(
+    get_template_part('template-parts/selected-template', null, array(
         'title' => 'Letter on File',
         'id'    => 'folded',
         'name'  => 'template_choice'
