@@ -25,7 +25,53 @@ get_header();
         <div class="handwritten-page-forms checkout-form-container">
             <h2 class="form-heading checkout-form-heading">Your Order Details</h2>
 
+            <table class="order-details-table">
+      <tr>
+        <td class="label">Product</td>
+        <td class="value">Create a Custom Template x1</td>
+      </tr>
+      <tr>
+        <td class="label">Products:</td>
+        <td class="value">FC Half Page Postcard (8.5x 5.5)</td>
+      </tr>
+      <tr>
+        <td class="label">Templates:</td>
+        <td class="value">Custom Designed Post Card ($65)</td>
+      </tr>
+      <tr>
+        <td class="label">Font Selection:</td>
+        <td class="value">Typed</td>
+      </tr>
+      <tr>
+        <td class="label">Font Color:</td>
+        <td class="value">Blue</td>
+      </tr>
+      <tr>
+        <td class="label">Paper Color:</td>
+        <td class="value">Pink</td>
+      </tr>
+    </table>
+
             <hr />
+
+           <table class="order-details-table">
+      <tr>
+        <td class="label">Subtotal :</td>
+        <td class="value">$65.00</td>
+      </tr>
+    </table>
+
+                  <hr />
+
+       <table class="order-details-table">
+      <tr>
+        <td class="label">Total :</td>
+        <td class="value">$65.00</td>
+      </tr>
+    </table>
+
+                      <hr />
+
 
             <h2 class="form-heading checkout-form-heading">Have a coupon? Click here to enter your code</h2>
 
@@ -187,7 +233,7 @@ get_header();
                     'required' => false
                 ]);
                 ?>
-                
+
             <div class="handwritten-page-divide2">
                 <div class="handwritten-page-form-mail-info">
 

@@ -207,3 +207,49 @@ img.login-footer-logo-image.cart-footer-logo-image {
 .place-order .homepage-header-button{
     padding: 18px 40px 20px;
 }
+
+
+
+.order-details-table{
+    margin: 0;
+    font-family:  Helvetica, Arial, sans-serif;
+}
+
+ .order-details-table td {
+      padding: 6px 0;
+      vertical-align: top;
+    }
+
+    .label {
+      width: 80%;
+      font-weight: 600;
+    }
+
+    .value {
+      font-style: italic;
+      font-weight: 600;
+    }
+
+    .totals {
+      border-top: 1px solid #ddd;
+      padding-top: 15px;
+    }
+
+    .totals-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+    }
+
+    .totals-row .label {
+      font-weight: 500;
+    }
+
+    .totals-row .value {
+      font-weight: bold;
+    }
+
+    .handwritten-page-forms.checkout-form-container hr{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
