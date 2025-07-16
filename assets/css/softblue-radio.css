@@ -1,6 +1,6 @@
 .button-radio {
   cursor: pointer;
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 .button-radio input {
@@ -11,10 +11,10 @@
 .button-style {
   display: inline-block;
   padding: 15px 20px;
-  background-color: #e6f2fa;
+  background-color: #0D84D124;
   border: none;  
-  border-radius: 30px;
-  color: #2D2D2D;
+  border-radius: 50px;
+  color: #2D2D2DB8;
   font-family: Helvetica;
   font-size: clamp(1rem, 1.75vw, 3rem);
   width: 100%;
@@ -23,13 +23,13 @@
 }
 
 .button-style{
-    color: #0D84D1;
-    font-weight: bold;
+    /* color: #0D84D1;
+    font-weight: bold; */
 }
 
 span.button-style {
-    background-color: #FFF7E6;
-    border: none;
+    /* background-color: #FFF7E6;
+    border: none; */
 }
 
 .button-radio input:checked + .button-style {

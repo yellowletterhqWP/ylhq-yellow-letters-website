@@ -995,7 +995,7 @@ textarea {
 #main {
   width: 100%;
   min-height: 700px;
-  overflow-x: hidden;
+  overflow-x: show;
 }
 
 .login-footer {
@@ -1249,6 +1249,7 @@ textarea {
     height: 70px;
     padding-left: 10px;
     padding-right: 10px;
+	margin-top: 0;
   }
 
   .login-logoicon {

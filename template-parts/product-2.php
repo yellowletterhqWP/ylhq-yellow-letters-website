@@ -7,7 +7,7 @@ $link = $args['link'] ?? '';
 
 <div class="box-yellow-box">
     <img src="<?php echo esc_html($icon); ?>" />
-    <span class="box-title"><?php echo esc_html($title); ?></span>
+    <!-- <span class="box-title"><?php /* echo esc_html($title); */ ?></span> -->
 
     <div class="box-yellow-overlay">
     <div class="overlay-content">

@@ -7,9 +7,9 @@
 }
 
 .product-radio-box-img {
-  background-color: #FFF7E6;
+  background-color: #0D84D1;
   border-radius: 15px;
-  height: 33vh;
+  height: clamp(290px, 25vw, 500px);
   aspect-ratio: 4 / 3;
   position: relative;
   display: flex;
@@ -18,8 +18,7 @@
 
 .product-radio-box span.product-radio-box-title {
   color: #2D2D2D;
-  font-weight: bold;
-  font-size: clamp(1rem, 1.875vh, 3rem);
+  font-size: clamp(24px, 1vw, 42px);
 }
 
 .product-radio-box:hover span.box-title {

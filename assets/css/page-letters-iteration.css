@@ -22,6 +22,14 @@
   margin: 0 30px;
 }
 
+.pricing-div {
+  margin-top: 140px;
+}
+
+.letters-product-radio .product-radio-box-img {
+  background-color: #FFF7E6;
+}
+
 .letter-iteration-page-container-1 .handwritten-category-grid {
   width: calc(100% + 60px);
   padding: 15px 0;

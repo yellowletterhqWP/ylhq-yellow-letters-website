@@ -5,7 +5,8 @@
   gap: 20px; */
   display: flex;
   justify-content: center;
-  margin: 40px 0 100px 0;
+  /* margin: 40px 0 100px 0; */
+  margin: 40px 0 45px 0;
   gap: 20px;
   width: 100%;
   overflow-x: hidden;
@@ -17,6 +18,7 @@
 
 .testimonial {
   position: relative;
+  /* height: max-content; */
 }
 
 .testimonial p {
@@ -147,4 +149,89 @@
   height: 84px;
   border: 4px solid #fff;
   background-color: #0D84D1;
+}
+
+@media screen and (max-width: 768px) {
+
+  .testimonial {
+    height: max-content;
+  }
+
+  .testimonial-wrapper {
+    min-width: 0;
+    height: max-content;
+    overflow: visible;
+  }
+
+  .testimonial-box hr {
+    margin: 5px 0;
+  }
+
+  .minibox p, .testimonial-rating {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .minibox p {
+    margin-top: 5px;
+  }
+
+  .minibox {
+    min-height: max-content;
+  }
+
+  .mainbox {
+    width: 275px;
+  }
+
+  .mainbox .testimonial-rating {
+    font-size: 14px;
+  }
+
+  .rating {
+    gap: 7px;
+    align-self: start;
+    margin-left: 30px;
+  }
+
+  .mainbox p, .rating, .rating .stars, .minibox .testimonial-name {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  .testimonial-box {
+    padding: 5px;
+    height: max-content;
+  }
+
+  .mainbox .testimonial-name, .mainbox .testimonial-date {
+    font-size: 14px;
+  }
+
+  .mainbox .bottom-arrow {
+    width: 40px;
+    height: 40px;
+    left: 44%;
+    bottom: -21px;
+  }
+
+  .mainboxwrapper .testimonial-avatar{
+    bottom: -115px;
+    left: 52%;
+    width: 82px;
+    height: 82px;
+  }
+
+  .homepage-campaign .homepage-header-button {
+    right: 55px;
+    top: 81px;
+  }
+
+  .rating .rating-score, .rating .stars, .rating .divider, .rating .review-count {
+    margin-top: 17px;
+  }
+
+  .testimonial-footer {
+    margin-bottom: 0;
+  }
 }

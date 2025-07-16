@@ -21,8 +21,8 @@ get_header();
 
         <div class="home-concept2-header-title-container">
             <span class="home-concept2-header1">Tired of ineffective real estate campaigns? we've been there too</span>
-            <div class="homepage-header-title-group">
-                <div class="homepage-header-title">
+            <div class="frontpage-header-title-group">
+                <div class="frontpage-header-title">
                     <span class="homepage-header-title1">Premium,</span>                        
                     <span class="homepage-header-title2">cost-effective marketing</span>                      
                 </div>
@@ -62,7 +62,7 @@ get_header();
             ?>
         </div>
 
-        <div class="homepage-campaign">
+        <div class="homepage-campaign2">
             <?php
                 get_template_part( 'template-parts/form-elements/red-label', null, array(
                     'title' => 'Pick Your Mailer Type',

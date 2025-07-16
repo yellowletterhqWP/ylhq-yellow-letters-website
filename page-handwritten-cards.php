@@ -13,8 +13,8 @@ get_header();
             
             <div class="handwritten-page-header-title-container">
                 <div class="handwritten-page-header-title">
-                    <span class="handwritten-page-header-title1">Handwritten</span>                        
-                    <span class="handwritten-page-header-title2">Cards</span>                      
+                    <span class="hero-header-title-blue">Handwritten</span>                        
+                    <span class="hero-header-title-black">Cards</span>                      
                 </div>
 
                 <span class="handwritten-page-header-title3">Handwritten cards often double postcard response rates, 
@@ -48,8 +48,8 @@ get_header();
                 ) );
             ?>
             
-            <div class="handwritten-radio1">
-                <div class="handwritten-page-radio1">
+            <div class="handwritten-cards-choose-templates">
+                <div class="handwritten-cards-choose-templates-radio1">
                 <?php
                 get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
                     'title' => 'Choose All Templates',

@@ -14,8 +14,8 @@
     color: #2D2D2D;
     font-size: clamp(1rem, 1.75vw, 3rem);
     font-style: italic;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 30px;
     position: relative;
     white-space: nowrap;
+    display: block;
 }
