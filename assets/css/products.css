@@ -175,3 +175,35 @@ img.login-footer-logo-image.cart-footer-logo-image {
 .handwritten-page-last.custom-tenplate-last .homepage-header-button{
     bottom: -49px;
 }
+
+.checkout-template-subtitle{
+    width: 100%;
+    margin-top: 0;
+}
+
+.handwritten-page-header-image.checkout-page-header-image{
+    top: -300px;
+}
+
+.handwritten-page-header-title-container.checkout-page-header-title-container{
+    margin-top: 0;
+}
+.handwritten-page-container-1-inner.checkout-inner-container{
+    min-height: 600px;
+}
+
+.form-heading.checkout-form-heading{
+    font-size: 32px;
+}
+
+.handwritten-page-last.place-order .homepage-header-button{
+    bottom: -100px;
+}
+
+.handwritten-page-forms.checkout-form-container{
+    padding: 50px 50px 120px;
+}
+
+.place-order .homepage-header-button{
+    padding: 18px 40px 20px;
+}
