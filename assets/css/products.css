@@ -208,7 +208,9 @@ img.login-footer-logo-image.cart-footer-logo-image {
     padding: 18px 40px 20px;
 }
 
-
+.handwritten-page-radio2 .product-radio-box-img {
+    background-color: #FFF7E6;
+}
 
 .order-details-table{
     margin: 0;
