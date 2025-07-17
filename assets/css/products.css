@@ -85,7 +85,7 @@ span.button-style.tenplate-categories-label {
 /* Empty Cart Page CSS */
 
 .handwritten-page-header-image.cart-header-image{
-    top: -300px;
+    margin-top: -250px;
 }
 
 .handwritten-page-header-title-container.cart-title-container{

@@ -6,7 +6,7 @@ get_header();
     <div class="handwritten-page-container-1">
         
         <div class="handwritten-page-container-1-inner checkout-inner-container">
-            <div class="handwritten-page-header-image checkout-page-header-image">
+            <div class="handwritten-page-header-image cart-header-image">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/hero-bg.png" />
             </div>
             
