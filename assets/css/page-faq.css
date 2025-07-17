@@ -18,4 +18,9 @@
   .faq-page-grid-divide2 {
     grid-template-columns: 1fr; /* Jadi 1 kolom di layar kecil */
   }
+
+  .faq-page-forms {
+    padding: 15px;
+    margin-top: 30px;
+  }
 }

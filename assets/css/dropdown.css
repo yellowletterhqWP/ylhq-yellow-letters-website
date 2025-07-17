@@ -69,3 +69,24 @@
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+@media screen and (max-width: 768px) {
+  .component-dropdown {
+    padding: 5px 15px;
+    margin-bottom: 0;
+  }
+
+  .component-title {
+    font-size: 11px;  
+  }
+
+  .component-content {
+    font-size: 11px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .component-content hr {
+    margin: 10px 0;
+  }
+}
