@@ -39,15 +39,15 @@
             <?php
                 get_template_part( 'template-parts/box', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/list-icon.svg',
-                    'title' => 'Pick Your Mailer',
-                    'description' => 'Choose a letter, postcard or greeting card that fits your style'
+                    'title' => 'Upload Your List',
+                    'description' => 'Easily upload a CSV or Excel file with your contacts.'
                 ) );
             ?>
             <?php
                 get_template_part( 'template-parts/box', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/flyarrow-icon.svg',
-                    'title' => 'Pick Your Mailer',
-                    'description' => 'Choose a letter, postcard or greeting card that fits your style'
+                    'title' => 'Send Your Campaign',
+                    'description' => 'Hit send and we take care of the rest — printing to postage.'
                 ) );
             ?>
         </div>

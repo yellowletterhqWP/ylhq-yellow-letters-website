@@ -70,5 +70,9 @@
 .box-content-inner span {
     font-size: 11px;
 }
+
+.box-header-asset {
+    height: 5px;
+}
     
 }

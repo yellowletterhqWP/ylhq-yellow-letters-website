@@ -83,3 +83,10 @@
   background: #fff;
   color: #2D2D2D;
 }
+
+@media screen and (max-width: 768px) {
+  .box-yellow-box img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

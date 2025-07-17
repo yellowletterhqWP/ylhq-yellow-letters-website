@@ -12,13 +12,19 @@
 ?>
 
 	<div class="login-footer">
-		<div class="footer-background"></div>
+		<div class="footer-background">
+			<img
+				alt="FooterLogoImage6672"
+				src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/footer-croped-background.png"
+				class="login-footer-back-image"
+			/>
+		</div>
 		<div class="login-footer-container">
 			<div class="login-footer-logo">
 			<img
 				alt="FooterLogoImage6672"
-				src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/footerlogoimage6672-7zox-200h.png"
-				class="login-footer-logo-image <?php echo is_cart() ? 'cart-footer-logo-image' : ''; ?>"
+				src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/footerlogoimage6672-7zox-200h.png"
+				class="login-footer-logo-image <?php /* echo is_cart() ? 'cart-footer-logo-image' : ''; */ ?>"
 			/>
 			</div>
 			<div class="footer-menus">
@@ -82,111 +88,109 @@
 			</div>
 			
 			<div class="login-social-handles-mobile">
-			<a href="#">
-			<img
-				alt="SocialIcon6672"
-				src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/socialicon6672-qzbi.svg"
-				class="login-footer-square-icon"
-			/>
-			</a>
-			<a href="#">
-			<img
-				alt="SocialIcon6672"
-				src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/socialicon6672-ful3.svg"
-				class="login-footer-square-icon"
-			/>
-			</a>
-			<a href="#">
-			<img
-				alt="SocialIcon6672"
-				src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/socialicon6672-ezci.svg"
-				class="login-footer-square-icon"
-			/>
-			</a>
-			<a href="#">
-			<img
-				alt="SocialIcon6672"
-				src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/socialicon6672-zky.svg"
-				class="login-footer-square-icon"
-			/>
-			</a>
-			<a href="#">
-			<img
-				alt="SocialIcon6672"
-				src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/socialicon6672-sys.svg"
-				class="login-footer-square-icon"
-			/>
-			</a>
-			<a href="#">
-			<img
-				alt="SocialIcon6672"
-				src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/socialicon6672-gnbc.svg"
-				class="login-footer-square-icon"
-			/>
-			</a>
-			</div>
-
-			<div class="login-footer-terms">
-			<div class="footer-after-menu-line">
-				<img
-				alt="Line26672"
-				src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/line26672-djsk.svg"
-				class="login-line2"
-				/>
-			</div>
-			<div class="footer-after-menu">
-				<span class="login-text30">
-				© 2025 Yellowletters.com&nbsp;All rights reserved.
-				</span>
-				<span class="login-text31">
-				<a href="#">Terms &amp; Conditions</a> | 
-				<a href="#">Privacy Policy</a>
-				</span>
-				<div class="login-social-handles-desktop">
 				<a href="#">
 				<img
 					alt="SocialIcon6672"
 					src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/socialicon6672-qzbi.svg"
-					class="login-social-icon1"
+					class="login-footer-square-icon"
 				/>
 				</a>
 				<a href="#">
 				<img
 					alt="SocialIcon6672"
 					src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/socialicon6672-ful3.svg"
-					class="login-social-icon2"
+					class="login-footer-square-icon"
 				/>
 				</a>
 				<a href="#">
 				<img
 					alt="SocialIcon6672"
 					src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/socialicon6672-ezci.svg"
-					class="login-social-icon3"
+					class="login-footer-square-icon"
 				/>
 				</a>
 				<a href="#">
 				<img
 					alt="SocialIcon6672"
 					src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/socialicon6672-zky.svg"
-					class="login-social-icon4"
+					class="login-footer-square-icon"
 				/>
 				</a>
 				<a href="#">
 				<img
 					alt="SocialIcon6672"
 					src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/socialicon6672-sys.svg"
-					class="login-social-icon5"
+					class="login-footer-square-icon"
 				/>
 				</a>
 				<a href="#">
 				<img
 					alt="SocialIcon6672"
 					src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/socialicon6672-gnbc.svg"
-					class="login-social-icon6"
+					class="login-footer-square-icon"
 				/>
 				</a>
 				</div>
-			</div>
+
+				<div class="login-footer-terms">
+				<div class="footer-after-menu-line">
+					<img
+					alt="Line26672"
+					src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/line26672-djsk.svg"
+					class="login-line2"
+					/>
+				</div>
+				<div class="footer-after-menu">
+					<span class="login-text30">© 2025 Yellowletters.com&nbsp;All rights reserved.</span>
+					<span class="login-text31">
+						<a href="#">Terms &amp; Conditions</a> | 
+						<a href="#">Privacy Policy</a>
+					</span>
+					<div class="login-social-handles-desktop">
+						<a href="#">
+						<img
+							alt="SocialIcon6672"
+							src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/socialicon6672-qzbi.svg"
+							class="login-social-icon1"
+						/>
+						</a>
+						<a href="#">
+						<img
+							alt="SocialIcon6672"
+							src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/socialicon6672-ful3.svg"
+							class="login-social-icon2"
+						/>
+						</a>
+						<a href="#">
+						<img
+							alt="SocialIcon6672"
+							src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/socialicon6672-ezci.svg"
+							class="login-social-icon3"
+						/>
+						</a>
+						<a href="#">
+						<img
+							alt="SocialIcon6672"
+							src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/socialicon6672-zky.svg"
+							class="login-social-icon4"
+						/>
+						</a>
+						<a href="#">
+						<img
+							alt="SocialIcon6672"
+							src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/socialicon6672-sys.svg"
+							class="login-social-icon5"
+						/>
+						</a>
+						<a href="#">
+						<img
+							alt="SocialIcon6672"
+							src="<?php echo get_stylesheet_directory_uri(); ?>/public//external/socialicon6672-gnbc.svg"
+							class="login-social-icon6"
+						/>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 		</div>

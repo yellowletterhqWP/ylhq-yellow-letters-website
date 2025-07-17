@@ -62,6 +62,7 @@ span.help-message {
     line-height: 40px;
     color: #2D2D2DBD;
     font-family: Helvetica;
+    margin-top: 25px;
 }
 
 .contact-us-message-wrapper {
@@ -164,4 +165,92 @@ span.help-message {
 .maps-footer {
   
   margin-bottom: -125px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .contact-us.global-page-wrapper {
+    gap: 0;
+  }
+
+  .register-hero-background-v2 {
+    height: 450px;
+  }
+
+  .contact-us .hero-header-title-blue, .contact-us .hero-header-desc-black {
+    line-height: 20px;
+    font-size: 16px;
+    margin-top: 0;
+  }
+  
+  .contact-us-header-title-container {
+    height: 160px;
+  }
+
+  .contact-us .register-right-image {
+    top: 25px;
+    width: 90px;
+  }
+
+  .contact-us .register-left-image {
+    top: 20px;
+    left: 0;
+  }
+
+  .contact-us span.help-message {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .contact-us .handwritten-page-forms {
+    margin-top: 0;
+    padding: 30px 15px 0 15px;
+  }
+
+  .contact-us .handwritten-page-divide2 {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .contact-us .handwritten-page-divide2 > * {
+    flex: -moz-available;
+  }
+
+  .contact-us-send-message-button {
+    bottom: 55px;
+    right: 5px;
+  }
+
+  .contact-us .concact-us-help-message {
+    background-color: #FAF7F3;
+    margin-top: 60px;
+    padding: 50px 0 0 0;
+  }
+
+  .contact-us .concact-us-help-message.reach-out-div {
+    background-color: transparent;
+    margin-top: 30px;
+  }
+
+  .contact-row .text {
+    font-size: 14px;
+  }
+
+  .footer-contact-social {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-divider, .contact-social-icons { 
+    display: none;
+  }
+
+  .contact-row .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .maps-footer {
+    margin-bottom: -40px;
+  }
 }

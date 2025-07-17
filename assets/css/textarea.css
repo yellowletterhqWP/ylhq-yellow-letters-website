@@ -22,3 +22,11 @@
   color: #888;
   pointer-events: none;
 }
+
+@media screen and (max-width: 768px) {
+  .textarea-container textarea {
+    font-size: 11px;
+    padding: 5px 15px;
+    color: #2D2D2D;
+  }
+}
