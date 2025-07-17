@@ -49,7 +49,7 @@ get_header();
             
             <div class="handwritten-radio1">
 
-                <div class="handwritten-page-radio2">
+                <div class="handwritten-page-radio2 choose-product">
                 <?php
                 get_template_part( 'template-parts/choose-product', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/letters-icon.png',
