@@ -83,3 +83,24 @@
   background: #fff;
   color: #2D2D2D;
 }
+
+@media screen and (max-width: 768px) {
+
+  .box-blue-box img {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+  }
+
+  .box-blue-box {
+    height: auto;
+  }
+
+  .box-blue-box span.box-title {
+    right: 10px;
+    top: 10px;
+    font-size: 12px;
+  }
+}

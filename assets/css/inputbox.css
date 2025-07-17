@@ -83,3 +83,11 @@ input.inputbox.filled {
 .inputbox-label.filled{
   color: #0D84D1;
 }
+
+@media screen and (max-width: 768px) {
+  input.inputbox {
+    font-size: 11px;
+    padding: 5px 15px;
+    color: #2D2D2D;
+  }
+}

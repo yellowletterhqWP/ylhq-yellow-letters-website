@@ -192,3 +192,16 @@ button.register-socialcontainer {
 .vector-sociallink {
   height: 28px;
 }
+
+@media screen and (max-width: 768px) {
+  .register-right-image {
+    top: 80px;
+    width: 100px;
+  }
+
+  .register-left-image {
+    top: 85px;
+    left: 0;
+    width: 100px;
+  }
+}

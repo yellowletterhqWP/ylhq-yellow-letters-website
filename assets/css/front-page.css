@@ -6,9 +6,17 @@
 .homepage-container-1-inner {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.frontpage-header-title-container-hero {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .inner2 {
@@ -17,9 +25,7 @@
 
 .homepage-header-image {
 	width: 100%;
-	z-index: 0;
-	position: absolute;
-	top: -65px;
+	position: relative;
 }
 
 .homepage-header-image img {
@@ -29,23 +35,20 @@
 .homepage-header1 {
   font-size: clamp(24px, 2vw, 35px);
   font-weight: 500;
-  margin-top: clamp(50px, 12vw, 250px);
   line-height: 1.2;
   position: relative;
   z-index: 1;
 }
 
-.homepage-header-title-group {
+.frontpage-header-title {
     font-size: clamp(1.75rem, 4vw, 4rem);
     font-family: Helvetica;
-    justify-content: start;
-    display: flex;
-    flex-flow: column;
-}
-
-.homepage-header-title {
 	z-index: 1;
 	position: relative;
+    width: 75%;
+    display: block;
+    line-height: 60px;
+    margin-top: 10px;
 }
 
 .homepage-header-title1 {
@@ -66,7 +69,7 @@
 }
 
 .homepage-header-title2b {
-	font-family: "Helvetica", Sans-serif;
+	font-family: Helvetica;
 	font-size: 40px;
 	font-weight: 600;
 	letter-spacing: 0.5px;
@@ -83,13 +86,12 @@
 	color: #0D84D1;
 	z-index: 1;
 	position: relative;
-	margin-top: -20px;
 }
 
 .homepage-header-title4 {
 	font-size: 24px;
 	line-height: 1.2;
-    margin-bottom: 20px;
+    margin: 20px 0;
 	position: relative;
 	z-index: 1;
 	width: 60%;
@@ -99,8 +101,6 @@
     display: flex;
     flex-flow: row;
     justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
     gap: 35px;
     
     padding-left: 30px;
@@ -138,6 +138,9 @@
     position: relative;
     width: 100%;
     padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .homepage-effortlessmail p {
@@ -151,8 +154,19 @@
     display: flex;
     flex-flow: row;
     justify-content: center;
-    margin-bottom: 100px;
     gap: 35px;
+    flex-wrap: wrap;
+}
+
+.homepage-container-1 .campaign-header-1 {
+  font-family: Helvetica;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  word-spacing: 0px;
+  color: #2D2D2D;
+  z-index: 1;
+  position: relative;
 }
 
 .rating {
@@ -195,6 +209,91 @@
 
 .homepage-testimony-div {
     padding-top: 30px;
-    padding-bottom: 135px;
+    /* padding-bottom: 135px; */
+    padding-bottom: 30px;
     margin-bottom: 30px;
+}
+
+.homepage-grid-header .header-grid-box {
+    flex: 1 1 calc(33.333% - 25px);
+}
+
+.homepage-concept1-header-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+
+.homepage-header1 {
+    font-size: 12px;
+}
+
+.frontpage-header-title-group {
+    font-size: 24px;
+    gap: 10px;
+}
+
+.frontpage-header-title {
+    line-height: 20px;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.homepage-header-title4 {
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.homepage-grid-header {
+    gap: 20px 10px;
+}
+
+.box-content-inner {
+    line-height: 15px;
+}
+
+.homepage-grid-header-effrortlessmail {
+    gap: 15px;
+}
+
+.homepage-grid-header .header-grid-box, .homepage-grid-header-effrortlessmail .header-grid-box {
+    /* flex: 1 1 calc(50% - 16px); */
+    flex: 0 0 calc(50% - 16px);
+    max-width: calc(50% - 16px);
+}
+
+.homepage-campaign p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.homepage-grid-product {
+    margin: 0;
+}
+
+.homepage-effortlessmail p {
+    font-size: 14px;
+}
+
+.homepage-container-1 .campaign-header-1 {
+    font-size: 16px;
+}
+
+.homepage-container-1 .campaign-header-2 {
+    font-size: 14px;
+    color: #3D2D02;
+    width: 75%;
+}
+
+.homepage-concept1-header-image img {
+    max-width: 125%;
+}
+
+.homepage-testimony-div {
+    padding-bottom: 80px;
+    margin-bottom: 10px;
+}
+    
 }

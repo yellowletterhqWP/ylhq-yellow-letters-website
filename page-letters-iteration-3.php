@@ -24,7 +24,7 @@ get_header();
             <span class="handwritten-page-header-title3">At Yellow Letters, we offer a variety of options to suit every budget, including windowed envelopes, trifold self-mailers, street view full window letters, unique envelopes, and invitation-style envelopes.</span>
         </div>
 
-        <div class="handwritten-page-radio">
+        <div class="handwritten-page-radio pricing-div">
             <?php
                 get_template_part( 'template-parts/form-elements/red-label', null, array(
                     'title' => 'Pricing',

@@ -108,7 +108,7 @@ get_header();
             </div>
         </div>
 
-        <div class="concact-us-help-message">
+        <div class="concact-us-help-message reach-out-div">
             <?php
                 get_template_part( 'template-parts/form-elements/red-label', null, array(
                     'title' => "Reach out to us",

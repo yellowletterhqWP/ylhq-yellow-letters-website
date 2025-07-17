@@ -80,3 +80,14 @@
   color: #2D2D2D;
   pointer-events: none;
 }
+
+@media screen and (max-width: 768px) {
+
+  .homepage-header-button {
+    height: 36px;
+  }
+
+  .homepage-header-button button, .homepage-header-button a {
+    font-size: 14px;    
+  }
+}

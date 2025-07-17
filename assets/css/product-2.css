@@ -1,5 +1,5 @@
 .box-yellow-box {
-  background-color: #0D84D1;
+  background-color: #FFF7E6;
   border-radius: 15px;
   height: 460px;
   width: clamp(100px, 45vw, 570px);
@@ -37,7 +37,7 @@
   left: 0;
   width: 100%;
   height: 50%;
-  background: #2D2D2D8C;
+  background: #2D2D2D7A;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -82,4 +82,11 @@
 .overlay-content .shop-button:hover {
   background: #fff;
   color: #2D2D2D;
+}
+
+@media screen and (max-width: 768px) {
+  .box-yellow-box img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }

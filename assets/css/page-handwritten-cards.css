@@ -4,13 +4,11 @@
 }
 
 .handwritten-page-container-1-inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  min-height: 700px;
-  margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .inner2 {
@@ -19,9 +17,6 @@
 
 .handwritten-page-header-image {
   width: 100%;
-  position: absolute;
-  top: -155px;
-  z-index: 0;
 }
 
 .handwritten-page-header-image img {
@@ -29,17 +24,15 @@
 }
 
 .handwritten-page-header-title-container{
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  margin-top: auto;
-  margin-bottom: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: absolute;
 }
 
 .handwritten-page-header-title {
   z-index: 1;
   position: relative;
-  margin-top: 165px;
   display: flex;
   align-items: center;
   gap: 25px;
@@ -63,13 +56,13 @@
 }
 
 .handwritten-page-header-title3 {
-  font-size: 20px;
+  font-size: 24px;
   font-family: Helvetica, sans-serif;
   line-height: 1.5;
   position: relative;
   z-index: 1;
   color: #2D2D2D;
-  width: 45%;
+  width: 55%;
   margin-top: 20px;
 }
 
@@ -113,7 +106,7 @@
 .handwritten-page-radio {
   position: relative;
   width: 100%;
-  padding: 70px 30px 50px 30px;
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -128,9 +121,8 @@
 .handwritten-page-radio2 {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 50px;
-  margin-top: 30px;
+  /* flex-wrap: wrap; */
+  gap: 20px;
 }
 
 .handwritten-page-radio3 {
@@ -138,6 +130,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
+  margin-bottom: 30px;
 }
 
 .handwritten-page-radio3 .iteration-2{
@@ -155,7 +148,7 @@
   position: relative;
 }
 
-.product-radio-box.active .product-radio-box-img {
+.handwritten-page-container-1 .product-radio-box.active .product-radio-box-img {
   outline: 5px solid #c2e6ff;
 }
 
@@ -249,4 +242,11 @@
   .handwritten-page-header-title4 {
     width: 90%;
   }
+}
+
+.handwritten-cards-choose-templates {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
 }

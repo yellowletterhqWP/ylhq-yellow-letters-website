@@ -8,22 +8,24 @@
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/header-image.png" />
             </div>
             
-            <span class="homepage-header1">Tired of ineffective real estate campaigns? we've been there too</span>
-            <div class="homepage-header-title-group">
-                <div class="homepage-header-title">
-                    <span class="homepage-header-title1">Premium,</span>                        
-                    <span class="homepage-header-title2">cost-effective marketing</span>                      
+            <div class="frontpage-header-title-container-hero">
+                <span class="homepage-header1">Tired of ineffective real estate campaigns? we've been there too</span>
+                
+                <div class="frontpage-header-title">
+                    <span class="homepage-header-title1">Premium,&nbsp;</span>
+                    <span class="homepage-header-title2">cost-effective marketing&nbsp;</span>
+                    <span class="homepage-header-title3">direct to sellers.</span>              
                 </div>
-                <span class="homepage-header-title3">direct to sellers.</span>
+                    
+                <span class="homepage-header-title4">We save your budget and your bandwidth with premium direct mail that drives immediate response.</span>
+                
+                <?php
+                    get_template_part( 'template-parts/form-elements/button', null, array(
+                        'icon' => get_stylesheet_directory_uri() . '/public/external/Vector.svg',
+                        'title' => 'See Mail Options',
+                    ) );
+                ?>
             </div>
-            <span class="homepage-header-title4">We save your budget and your bandwidth with premium direct mail that drives immediate response.</span>
-            
-            <?php
-                get_template_part( 'template-parts/form-elements/button', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/Vector.svg',
-                    'title' => 'See Mail Options',
-                ) );
-            ?>
         </div>
 
         <div class="homepage-grid-header">
@@ -37,15 +39,15 @@
             <?php
                 get_template_part( 'template-parts/box', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/list-icon.svg',
-                    'title' => 'Pick Your Mailer',
-                    'description' => 'Choose a letter, postcard or greeting card that fits your style'
+                    'title' => 'Upload Your List',
+                    'description' => 'Easily upload a CSV or Excel file with your contacts.'
                 ) );
             ?>
             <?php
                 get_template_part( 'template-parts/box', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/flyarrow-icon.svg',
-                    'title' => 'Pick Your Mailer',
-                    'description' => 'Choose a letter, postcard or greeting card that fits your style'
+                    'title' => 'Send Your Campaign',
+                    'description' => 'Hit send and we take care of the rest — printing to postage.'
                 ) );
             ?>
         </div>
@@ -149,7 +151,7 @@
             ?>
         </div> -->
 
-        <div class="homepage-concept2-header-image">
+        <div class="homepage-concept1-header-image">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/header2.svg" />
             <div class="campaign-wrapper">
                 <span class="campaign-header-1">Start Your Campaign Today</span>

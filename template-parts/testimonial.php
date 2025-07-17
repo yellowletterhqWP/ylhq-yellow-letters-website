@@ -14,7 +14,7 @@
       <div class="bottom-arrow"></div>
     </div>
     <div class="testimonial-avatar">
-      <img src="https://via.placeholder.com/80" alt="avatar">
+      <img src="<?php echo get_stylesheet_directory_uri() ?>/public/external/testimony-people.png" alt="avatar">
     </div>
   </div>
 
@@ -33,7 +33,7 @@
       <div class="bottom-arrow"></div>
     </div>
     <div class="testimonial-avatar">
-      <img src="https://via.placeholder.com/80" alt="avatar">
+      <img src="<?php echo get_stylesheet_directory_uri() ?>/public/external/testimony-people.png" alt="avatar">
     </div>
   </div>
 
@@ -52,7 +52,7 @@
       <div class="bottom-arrow"></div>
     </div>
     <div class="testimonial-avatar">
-      <img src="https://via.placeholder.com/80" alt="avatar">
+      <img src="<?php echo get_stylesheet_directory_uri() ?>/public/external/testimony-people.png" alt="avatar">
     </div>
   </div>
 </div>

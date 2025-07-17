@@ -995,43 +995,43 @@ textarea {
 #main {
   width: 100%;
   min-height: 700px;
-  overflow-x: hidden;
+  overflow-x: show;
 }
 
 .login-footer {
   display: flex;
-  /* position: absolute; */
-  align-items: flex-start;
-  flex-shrink: 0;
+  position: relative;
+  /* align-items: flex-start; */
+  /* flex-shrink: 0; */
   width: 100%;
   /* height: 100%; */
   flex-direction: column;
-  gap: 30px;
-  z-index: 1;
+  /* gap: 30px; */
+  /* z-index: 1; */
   /* margin-top: 50px; */
   /* bottom: 0; */
 }
 
 .footer-background {
-  background-image: url(public/external/vector6672-rlo8.svg);
+  /* background-image: url(public/external/vector6672-rlo8.svg);
   background-size: cover;
-  background-position: top;
+  background-position: top; */
   width: 100%;
-  height: 620px; /* 100%; */
+  /* height: 620px;
   margin-left: auto;
   margin-right: auto;
-  position: absolute;
+  position: absolute; */
 }
 
 .login-footer-container {
   position: relative;
+  background-color: #2d2d2d;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   gap: 5%;
-  margin-top: 10%;
   width: 100%;
 }
 
@@ -1072,7 +1072,6 @@ textarea {
   list-style: none;
   margin: 0;
   padding: 0;
-  flex: 1 0 0;
 }
 
 .footer-menu li {
@@ -1100,8 +1099,18 @@ textarea {
   flex-flow: column;
   justify-content: space-evenly;
   position: relative;
-  /* gap: 30px; */
+  background-color: #2d2d2d;
+  color: #FFF;
   /* margin-bottom: 30px; */
+}
+
+.login-footer-terms a {
+  color: #FFF;
+}
+
+.login-footer-back-image {
+	height: 100%;
+	width: 100%;
 }
 
 .footer-after-menu-line {
@@ -1123,10 +1132,9 @@ textarea {
   flex-flow: row;
   align-items: center;
   justify-content: space-between;
-  padding-left: 30px;
+  padding: 10px 30px;
   width: 100%;
   position: relative;
-  padding-right: 30px;
 }
 
 .login-social-handles-desktop {
@@ -1237,80 +1245,103 @@ textarea {
 /* optional mobile responsive, if you want to preserve */
 @media screen and (max-width: 768px) {
 
-.form-group {
-	font-size: 0.5rem;
-}
+	.form-group {
+		font-size: 11px;
+		margin-bottom: 10px;
+	}
 
-  .menu-toggle {
-    display: block;
-  }
+	.menu-toggle {
+		display: block;
+	}
 
-  .login-navbar {
-    height: 70px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+	.login-navbar {
+		height: 70px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-top: 0;
+	}
 
-  .login-logoicon {
-    width: 75px;
-    height: 60px;
-  }
+	.login-logoicon {
+		width: 75px;
+		height: 60px;
+	}
 
-  .login-logoimage {
-    width: 130px;
-    height: 35px;
-  }
+	.login-logoimage {
+		width: 130px;
+		height: 35px;
+	}
 
-  .login-navigations {
-    display: none;
-    flex-direction: column;
-    background-color: #fff;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-  }
+	.login-navigations {
+		display: none;
+		flex-direction: column;
+		background-color: #fff;
+		position: absolute;
+		top: 80px;
+		left: 0;
+		width: 100%;
+		padding: 10px;
+	}
 
-  .login-navigations.active {
-    display: flex;
-  }
+	.login-navigations.active {
+		display: flex;
+	}
 
-  .login-footer-container {
-    flex-flow: column;
-    align-items: flex-start;
-    margin-top: 25%;
-  }
+	.login-footer-container {
+		flex-flow: column;
+		align-items: flex-start;
+		padding-bottom: 10px;
+	}
 
-  .footer-menus {
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: start;
-    padding-left: 20px;
-  }
+	.footer-menus {
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: space-between;
+		padding-left: 20px;
+	}
 
-  .footer-menus section {
-    flex: none;
-  }
+	.footer-menu {
+		line-height: 15px;
+	}
 
-  .login-footer-logo {
-    height: 80px;
-    padding-left: 8px;
-  }
+	.footer-menus section {
+		flex: none;
+	}
 
-  .footer-after-menu span {
-    font-size: 8px;
-  }
+	.login-footer-logo {
+		height: 100px;
+		margin-left: 0;
+		margin-top: 30px;
+	}
 
-  .login-social-handles-desktop {
-    display: none;
-  }
+	.footer-after-menu span {
+		font-size: 8px;
+	}
 
-  .login-social-handles-mobile {
-    display: flex;
-  }
+	.login-social-handles-desktop {
+		display: none;
+	}
 
-  .login-footer-square-icon, .login-social-icon {
-    width: 25px;
-  }
+	.login-social-handles-mobile {
+		display: flex;
+		background-color: #2d2d2d;
+		padding: 10px 0 0 20px;
+		gap: 5px;
+	}
+
+	.footer-after-menu {
+		padding: 10px 20px;
+	}
+
+	.login-footer-square-icon, .login-social-icon {
+		width: 25px;
+	}
+
+	.login-footer-back-image {
+		height: 105%;
+	}
+
+	.footer-menus, .footer-header {
+		font-size: 14px;
+	}
+
 }
