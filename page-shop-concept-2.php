@@ -1,12 +1,12 @@
 <?php
-/* Template Name: Shop Concept 2 */
+/* Template Name: Home Concept 2 */
 get_header();
 ?>
 
 <main id="main" class="site-main">
     <div class="register-hero-background"></div>
 
-    <div class="shop-concept-2 global-page-wrapper">        
+    <div class="home-concept-2 global-page-wrapper">        
         
         <img
         alt="RightImage6672"
@@ -20,8 +20,10 @@ get_header();
         />
 
         <div class="home-concept2-header-title-container">
-            <span class="hero-header-title-blue">Shop</span>
-            <span class="hero-header-desc-black">We save your budget and your bandwidth with premium direct mail that drives immediate response.</span>
+            <div class="frontpage-header-title">
+                <span class="homepage-header-title1">Shop</span>                        
+            </div>                
+            <span class="homepage-header-title4">We save your budget and your bandwidth with premium direct mail that drives immediate response.</span>
             
             <?php
                 get_template_part( 'template-parts/form-elements/button', null, array(
@@ -31,57 +33,70 @@ get_header();
             ?>
         </div>
 
-        <div class="shop-concept-2-budget-friendly">
-            <div class="shop-concept-2-budget-friendly-header">
-                <?php
-                    get_template_part( 'template-parts/form-elements/red-label', null, array(
-                        'title' => "Budget-Friendly Upload Tool",
-                    ) );
-                ?>
-                <span class="help-message">Save More, Upload Smarter</span>
-            </div>
-
+        <div class="shop-budget-friendly-tool">
             <img
-                alt="RightImage6672"
-                src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/blog-right.png"
-                class="register-right-image"
-            />
-            <img
-                alt="LeftImage6672"
+                alt="Blog left mage"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/blog-left.png"
-                class="register-left-image"
+                class="blog-left-image"
+            />
+            <img
+                alt="Blog right mage"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/blog-right.png"
+                class="blog-right-image"
             />
 
-            <div class="shop-concept-2-div">
-                <?php
-                get_template_part( 'template-parts/box', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/env-icon.svg',
-                    'title' => 'List Features',
-                    'description' => 'Choose a letter, postcard or greeting card that fits your style'
+            <?php
+                get_template_part( 'template-parts/form-elements/red-label', null, array(
+                    'title' => 'Budget-Friendly Upload Tool',
                 ) );
+            ?>
+
+            <span>See More, Upload Smarter</span>
+
+            <div class="homepage-grid-header-effrortlessmail shop-wrapper">
+                <?php
+                    get_template_part( 'template-parts/box', null, array(
+                        'icon' => get_stylesheet_directory_uri() . '/public/external/list-features.png',
+                        'title' => 'LIST FEATURES',
+                        'description' => 
+                            '<ul class="box-list">
+                                <li>Bulk Mail Savings</li>
+                                <li>Merge Multiple Lists into a Single Campaign</li>
+                                <li>Auto-Match List Headers</li>
+                                <li>Assign Unique Tracking Numbers to Each List</li>
+                                <li>Personalize Trust Names (e.g., "Ontiveros Trust 1997" to "Ontiveros Family")</li>
+                            </ul>'
+                    ) );
                 ?>
                 <?php
                     get_template_part( 'template-parts/box', null, array(
-                        'icon' => get_stylesheet_directory_uri() . '/public/external/list-icon.svg',
+                        'icon' => get_stylesheet_directory_uri() . '/public/external/ncoa-cass.png',
                         'title' => 'NCOA / CASS',
-                        'description' => 'Choose a letter, postcard or greeting card that fits your style'
+                        'description' => 
+                            '<ul class="box-list">
+                                <li>Standardizes mailing addresses</li>
+                                <li>Verifies forwarding addresses</li>
+                                <li>Ensures address accuracy and deliverability</li>
+                                <li>Cleans up undeliverable records</li>
+                                <li>Eliminates duplicate property addresses</li>
+                            </ul>'
                     ) );
                 ?>
             </div>
         </div>
 
-        <div class="shop-concept2-pict-your-mailer">
-            <div class="shop-concept-2-budget-friendly-header">
-                <?php
-                    get_template_part( 'template-parts/form-elements/red-label', null, array(
-                        'title' => "Pick Your Mailer Type",
-                    ) );
-                ?>
-                <span class="help-message">Marketing made easy for Real Estate Inverstors and Mortage Brokers - Letters,<br />
-                Postcards, Real Handwritten Cards and Custom templates</span>
-            </div>
+        <div class="shop-campaign2">
+            <?php
+                get_template_part( 'template-parts/form-elements/red-label', null, array(
+                    'title' => 'Pick Your Mailer Type',
+                ) );
+            ?>
+            <p>
+                Marketing made easy for Real Estate Inverstors and Mortage Brokers - Letters,<br />
+                Postcards, Real Handwritten Cards and Custom templates
+            </p>
 
-            <div class="shop-concept-2-div-product">
+            <div class="homepage-grid-product">
                 <?php
                     get_template_part( 'template-parts/product-2', null, array(
                         'icon' => get_stylesheet_directory_uri() . '/public/external/letters-icon.png',

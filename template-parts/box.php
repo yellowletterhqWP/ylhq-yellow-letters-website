@@ -13,7 +13,7 @@ $description = $args['description'] ?? '';
         </div>
         <div class="box-content-inner">
             <h3><?php echo esc_html($title); ?></h3>
-            <span><?php echo esc_html($description); ?></span>
+            <span><?php echo $description; ?></span>
         </div>
     </div>
     <img class="box-cropped-footer" src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/blog-cropped.png" />

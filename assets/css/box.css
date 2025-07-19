@@ -16,10 +16,6 @@
     margin-top: 15px;
 }
 
-.box-content-image {
-    min-height: 150px;
-}
-
 .box-content {
     background-color: #FFF;
     display: flex;
@@ -29,6 +25,7 @@
 
 .box-content-image {
     min-height: 60px;
+    width: 82px;
 }
 
 .box-content-inner {
