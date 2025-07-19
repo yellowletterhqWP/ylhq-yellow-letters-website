@@ -90,13 +90,36 @@
   text-decoration: none;
 }
 
-
-
-
 .forgot-password-wrapper {
   padding: 0 30px 30px 30px;
 }
 
-div.forgot-page {
-  /* height: 577px; */
+@media screen and (max-width: 768px) {
+  .login-group.register-right-image {
+    top: -20px
+  }
+
+  .login-group.register-left-image {
+    top: -20px
+  }
+
+  .login-form-wrapper {
+    gap: 0;
+  }
+
+  .login-group-wrapper .register-text-header {
+    font-size: 18px;
+  }
+  
+  .login-group-wrapper .register-text-desc {
+    font-size: 11px;
+  }
+
+  .login-rememberme-text {
+    font-size: 9px;
+  }
+
+  .login-link-text {
+    font-size: 9px;
+  }
 }

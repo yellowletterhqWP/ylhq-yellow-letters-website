@@ -36,6 +36,10 @@
     padding-right: 10vw;
 }
 
+.homepage-concept2-grid-header .header-grid-box {
+  flex: 1 1 45%; /* minimum 2 col */
+}
+
 .home-concept-2 .homepage-campaign {
     background-color: #fff;
 }
@@ -204,6 +208,10 @@
 
   .home-concept-2 .testimony-background-image {
     margin-top: 0;
+  }
+
+  .homepage-concept2-grid-header .header-grid-box {
+    width: 100%;
   }
     
 }

@@ -13,3 +13,26 @@
 .my-account-logout-button {
   justify-self: right;
 }
+
+.my-account-page .register-header-desc {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-box-3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 15px;
+    width: 100%;
+  }
+
+  .grid-box-3 .header-grid-box {
+    max-width: 100%;
+  }
+
+  .grid-box-3 .my-account-logout-button {
+    grid-column: span 2;
+    justify-self: end;
+    margin-top: -25px;
+    margin-bottom: 25px;
+  }
+}

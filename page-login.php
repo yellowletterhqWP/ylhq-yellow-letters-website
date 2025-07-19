@@ -14,18 +14,18 @@ get_header();
     <img
       alt="RightImage6672"
       src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/rightimage6672-cck6-300w.png"
-      class="register-right-image"
+      class="register-right-image login-group"
     />
     <img
       alt="LeftImage6672"
       src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/leftimage6672-vfcz-300w.png"
-      class="register-left-image"
+      class="register-left-image login-group"
     />
 
     <div class="register-register-form">
       <div class="register-asset-header"></div>
 
-      <div class="register-header-form">
+      <div class="register-header-form login-group-wrapper">
         <span class="register-text-header">
           Log in to Yellowletters
         </span>

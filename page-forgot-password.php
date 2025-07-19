@@ -30,7 +30,7 @@ get_header();
           Forget Password
         </span>
         <span class="register-text-desc">
-          Enter your email, and we'll send you a password reset link..
+          Reset Your Password in Just a Few Steps.
         </span>
       </div>
 
@@ -74,7 +74,7 @@ get_header();
               'icon' => '',
               'title' => 'Send Reset Password Link',
               'type' => 'submit',
-              'disabled' => 'true',
+              'disabled' => true,
               'id' => 'forgot-password-button'
           ) );
         ?>

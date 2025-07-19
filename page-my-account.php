@@ -8,10 +8,10 @@ get_header();
 
   <div class="register-hero-background"></div>
 
-  <div class="custom-register-wrapper">  
+  <div class="my-account-page custom-register-wrapper">  
 
     <h1>My Account</h1>
-    <span class="register-header-desc">Create an Account and Explore Yellow Letters’ Benefits.</span>
+    <span class="register-header-desc">Where Your Information and Orders Meet.</span>
     <img
       alt="RightImage6672"
       src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/rightimage6672-cck6-300w.png"

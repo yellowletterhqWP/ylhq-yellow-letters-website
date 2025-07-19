@@ -84,6 +84,7 @@
   line-height: normal;
   font-stretch: normal;
   text-decoration: none;
+  margin-top: 10px;
 }
 
 .register-form-wrapper {
@@ -195,13 +196,80 @@ button.register-socialcontainer {
 
 @media screen and (max-width: 768px) {
   .register-right-image {
-    top: 80px;
+    top: 20px;
     width: 100px;
   }
 
   .register-left-image {
-    top: 85px;
+    top: 25px;
     left: 0;
     width: 100px;
+  }
+
+  .register-hero-background {
+    height: 287px;
+  }
+
+  .register-asset-header {
+    height: 11px;
+  }
+
+  .register-header-desc {
+    font-size: 12px;
+  }
+
+  .custom-register-wrapper h1 {
+    font-size: 40px;
+  }
+
+  .register-register-form {
+    width: 328px;
+  }
+  
+  .register-register-form .register-social-links {
+    margin-top: 15px;
+  }
+
+  .register-text-header {
+    font-size: 18px;
+  }
+
+  .register-text-desc {
+    font-size: 11px;
+  }
+
+  .register-register-form {
+    gap: 0px;
+  }
+
+  .register-under-button {
+    font-size: 11px;
+  }
+
+  .register-socialcontainer span.register-text40,
+  .register-socialcontainer span.register-text41 {
+    font-size: 11px;
+  }
+
+  .vector-sociallink {
+    height: 15px;
+  }
+
+  button.register-socialcontainer {
+    gap: 5px;
+    height: 34px;
+  }
+
+  .register-form-wrapper {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .register-form-wrapper .form-group {
+    flex: 1 1 100%;
+  }
+
+  .forgot-password-form {
+    margin-bottom: 30px;
   }
 }
