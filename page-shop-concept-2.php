@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Home Concept 2 */
+/* Template Name: Shop Concept 2 */
 get_header();
 ?>
 
