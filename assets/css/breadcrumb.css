@@ -1,0 +1,28 @@
+.breadcrumb-nav {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  color: #666;
+}
+
+.breadcrumb-item a {
+  color: #999;
+  text-decoration: none;
+}
+
+.breadcrumb-current {
+  color: #000;
+  font-weight: 500;
+}
+
+.breadcrumb-separator {
+  margin: 0 0.5rem;
+  color: #ccc;
+}

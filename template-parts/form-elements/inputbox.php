@@ -7,6 +7,7 @@ $type = $args['type'] ?? 'text';
 $required = $args['required'] ?? false;
 $strength = $args['strength'] ?? false;
 $extra_class = ($type === 'date') ? 'datepicker' : '';
+$icon = $args['icon'] ?? '';
 ?>
 
 <div class="form-group inputbox-group">
@@ -16,11 +17,16 @@ $extra_class = ($type === 'date') ? 'datepicker' : '';
     </label>
 
     <div class="inputbox-container">
+
+        <?php if ($icon !== '') : ?>
+            <img src="<?php echo esc_url($icon); ?>" alt="icon" />
+        <?php endif; ?>
+
         <input
             class="inputbox <?php echo esc_attr($extra_class); ?>"
             id="<?php echo esc_attr($id); ?>"
             name="<?php echo esc_attr($name); ?>"
-            placeholder="<?php echo esc_attr($placeholder); ?>"
+            placeholder="<?php echo $placeholder; ?>"
             type="<?php echo esc_attr($type); ?>"
             <?php echo $required ? 'required' : ''; ?>
             autocomplete="new-password"
