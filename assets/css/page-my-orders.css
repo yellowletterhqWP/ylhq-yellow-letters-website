@@ -30,3 +30,56 @@
 .my-account-content-title {
   font-size: 40px;
 }
+
+.my-order-no-order {
+  color: #2D2D2D82;
+  font-size: 40px;
+  margin-bottom: 100px;
+  display: block;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+
+  .my-orders-page-wrapper {
+    gap: 0;
+  }
+
+  .my-orders-page-wrapper .handwritten-page-header-title1 {
+    font-size: 40px;
+  }
+
+  .my-orders-page-wrapper .handwritten-page-header-title3 {
+    font-size: 12px;
+    margin-top: 0;
+  }
+
+  .my-orders-page-wrapper .letters-iteration-page-header-title-container {
+    height: 190px;
+  }
+
+  .my-account-content-title {
+    font-size: 18px;
+  }
+
+  .my-order-page-content {
+    flex-wrap: wrap;
+  }
+
+  .my-order-page-content .breadcrumb-nav {
+    width: 85%;
+  }
+
+  .my-order-hr-1 {
+    padding-top: 15px;
+  }
+
+  .my-order-hr-1 .inputbox-container {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .my-order-no-order {
+    font-size: 16px;
+  }
+}

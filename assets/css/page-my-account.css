@@ -4,6 +4,7 @@
     grid-template-rows: repeat(3, auto);
     gap: 30px;
     width: 75%;
+    margin-bottom: 30px;
 }
 
 .grid-box-3 > div.header-gird-box {

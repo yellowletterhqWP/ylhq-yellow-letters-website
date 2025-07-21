@@ -55,8 +55,11 @@ get_header();
                 'required' => false,
                 'icon' => get_stylesheet_directory_uri() . '/public/external/search-icon.svg',
             ]);
-                ?>
-        </div>
+        ?>
+
+        <span class="my-order-no-order">
+            Your orders will appear here once placed
+        </span>
 
     </div>
 </main>

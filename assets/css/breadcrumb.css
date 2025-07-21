@@ -26,3 +26,9 @@
   margin: 0 0.5rem;
   color: #ccc;
 }
+
+@media screen and (max-width: 768px) {
+  .breadcrumb-nav {
+    font-size: 10px;
+  }
+}
