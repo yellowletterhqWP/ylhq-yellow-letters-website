@@ -1,9 +1,6 @@
 .pricing-table {
   font-family: Helvetica;
-  font-size: 24px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  border-radius: 8px;
-  overflow: hidden;
+  font-size: 24px;  
 }
 
 .pricing-header {
@@ -12,6 +9,7 @@
   gap: 10px;
   margin-bottom: 10px;
   color: #333;
+  justify-content: space-between;
 }
 
 .product-title {
@@ -26,6 +24,9 @@
 .pricing-grid {
   border-collapse: collapse;
   width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
 }
 
 .pricing-grid-row {
@@ -55,4 +56,9 @@
 
 .pricing-grid-row:not(.header) .label {
   font-weight: 500;
+}
+
+.right-side-title {
+  font-size: 24px;
+  color: #505050;
 }

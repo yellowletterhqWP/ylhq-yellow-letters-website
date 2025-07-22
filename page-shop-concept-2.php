@@ -47,7 +47,7 @@ get_header();
 
             <?php
                 get_template_part( 'template-parts/form-elements/red-label', null, array(
-                    'title' => 'Budget-Friendly Upload Tool',
+                    'title' => 'Our Prices Will Not Be Beat Upload Tool',
                 ) );
             ?>
 
@@ -88,7 +88,7 @@ get_header();
         <div class="shop-campaign2">
             <?php
                 get_template_part( 'template-parts/form-elements/red-label', null, array(
-                    'title' => 'Pick Your Mailer Type',
+                    'title' => 'Pick your mailer',
                 ) );
             ?>
             <p>

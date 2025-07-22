@@ -7,10 +7,16 @@ $rows    = $args['rows'] ?? [];          // Baris data
 
 <div class="pricing-table">
   <div class="pricing-header">
-    <span class="product-title"><?php echo esc_html($title); ?></span>
-    <?php if ($minimum): ?>
-      <a href="#" class="minimum-link"><?php echo esc_html($minimum); ?></a>
-    <?php endif; ?>
+    
+    <div class="left-side-title">
+      <span class="product-title"><?php echo esc_html($title); ?></span>
+      <span class="divider">|</span>
+      <?php if ($minimum): ?>
+        <a href="#" class="minimum-link"><?php echo esc_html($minimum); ?></a>
+      <?php endif; ?>
+    </div>
+
+    <div class="right-side-title">First Class Postage adds $0.179 each</div>
   </div>
 
   <div class="pricing-grid">

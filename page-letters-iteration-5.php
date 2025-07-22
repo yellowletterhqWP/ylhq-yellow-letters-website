@@ -98,15 +98,15 @@ get_header();
                     'name'  => 'template_product_choice'
                 ) );
 
-                get_template_part( 'template-parts/radio-product', null, array(
+                /* get_template_part( 'template-parts/radio-product', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/digital-folded.png',
                     'title' => 'Digital Folded Notes',
                     'id'    => 'digital-folded-notes',
                     'name'  => 'template_product_choice'
-                ) );
+                ) ); */
 
                 get_template_part( 'template-parts/radio-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/digital-folded.png',
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/jumbo-letter.png',
                     'title' => 'Jumbo Letter',
                     'id'    => 'jumbo-letter',
                     'name'  => 'template_product_choice'
@@ -140,7 +140,6 @@ get_header();
                     'custom' => 'Custom / Business',
                     'greetings' => 'General Greetings',
                     'holiday' => 'Holiday / Seasonal',
-                    'christmas' => 'Christmas - Specific'
                 )
             ));
             ?>

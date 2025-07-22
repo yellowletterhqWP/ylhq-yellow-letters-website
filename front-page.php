@@ -32,21 +32,21 @@
             <?php
                 get_template_part( 'template-parts/box', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/env-icon.svg',
-                    'title' => 'Pick Your Mailer',
+                    'title' => '#1 Pick Your Mailer',
                     'description' => 'Choose a letter, postcard or greeting card that fits your style'
                 ) );
             ?>
             <?php
                 get_template_part( 'template-parts/box', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/list-icon.svg',
-                    'title' => 'Upload Your List',
+                    'title' => '#2 Upload Your List',
                     'description' => 'Easily upload a CSV or Excel file with your contacts.'
                 ) );
             ?>
             <?php
                 get_template_part( 'template-parts/box', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/flyarrow-icon.svg',
-                    'title' => 'Send Your Campaign',
+                    'title' => '#3 Send Your Campaign',
                     'description' => 'Hit send and we take care of the rest — printing to postage.'
                 ) );
             ?>
@@ -55,7 +55,7 @@
         <div class="homepage-campaign">
             <?php
                 get_template_part( 'template-parts/form-elements/red-label', null, array(
-                    'title' => 'Pick Your Mailer Type',
+                    'title' => 'Pick your mailer',
                 ) );
             ?>
             <p>
@@ -114,14 +114,14 @@
                 <?php
                     get_template_part( 'template-parts/box', null, array(
                         'icon' => get_stylesheet_directory_uri() . '/public/external/env-icon.svg',
-                        'title' => 'Budget-Friendly',
+                        'title' => 'Our Prices Will Not Be Beat',
                         'description' => 'Yellow Letters offers top-quality direct mail at prices that fit your budget.'
                     ) );
                 ?>
                 <?php
                     get_template_part( 'template-parts/box', null, array(
                         'icon' => get_stylesheet_directory_uri() . '/public/external/list-icon.svg',
-                        'title' => 'Fast Dispatch',
+                        'title' => 'Quickest Out the Door',
                         'description' => 'Forget long waits - your mail goes out in 2-3 days.'
                     ) );
                 ?>
@@ -129,7 +129,7 @@
                     get_template_part( 'template-parts/box', null, array(
                         'icon' => get_stylesheet_directory_uri() . '/public/external/flyarrow-icon.svg',
                         'title' => 'Consistent Communication',
-                        'description' => 'We keep you in the loop from order to dispatch.'
+                        'description' => 'We keep you in the loop from order to delivery.'
                     ) );
                 ?>
             </div>
@@ -175,7 +175,7 @@
             ?>
             <?php
                 get_template_part( 'template-parts/form-elements/red-label', null, array(
-                    'title' => 'Smilling Customers',
+                    'title' => 'Happy Customers',
                 ) );
             ?>
             <div class="rating">
@@ -186,7 +186,7 @@
             </div>
             <?php
                 get_template_part( 'template-parts/testimonial', null, array(
-                    'title' => 'Smilling Customers',
+                    'title' => 'Happy Customers',
                 ) );
             ?>
         </div>

@@ -65,7 +65,7 @@ get_header();
         <div class="homepage-campaign2">
             <?php
                 get_template_part( 'template-parts/form-elements/red-label', null, array(
-                    'title' => 'Pick Your Mailer Type',
+                    'title' => 'Pick your mailer',
                 ) );
             ?>
             <p>
@@ -124,14 +124,14 @@ get_header();
                 <?php
                     get_template_part( 'template-parts/box', null, array(
                         'icon' => get_stylesheet_directory_uri() . '/public/external/env-icon.svg',
-                        'title' => 'Budget-Friendly',
+                        'title' => 'Our Prices Will Not Be Beat',
                         'description' => 'Yellow Letters offers top-quality direct mail at prices that fit your budget.'
                     ) );
                 ?>
                 <?php
                     get_template_part( 'template-parts/box', null, array(
                         'icon' => get_stylesheet_directory_uri() . '/public/external/list-icon.svg',
-                        'title' => 'Fast Dispatch',
+                        'title' => 'Quickest Out the Door',
                         'description' => 'Forget long waits - your mail goes out in 2-3 days.'
                     ) );
                 ?>
@@ -139,7 +139,7 @@ get_header();
                     get_template_part( 'template-parts/box', null, array(
                         'icon' => get_stylesheet_directory_uri() . '/public/external/flyarrow-icon.svg',
                         'title' => 'Consistent Communication',
-                        'description' => 'We keep you in the loop from order to dispatch.'
+                        'description' => 'We keep you in the loop from order to delivery.'
                     ) );
                 ?>
             </div>
@@ -177,7 +177,7 @@ get_header();
                 ?>
                 <?php
                     get_template_part( 'template-parts/form-elements/red-label', null, array(
-                        'title' => 'Smilling Customers',
+                        'title' => 'Happy Customers',
                     ) );
                 ?>
                 <div class="rating">
@@ -188,7 +188,7 @@ get_header();
                 </div>
                 <?php
                     get_template_part( 'template-parts/testimonial', null, array(
-                        'title' => 'Smilling Customers',
+                        'title' => 'Happy Customers',
                     ) );
                 ?>
             </div>

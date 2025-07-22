@@ -109,12 +109,6 @@ get_header();
                         'id'    => 'category-holiday-seasonal',
                         'name'  => 'category_choice'
                     ) );
-
-                    get_template_part( 'template-parts/form-elements/softblue-radio', null, array(
-                        'title' => 'Christmas - Specific',
-                        'id'    => 'category-christmas-specific',
-                        'name'  => 'category_choice'
-                    ) );
                 ?>
             </div>
 
