@@ -99,9 +99,6 @@ span.button-style.tenplate-categories-label {
     margin-top: 0;
 }
 
-img.login-footer-logo-image.cart-footer-logo-image {
-    height: inherit;
-}
 
 .homepage-header-button.return-to-shop-button{
     height: 80px;
@@ -201,7 +198,7 @@ img.login-footer-logo-image.cart-footer-logo-image {
 }
 
 .handwritten-page-forms.checkout-form-container{
-    padding: 50px 50px 120px;
+    padding: 50px;
 }
 
 .place-order .homepage-header-button{
@@ -255,3 +252,46 @@ img.login-footer-logo-image.cart-footer-logo-image {
         margin-top: 1em;
         margin-bottom: 1em;
     }
+
+
+    /* Woocommerce CSS */
+
+    img.login-footer-logo-image.cart-footer-logo-image, .woocommerce img, .woocommerce-page img {
+
+    height: inherit;
+}
+
+p.coupon-instructions {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.woocommerce form .form-row .input-text, .select2-container--default .select2-selection--single {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 20px;
+    resize: vertical;
+}
+.select2-container--default .select2-selection--single{
+    padding: 10px;
+}
+.woocommerce form .form-row-first, .woocommerce form .form-row-last, .woocommerce-page form .form-row-first, .woocommerce-page form .form-row-last {
+    width: 100%;
+}
+
+.woocommerce-checkout #main{
+    min-height: 2550px;
+}
+
+ .woocommerce-checkout #payment {
+    background-color: #FAF7F3;
+    padding: 50px 50px 100px;
+}
+
+#payment .homepage-header-button {
+    float: right;
+}

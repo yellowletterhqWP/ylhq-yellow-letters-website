@@ -25,7 +25,7 @@ get_header();
         <div class="handwritten-page-forms checkout-form-container">
             <h2 class="form-heading checkout-form-heading">Your Order Details</h2>
 
-            <table class="order-details-table">
+    <table class="order-details-table">
       <tr>
         <td class="label">Product</td>
         <td class="value">Create a Custom Template x1</td>

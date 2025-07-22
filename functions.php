@@ -301,7 +301,111 @@ function custom_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'custom_excerpt_more');
 
+add_action( 'after_setup_theme', 'setup_woocommerce_support' );
 
+ function setup_woocommerce_support()
+{
+  add_theme_support('woocommerce');
+}
+
+add_filter('woocommerce_form_field', 'custom_modify_billing_address_2_label_output', 10, 4);
+function custom_modify_billing_address_2_label_output($field, $key, $args, $value) {
+    if ($key === 'billing_address_2') {
+        // Replace entire label tag
+        $custom_label = '<label for="billing_address_2" class="inputbox-label">Other Address</label>';
+
+        // Replace the label portion in the generated field HTML
+        $field = preg_replace('/<label[^>]*>.*?<\/label>/', $custom_label, $field);
+    }
+    return $field;
+}
+
+add_filter('woocommerce_checkout_fields', 'remove_name_fields_and_add_full_name');
+
+function remove_name_fields_and_add_full_name($fields) {
+    // Remove default first and last name fields
+    unset($fields['billing']['billing_first_name']);
+    unset($fields['billing']['billing_last_name']);
+
+    // Add custom full name field
+    $fields['billing']['billing_full_name'] = array(
+        'label'       => 'Full Name',
+        'required'    => true,
+        'class'       => array('form-row-wide'),
+        'clear'       => true,
+        'priority'    => 10
+    );
+
+    return $fields;
+}
+
+add_action('woocommerce_checkout_create_order', 'split_full_name_into_parts', 10, 2);
+
+function split_full_name_into_parts($order, $data) {
+    if (!empty($data['billing_full_name'])) {
+        $full_name = trim($data['billing_full_name']);
+        $parts = explode(' ', $full_name, 2);
+
+        $first_name = $parts[0];
+        $last_name = isset($parts[1]) ? $parts[1] : '';
+
+        $order->set_billing_first_name($first_name);
+        $order->set_billing_last_name($last_name);
+    }
+}
+
+add_action('woocommerce_checkout_update_customer', 'save_split_name_to_customer', 10, 2);
+
+function save_split_name_to_customer($customer, $data) {
+    if (!empty($data['billing_full_name'])) {
+        $full_name = trim($data['billing_full_name']);
+        $parts = explode(' ', $full_name, 2);
+
+        $customer->set_billing_first_name($parts[0]);
+        $customer->set_billing_last_name(isset($parts[1]) ? $parts[1] : '');
+    }
+}
+
+add_filter('woocommerce_order_formatted_billing_address', 'show_full_name_in_billing_address', 10, 2);
+
+function show_full_name_in_billing_address($address, $order) {
+    $address['first_name'] = $order->get_billing_first_name() . ' ' . $order->get_billing_last_name();
+    $address['last_name'] = ''; // clear to prevent duplication
+    return $address;
+}
+
+remove_action( 'woocommerce_checkout_order_review', 'woocommerce_checkout_payment', 20 );
+add_action( 'woocommerce_after_checkout_form', 'woocommerce_checkout_payment', 10 );
+
+remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
+
+add_filter( 'woocommerce_default_address_fields', 'change_fname_field' );
+function change_fname_field( $fields ) {
+	
+	// $fields[ 'first_name' ][ 'label' ] = 'Full Name';
+	$fields[ 'postcode' ][ 'placeholder' ] = 'Postcode / Zip';
+
+	return $fields;	
+}
+
+add_filter('woocommerce_billing_fields', 'custom_billing_fields');
+function custom_billing_fields($fields) {
+    $fields['billing_phone']['label'] = 'Phone';
+    $fields['billing_phone']['placeholder'] = 'Phone Number';
+    return $fields;
+}
+
+add_filter('woocommerce_billing_fields', 'enable_company_field');
+function enable_company_field($fields) {
+    $fields['billing_company'] = array(
+        'label'       => 'Company Name',
+        'placeholder' => 'Company (Optional)',
+        'required'    => false,
+        'class'       => array('form-row-wide'),
+        'priority'    => 25,
+    );
+    return $fields;
+}
 /**
  * Implement the Custom Header feature.
  */
