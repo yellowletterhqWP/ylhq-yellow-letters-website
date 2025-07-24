@@ -1,0 +1,128 @@
+.handwritten-page-forms.account-details-form {
+    margin-top: 45px;
+}
+
+.account-details-col-divide {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.disconnect-icon {
+  background-color: #0D84D1;
+  border-radius: 50px 50px 50px 50px;
+  padding: 10px 20px 10px 20px;
+  width: max-content;
+  z-index: 1;
+  position: relative;
+  color: #fff;
+}
+
+.social-form-label {
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 32px;
+    font-family: Helvetica;
+    margin-bottom: 15px;
+}
+
+.social-form-login-note {
+  font-size: 16px;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.social-form-login-lastdate {
+  color: #0D84D1;
+}
+
+.handwritten-page-forms.account-details-form hr {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.handwritten-page-forms.account-details-form .inputbox-container {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.handwritten-page-forms.account-details-form .inputbox-label.filled {
+    color: #2D2D2D;
+}
+
+.handwritten-page-forms.account-details-form input.inputbox.filled {
+    border-color: #D0CDCA;
+}
+
+.social-form-login-note-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .my-account-detail-wrapper.global-page-wrapper {
+    gap: 0;
+  }
+
+  .my-account-detail-wrapper .letters-iteration-page-header-title-container {
+    height: 125px;
+  }
+
+  .my-account-detail-wrapper .handwritten-page-header-title1 {
+    font-size: 40px;
+  }
+
+  .my-account-detail-wrapper .handwritten-page-header-title3 {
+    font-size: 12px;
+    margin-top: 0;
+  }
+
+  .my-account-detail-wrapper .my-order-page-content {
+    margin-top: 55px;
+    padding: 0 20px;
+  }
+
+  .my-account-detail-wrapper .my-order-page-content .breadcrumb-nav {
+    margin-bottom: 0;
+  }
+
+  .my-account-detail-wrapper .handwritten-page-forms.account-details-form {
+    margin-top: 20px;
+  }
+
+  .my-account-detail-wrapper .my-order-hr-1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .my-account-detail-wrapper .handwritten-page-forms {
+    padding: 0 20px;
+  }
+
+  .handwritten-page-divide2.account-detail-social-mobile {
+    display: block;
+  }
+
+  .my-account-detail-wrapper button.register-socialcontainer {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .social-form-login-note {
+    display: none;
+  }
+
+  .social-form-login-note-mobile {
+    display: block;
+    font-size: 10px;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+
+  .my-account-detail-wrapper .handwritten-page-divide2 {
+    display: block;
+  }
+
+  .my-account-detail-wrapper .social-form-label {
+    font-size: 16px;
+  }
+}

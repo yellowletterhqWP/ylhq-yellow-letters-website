@@ -77,11 +77,20 @@ input.inputbox {
 .strength-active-strong { background-color: #95a5a6; }
 
 input.inputbox.filled {
-  border-color: #0D84D1; /* biru */
+  border-color: #0D84D1;
+  color: #2D2D2D;
 }
 
 .inputbox-label.filled{
   color: #0D84D1;
+}
+
+input.inputbox::placeholder {
+  color: #BBBBBB;
+}
+
+.extralabel {
+  color: #2D2D2D82;
 }
 
 @media screen and (max-width: 768px) {

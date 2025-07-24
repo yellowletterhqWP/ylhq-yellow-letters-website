@@ -3,17 +3,20 @@ $id = $args['id'] ?? 'inputbox';
 $name = $args['name'] ?? $id;
 $label = $args['label'] ?? '';
 $placeholder = $args['placeholder'] ?? '';
+$value = $args['value'] ?? '';
 $type = $args['type'] ?? 'text';
 $required = $args['required'] ?? false;
 $strength = $args['strength'] ?? false;
 $extra_class = ($type === 'date') ? 'datepicker' : '';
 $icon = $args['icon'] ?? '';
+$extralabel = $args['extralabel'] ?? '';
 ?>
 
 <div class="form-group inputbox-group">
     <label for="<?php echo esc_attr($id); ?>" class="inputbox-label">
         <?php echo esc_html($label); ?>
         <?php if ($required) : ?><span class="required">(Required)</span><?php endif; ?>
+        <?php if ($extralabel !== '') : ?><span class="extralabel"><?php echo esc_attr($extralabel); ?></span><?php endif; ?>
     </label>
 
     <div class="inputbox-container">
@@ -28,6 +31,7 @@ $icon = $args['icon'] ?? '';
             name="<?php echo esc_attr($name); ?>"
             placeholder="<?php echo $placeholder; ?>"
             type="<?php echo esc_attr($type); ?>"
+            value="<?php echo esc_attr($value); ?>"
             <?php echo $required ? 'required' : ''; ?>
             autocomplete="new-password"
         />
