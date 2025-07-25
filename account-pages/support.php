@@ -6,7 +6,7 @@ get_header();
 <main id="main" class="site-main">
     <div class="register-hero-background"></div>
 
-    <div class="my-orders-page-wrapper global-page-wrapper">        
+    <div class="page-support-wrapper global-page-wrapper">        
         
         <img
         alt="RightImage6672"
@@ -36,6 +36,33 @@ get_header();
 
             <span class="my-account-content-title">Support</span>
 
+            <div class="handwritten-page-divide2">
+            <?php
+                get_template_part( 'template-parts/form-elements/whitebutton', null, array(
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/my-ticket-icon.png',
+                    'title' => 'My Tickets',
+                ) );
+                get_template_part( 'template-parts/form-elements/whitebutton', null, array(
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/privacy-icon.png',
+                    'title' => 'Privacy',
+                ) );
+            ?>
+            </div>
+        </div>
+
+        <hr />
+
+        <?php
+            get_template_part('template-parts/form-elements/inputbox', null, [
+                'id' => 'search_tickets',
+                'label' => '',
+                'placeholder' => '	Search my tickets',
+                'required' => false,
+                'icon' => get_stylesheet_directory_uri() . '/public/external/search-icon.svg',
+            ]);
+        ?>
+
+        <div class="support-logout">
             <?php
                 get_template_part( 'template-parts/form-elements/button', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/logout.svg',
@@ -43,23 +70,6 @@ get_header();
                 ) );
             ?>
         </div>
-
-        <div class="my-order-hr-1">
-        <hr />
-
-        <?php
-            get_template_part('template-parts/form-elements/inputbox', null, [
-                'id' => 'coupon',
-                'label' => '',
-                'placeholder' => '	Search by Order ID/Name',
-                'required' => false,
-                'icon' => get_stylesheet_directory_uri() . '/public/external/search-icon.svg',
-            ]);
-        ?>
-
-        <span class="my-order-no-order">
-            Your orders will appear here once placed
-        </span>
 
     </div>
 </main>

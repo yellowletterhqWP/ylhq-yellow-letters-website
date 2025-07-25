@@ -1,6 +1,74 @@
+.page-support-wrapper .handwritten-page-divide2
+{
+    gap: 10px;
+    width: 30%;
+}
 
+.support-logout {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 30px;
+}
+
+.page-support-wrapper .form-group {
+    padding: 0 30px;
+}
+
+.page-support-wrapper .support-logout {
+    margin-right: 30px;
+}
 
 @media screen and (max-width: 768px) {
 
-  
+    .page-support-wrapper.global-page-wrapper {
+        gap: 0;
+    }
+
+    .page-support-wrapper .letters-iteration-page-header-title-container {
+        height: 125px;
+    }
+
+    .page-support-wrapper .handwritten-page-header-title1 {
+        font-size: 40px;
+    }
+
+    .page-support-wrapper .handwritten-page-header-title3 {
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    .page-support-wrapper .my-order-page-content {
+        margin-top: 55px;
+        padding: 0 20px;
+    }
+
+    .page-support-wrapper .my-order-page-content .breadcrumb-nav {
+        margin-bottom: 0;
+    }
+
+    .page-support-wrapper .handwritten-page-forms.account-details-form {
+        margin-top: 20px;
+    }
+
+    .page-support-wrapper .my-order-hr-1 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .page-support-wrapper .handwritten-page-forms {
+        padding: 0 20px;
+    }
+
+    .page-support-wrapper .handwritten-page-divide2 {
+        gap: 5px;
+        width: 58%;
+    }
+
+    .page-support-wrapper .form-group {
+        padding: 0 10px;
+    }
+
+    .page-support-wrapper .support-logout {
+        margin-right: 10px;
+    }
 }

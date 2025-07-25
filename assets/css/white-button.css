@@ -1,0 +1,97 @@
+.homepage-header-white-button {
+	height: 64px;
+  display: flex;
+  border: 1px solid #0D84D1;
+  border-radius: 50px 50px 50px 50px;
+  padding: 10px 25px 10px 25px;
+  gap: 10px;
+  width: max-content;
+  z-index: 1;
+  position: relative;
+}
+
+.homepage-header-white-button a {
+	font-family: "Helvetica", Sans-serif;
+	font-size: 28px;
+	font-weight: 500;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+
+.homepage-header-white-button img {
+	width: 28px;
+}
+
+.homepage-header-white-button.is-disabled {
+  pointer-events: none; /* prevent click */
+  cursor: default;
+  background-color: #DFDFDF;
+}
+
+.homepage-header-white-button.is-disabled a {
+  color: #2D2D2D;
+  pointer-events: none;
+}
+
+.homepage-header-white-button a:focus,
+.homepage-header-white-button a:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.homepage-header-white-button button,
+.homepage-header-white-button a {
+  font-family: "Helvetica", Sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.homepage-header-white-button button:focus,
+.homepage-header-white-button button:active,
+.homepage-header-white-button a:focus,
+.homepage-header-white-button a:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.homepage-header-white-button.is-disabled {
+  pointer-events: none;
+  background-color: #DFDFDF;
+}
+
+.homepage-header-white-button.is-disabled a,
+.homepage-header-white-button.is-disabled button {
+  color: #2D2D2D;
+  pointer-events: none;
+}
+
+.homepage-header-white-button button {
+    color: #0D84D1;
+  }
+
+@media screen and (max-width: 768px) {
+
+  .homepage-header-white-button {
+    height: 36px;
+  }
+
+  .homepage-header-white-button button {
+    font-size: 14px;
+  }
+}

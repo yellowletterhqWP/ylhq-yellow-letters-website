@@ -1,0 +1,74 @@
+.page-store-credits-wrapper .handwritten-page-divide2
+{
+    gap: 10px;
+    width: 30%;
+}
+
+.support-logout {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 30px;
+}
+
+.page-store-credits-wrapper .form-group {
+    padding: 0 30px;
+}
+
+.page-store-credits-wrapper .support-logout {
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .page-store-credits-wrapper.global-page-wrapper {
+        gap: 0;
+    }
+
+    .page-store-credits-wrapper .letters-iteration-page-header-title-container {
+        height: 125px;
+    }
+
+    .page-store-credits-wrapper .handwritten-page-header-title1 {
+        font-size: 40px;
+    }
+
+    .page-store-credits-wrapper .handwritten-page-header-title3 {
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    .page-store-credits-wrapper .my-order-page-content {
+        margin-top: 55px;
+        padding: 0 20px;
+    }
+
+    .page-store-credits-wrapper .my-order-page-content .breadcrumb-nav {
+        margin-bottom: 0;
+    }
+
+    .page-store-credits-wrapper .handwritten-page-forms.account-details-form {
+        margin-top: 20px;
+    }
+
+    .page-store-credits-wrapper .my-order-hr-1 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .page-store-credits-wrapper .handwritten-page-forms {
+        padding: 0 20px;
+    }
+
+    .page-store-credits-wrapper .handwritten-page-divide2 {
+        gap: 5px;
+        width: 58%;
+    }
+
+    .page-store-credits-wrapper .form-group {
+        padding: 0 10px;
+    }
+
+    .page-store-credits-wrapper.support-logout {
+        margin-right: 10px;
+    }
+}

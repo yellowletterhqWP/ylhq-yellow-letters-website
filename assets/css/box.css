@@ -60,6 +60,12 @@
   border-radius: 30px;
 }
 
+.box-content-inner a {
+    color: #2D2D2D;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
 
 .box-content-inner h3 {
