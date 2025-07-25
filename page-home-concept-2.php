@@ -42,21 +42,21 @@ get_header();
             <?php
                 get_template_part( 'template-parts/box', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/env-icon.svg',
-                    'title' => 'Pick Your Mailer',
+                    'title' => '#1 Pick Your Mailer',
                     'description' => 'Choose a letter, postcard or greeting card that fits your style'
                 ) );
             ?>
             <?php
                 get_template_part( 'template-parts/box', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/list-icon.svg',
-                    'title' => 'Upload Your List',
+                    'title' => '#2 Upload Your List',
                     'description' => 'Easily upload a CSV or Excel file with your contacts.'
                 ) );
             ?>
             <?php
                 get_template_part( 'template-parts/box', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/flyarrow-icon.svg',
-                    'title' => 'Send Your Campaign',
+                    'title' => '#3 Send Your Campaign',
                     'description' => 'Hit send and we take care of the rest — printing to postage.'
                 ) );
             ?>
