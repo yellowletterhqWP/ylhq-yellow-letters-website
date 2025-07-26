@@ -1,4 +1,4 @@
-.homepage-header-button {
+.blue-default-button {
 	height: 64px;
 	display: flex;
 	background-color: #0D84D1;
@@ -8,9 +8,10 @@
 	width: max-content;
 	z-index: 1;
 	position: relative;
+  align-items: center;
 }
 
-.homepage-header-button a {
+/* .blue-default-button a {
 	font-family: "Helvetica", Sans-serif;
 	font-size: 28px;
 	font-weight: 500;
@@ -21,31 +22,33 @@
 	width: 100%;
 	height: 100%;
 	text-decoration: none;
-}
+  align-items: center;
+} */
 
-.homepage-header-button img {
+.blue-default-button img {
 	width: 28px;
+  max-height: 70%;
 }
 
-.homepage-header-button.is-disabled {
+.blue-default-button.is-disabled {
   pointer-events: none; /* prevent click */
   cursor: default;
   background-color: #DFDFDF;
 }
 
-.homepage-header-button.is-disabled a {
+.blue-default-button.is-disabled a {
   color: #2D2D2D;
   pointer-events: none;
 }
 
-.homepage-header-button a:focus,
-.homepage-header-button a:active {
+.blue-default-button a:focus,
+.blue-default-button a:active {
   outline: none;
   box-shadow: none;
 }
 
-.homepage-header-button button,
-.homepage-header-button a {
+.blue-default-button button,
+.blue-default-button a {
   font-family: "Helvetica", Sans-serif;
   font-size: 28px;
   font-weight: 500;
@@ -62,32 +65,32 @@
   padding: 0;
 }
 
-.homepage-header-button button:focus,
-.homepage-header-button button:active,
-.homepage-header-button a:focus,
-.homepage-header-button a:active {
+.blue-default-button button:focus,
+.blue-default-button button:active,
+.blue-default-button a:focus,
+.blue-default-button a:active {
   outline: none;
   box-shadow: none;
 }
 
-.homepage-header-button.is-disabled {
+.blue-default-button.is-disabled {
   pointer-events: none;
   background-color: #DFDFDF;
 }
 
-.homepage-header-button.is-disabled a,
-.homepage-header-button.is-disabled button {
+.blue-default-button.is-disabled a,
+.blue-default-button.is-disabled button {
   color: #2D2D2D;
   pointer-events: none;
 }
 
 @media screen and (max-width: 768px) {
 
-  .homepage-header-button {
+  .blue-default-button {
     height: 36px;
   }
 
-  .homepage-header-button button, .homepage-header-button a {
+  .blue-default-button button, .blue-default-button a {
     font-size: 14px;    
   }
 }

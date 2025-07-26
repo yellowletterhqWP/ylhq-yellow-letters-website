@@ -41,18 +41,18 @@
 			<section aria-labelledby="footer-shop">
 				<h4 class="footer-header">Shop</h4>
 				<ul class="footer-menu">
-				<li><a href="#">Letters</a></li>
-				<li><a href="/about-us">Postcards</a></li>
-				<li><a href="/blogs">Handwritten Cards</a></li>
-				<li><a href="/podio">Custom Template</a></li>
+				<li><a href="/letters-iteration-1">Letters</a></li>
+				<li><a href="/postcard-final">Postcards</a></li>
+				<li><a href="/handwritten-cards-final">Handwritten Cards</a></li>
+				<li><a href="/custom-template-final">Custom Template</a></li>
 				</ul>
 			</section>
 			<section aria-labelledby="footer-shop">
 				<h4 class="footer-header">Store</h4>
 				<ul class="footer-menu">
-				<li><a href="#">My Account</a></li>
-				<li><a href="/about-us">Checkout</a></li>
-				<li><a href="/blogs">Cart</a></li>
+				<li><a href="my-account">My Account</a></li>
+				<li><a href="/checkout">Checkout</a></li>
+				<li><a href="/cart">Cart</a></li>
 				</ul>
 			</section>
 			<section aria-labelledby="footer-contact">

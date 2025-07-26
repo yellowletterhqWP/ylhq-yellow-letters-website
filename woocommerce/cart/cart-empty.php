@@ -50,7 +50,7 @@ do_action( 'woocommerce_cart_is_empty' );
 ?>
 
 	<div class="register-button">
-		<div id="forgot-password-button" class="homepage-header-button return-to-shop-button">
+		<div id="forgot-password-button" class="blue-default-button return-to-shop-button">
 
 			<a class="wc-backward<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
 				<?php

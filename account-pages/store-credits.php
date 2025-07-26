@@ -29,7 +29,7 @@ get_header();
                 get_template_part('template-parts/form-elements/breadcrumb', null, [
                 'items' => [
                     ['label' => 'My Account', 'url' => '/my-account'],
-                    ['label' => 'Support']
+                    ['label' => 'Store Credits']
                 ]
                 ]);
             ?>
@@ -38,8 +38,10 @@ get_header();
 
             <?php
                 get_template_part( 'template-parts/form-elements/whitebutton', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/my-ticket-icon.png',
-                    'title' => 'My Tickets',
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/credit-history.png',
+                    'title' => 'Credits History',
+                    'type' => 'link',
+                    'url' => site_url('/my-account/?section=credit-history')
                 ) );
             ?>
         </div>

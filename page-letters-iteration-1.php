@@ -335,6 +335,7 @@ get_header();
 
             get_template_part('template-parts/form-elements/upload-box', null, [
                 'label' => 'Drag and drop your files needed: list, picture, logo or example of a preferred mail piece',
+                'description' => 'Please make sure the file format is CSV (XLS and XLSX are not accepted)*'
             ]);
             ?>
 

@@ -100,13 +100,13 @@ span.button-style.tenplate-categories-label {
 }
 
 
-.homepage-header-button.return-to-shop-button{
+.blue-default-button.return-to-shop-button{
     height: 80px;
     padding: 18px 40px 20px 40px;
     margin-bottom: 6em;
 }
 
-.homepage-header-button.return-to-shop-button a {
+.blue-default-button.return-to-shop-button a {
     font-size: 24px;
     font-weight: bold;
 }
@@ -169,7 +169,7 @@ span.button-style.tenplate-categories-label {
     color: #0d84d1;
 }
 
-.handwritten-page-last.custom-tenplate-last .homepage-header-button{
+.handwritten-page-last.custom-tenplate-last .blue-default-button{
     bottom: -49px;
 }
 
@@ -193,7 +193,7 @@ span.button-style.tenplate-categories-label {
     font-size: 32px;
 }
 
-.handwritten-page-last.place-order .homepage-header-button{
+.handwritten-page-last.place-order .blue-default-button{
     bottom: -100px;
 }
 
@@ -201,7 +201,7 @@ span.button-style.tenplate-categories-label {
     padding: 50px;
 }
 
-.place-order .homepage-header-button{
+.place-order .blue-default-button{
     padding: 18px 40px 20px;
 }
 
@@ -292,6 +292,6 @@ p.coupon-instructions {
     padding: 50px 50px 100px;
 }
 
-#payment .homepage-header-button {
+#payment .blue-default-button {
     float: right;
 }

@@ -9,7 +9,7 @@ $allowed_pages = [
   'my-orders', 
   'my-account-details',
   'support', 
-  'support/my-tickets', 
+  'support/tickets',
   'support/submit-ticket',
   'store-credits',
   'other-options',

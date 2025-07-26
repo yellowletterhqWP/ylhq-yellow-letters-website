@@ -47,7 +47,7 @@ if ( ! wc_coupons_enabled() ) { // @codingStandardsIgnoreLine.
             </div>
         </div>
 
-        <div class="homepage-header-button" data-disabled="false">
+        <div class="blue-default-button" data-disabled="false">
             <button type="submit" name="apply_coupon">
                 <?php esc_html_e( 'Apply coupon', 'woocommerce' ); ?>
             </button>   

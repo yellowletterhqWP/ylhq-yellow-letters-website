@@ -19,6 +19,104 @@
   margin-bottom: 50px;
 }
 
+.submit-ticket-wrapper .handwritten-page-forms.account-details-form {
+  margin-top:0;
+}
+
+.submit-ticket-wrapper .handwritten-page-divide2.header-button-tab {
+  gap: 10px;
+}
+
+.submit-ticket-wrapper .handwritten-page-divide2.header-button-tab > *, 
+.handwritten-page-divide2.other-options-div > *,
+.handwritten-page-divide2.other-options-custom-header-name > * {
+  flex: unset;
+}
+
+.subscriptions-message {
+  font-size: 32px;
+  color: #2D2D2D8A;
+  text-align: left;
+}
+
+.empty-space {
+  width: 20%;
+}
+
+.handwritten-page-forms.other-options-form span.my-account-content-title {
+  text-align: left;
+}
+
+.other-options-form, .submit-ticket-form {
+  margin-bottom: 30px;
+}
+
+.handwritten-page-divide2.other-options-custom-header-name {
+  justify-content: end;
+}
+
+/* calendar */
+.calendar-container {
+  border-radius: 12px;
+  font-family: sans-serif;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.calendar-controls button {
+  background: #007BDB;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.google-sync {
+  background: white;
+  border: 1px solid #ccc;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+}
+
+.calendar-table {
+  width: 100%;
+  margin-top: 16px;
+  border-collapse: collapse;
+}
+
+.calendar-table th {
+  background: #007BDB;
+  color: white;
+  padding: 10px;
+}
+
+.calendar-table td {
+  text-align: center;
+  padding: 14px 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.calendar-table td.today {
+  background: #007BDB;
+  color: white;
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 768px) {
   .grid-box-3 {
     grid-template-columns: repeat(2, 1fr);

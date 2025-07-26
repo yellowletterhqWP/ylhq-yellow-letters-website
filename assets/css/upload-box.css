@@ -27,7 +27,7 @@
   color: #bbb;
 }
 
-.uploadgroup .homepage-header-button {
+.uploadgroup .blue-default-button {
   margin-top: 20px;
 }
 
@@ -40,4 +40,9 @@
   color: #2D2D2D;
   font-size: 20px;
   text-align: left;
+}
+
+span.extlist {
+  color: #2D2D2D;
+  font-size: 16px;
 }

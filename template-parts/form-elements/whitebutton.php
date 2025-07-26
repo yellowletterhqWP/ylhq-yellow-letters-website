@@ -2,16 +2,18 @@
 $id = $args['id'] ?? '';
 $icon = $args['icon'] ?? '';
 $title = $args['title'] ?? '';
-$disabled = $args['disabled'] ?? false;
+//$disabled = $args['disabled'] ?? false;
 $type = $args['type'] ?? 'button'; // 'button', 'submit', or 'link'
+$url = $args['url'] ?? '#';
+$active = $args['set-active'] ?? false;
 ?>
 
 <div <?php echo $id === '' ? '' : 'id="' . esc_attr($id) . '"'; ?>
-    class="homepage-header-white-button <?php echo $disabled ? 'is-disabled' : ''; ?>"
+    class="homepage-header-white-button <?php /* echo $disabled ? 'is-disabled' : ''; */ ?> <?php echo $active ? 'is-active' : ''; ?>"
     data-disabled="<?php echo $disabled ? 'true' : 'false'; ?>">
 
     <?php if ($type === 'link') : ?>
-        <a href="#" <?php echo $disabled ? 'tabindex="-1"' : ''; ?>>
+        <a href="<?php echo esc_url($url); ?>" <?php echo $disabled ? 'tabindex="-1"' : ''; ?>>
             <?php echo esc_html($title); ?>
         </a>
     <?php else : ?>

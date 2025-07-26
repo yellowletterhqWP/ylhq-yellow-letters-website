@@ -23,3 +23,28 @@
 .form-group select option {
   padding: 5px 10px;
 }
+
+.custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.custom-select-wrapper select {
+  appearance: none;         /* important! */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  padding-right: 40px;      /* space for the icon */
+}
+
+.select-arrow {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  width: 16px;
+  height: auto;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease;
+}

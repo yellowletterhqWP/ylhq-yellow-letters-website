@@ -7,7 +7,7 @@ $type = $args['type'] ?? 'button'; // 'button', 'submit', or 'link'
 ?>
 
 <div <?php echo $id === '' ? '' : 'id="' . esc_attr($id) . '"'; ?>
-    class="homepage-header-button <?php echo $disabled ? 'is-disabled' : ''; ?>"
+    class="blue-default-button <?php echo $disabled ? 'is-disabled' : ''; ?>"
     data-disabled="<?php echo $disabled ? 'true' : 'false'; ?>">
 
     <?php if ($type === 'link') : ?>

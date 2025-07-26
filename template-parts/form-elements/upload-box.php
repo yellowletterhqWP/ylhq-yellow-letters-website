@@ -1,5 +1,9 @@
 <?php
 $label = $args['label'] ?? 'Upload your files';
+$placeholder = $args['label'] ?? '';
+$description = $args['description'] ?? '';
+$ext_list = $args['ext_list'] ?? '';
+$type = $args['type'] ?? 'blue'; //another opt is white
 ?>
 
 <div class="form-group uploadgroup">
@@ -16,14 +20,22 @@ $label = $args['label'] ?? 'Upload your files';
 				class="uploadbox-icon"
 			/>
       </div>
-      <span>Drop or Drag your list here. Add as many lists as you want to make one large list:</span>
+      <span><?php echo esc_html($placeholder); ?></span>
+      <span class="extlist"><?php echo esc_html($ext_list); ?></span>
       <?php
-      get_template_part( 'template-parts/form-elements/button', null, array(
-          'icon' => '',
-          'title' => 'Upload files',
-      ) );
+      if($type == 'white'){
+        get_template_part( 'template-parts/form-elements/whitebutton', null, array(
+            'icon' => '',
+            'title' => 'Upload files',
+        ) );
+      }else{
+        get_template_part( 'template-parts/form-elements/button', null, array(
+            'icon' => '',
+            'title' => 'Upload files',
+        ) );
+      }
       ?>
     </div>
   </div>
-  <span class="upload-instructions">Please make sure the file format is CSV (XLS and XLSX are not accepted)*</span>
+  <span class="upload-instructions"><?php echo esc_html($description); ?></span>
 </div>

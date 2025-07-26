@@ -13,16 +13,21 @@ $placeholder = $args['placeholder'] ?? 'Please select';
     <?php echo esc_html($label); ?>
     <?php if ($required) : ?><span class="required">(Required)</span><?php endif; ?>
   </label>
-  <select id="<?php echo esc_attr($id); ?>" name="<?php echo esc_attr($name); ?>" <?php echo $required ? 'required' : ''; ?>>
-    <option value=""><?php echo esc_html($placeholder); ?></option>
-    <?php foreach($options as $opt): 
-      $value = esc_attr($opt['value']);
-      $text = esc_html($opt['label']);
-      $isSelected = ($selected === $opt['value']) ? 'selected' : '';
-    ?>
-      <option value="<?php echo $value; ?>" <?php echo $isSelected; ?>>
-        <?php echo $text; ?>
-      </option>
-    <?php endforeach; ?>
-  </select>
+
+  <div class="custom-select-wrapper">
+    <select id="<?php echo esc_attr($id); ?>" name="<?php echo esc_attr($name); ?>" <?php echo $required ? 'required' : ''; ?>>
+      <option value=""><?php echo esc_html($placeholder); ?></option>
+      <?php foreach($options as $opt): 
+        $value = esc_attr($opt['value']);
+        $text = esc_html($opt['label']);
+        $isSelected = ($selected === $opt['value']) ? 'selected' : '';
+      ?>
+        <option value="<?php echo $value; ?>" <?php echo $isSelected; ?>>
+          <?php echo $text; ?>
+        </option>
+      <?php endforeach; ?>
+    </select>
+
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/simple-arrow-down.png" class="select-arrow" alt="Arrow" />
+  </div>
 </div>
