@@ -41,7 +41,7 @@ get_header();
                     'icon' => get_stylesheet_directory_uri() . '/public/external/credit-history.png',
                     'title' => 'Credits History',
                     'type' => 'link',
-                    'url' => site_url('/my-account/?section=store-credits/credit-history')
+                    'url' => site_url('/my-account/?section=credit-history')
                 ) );
             ?>
         </div>

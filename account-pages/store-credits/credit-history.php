@@ -29,27 +29,19 @@ get_header();
                 get_template_part('template-parts/form-elements/breadcrumb', null, [
                 'items' => [
                     ['label' => 'My Account', 'url' => '/my-account'],
-                    ['label' => 'Store Credits']
+                    ['label' => 'Store Credits', 'url' => '/store-credits'],
+                    ['label' => 'Credits History']
                 ]
                 ]);
             ?>
 
-            <span class="my-account-content-title">Store Credits</span>
-
-            <?php
-                get_template_part( 'template-parts/form-elements/whitebutton', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/credit-history.png',
-                    'title' => 'Credits History',
-                    'type' => 'link',
-                    'url' => site_url('/my-account/?section=store-credits/credit-history')
-                ) );
-            ?>
+            <span class="my-account-content-title">Credits History</span>
         </div>
 
         <hr />
 
         <span class="my-order-no-order">
-            No credits available at this time
+            Store credit coupons not available
         </span>
 
     </div>

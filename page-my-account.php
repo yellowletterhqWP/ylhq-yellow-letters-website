@@ -12,6 +12,8 @@ $allowed_pages = [
   'support/tickets',
   'support/submit-ticket',
   'store-credits',
+  'store-credits/coupon-card',
+  'store-credits/credit-history',
   'other-options',
   'zap-coming-soon'
 ];
