@@ -36,14 +36,14 @@ get_header();
                 'icon' => get_stylesheet_directory_uri() . '/public/external/list-icon.svg',
                 'title' => 'My Account Details',
                 'description' => 'Update Your Account Details Anytime',
-                'link' => '/my-account-detail'
+                'link' => site_url('/my-account/?section=my-account-details')
             ) );
         
             get_template_part( 'template-parts/box', null, array(
                 'icon' => get_stylesheet_directory_uri() . '/public/external/flyarrow-icon.svg',
                 'title' => 'Support',
                 'description' => "Support. That's Fast, Friendly, and Reliable.",
-                'link' => '/support'
+                'link' => site_url('/my-account/?section=support')
             ) );
         
             get_template_part( 'template-parts/box', null, array(
@@ -56,14 +56,14 @@ get_header();
                 'icon' => get_stylesheet_directory_uri() . '/public/external/list-icon.svg',
                 'title' => 'Store Credits',
                 'description' => 'Use Your Store Credit on Your Next Purchase.',
-                'link' => '/store-credits'
+                'link' => site_url('/my-account/?section=store-credits')
             ) );
         
             get_template_part( 'template-parts/box', null, array(
                 'icon' => get_stylesheet_directory_uri() . '/public/external/flyarrow-icon.svg',
                 'title' => 'Other Options',
                 'description' => "Explore Other Options Available to You.",
-                'link' => '/other-options'
+                'link' => site_url('/my-account/?section=other-options')
             ) );
         ?>
         <div></div>
