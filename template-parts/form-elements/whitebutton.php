@@ -13,12 +13,12 @@ $active = $args['set-active'] ?? false;
     data-disabled="<?php echo $disabled ? 'true' : 'false'; ?>">
 
     <?php if ($type === 'link') : ?>
-        <a href="<?php echo esc_url($url); ?>" <?php echo $disabled ? 'tabindex="-1"' : ''; ?>>
+        <a href="<?php echo esc_url($url); ?>" <?php /* echo $disabled ? 'tabindex="-1"' : ''; */ ?>>
             <?php echo esc_html($title); ?>
         </a>
     <?php else : ?>
         <button type="<?php echo esc_attr($type); ?>"
-                <?php echo $disabled ? 'disabled tabindex="-1"' : ''; ?>>
+                <?php /* echo $disabled ? 'disabled tabindex="-1"' : ''; */ ?>>
             <?php echo esc_html($title); ?>
         </button>
     <?php endif; ?>
