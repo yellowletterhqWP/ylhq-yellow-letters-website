@@ -57,9 +57,38 @@ get_header();
             ]);
         ?>
 
-        <span class="my-order-no-order">
-            Your orders will appear here once placed
-        </span>
+        <?php
+        $current_user_id = get_current_user_id();
+
+        $customer_orders = wc_get_orders( array(
+            'customer' => $current_user_id,
+            'limit'    => -1, // ambil semua order
+            'orderby'  => 'date',
+            'order'    => 'DESC',
+        ) );
+        ?>
+
+        <?php if ( ! empty( $customer_orders ) ) : ?>
+        <ul class="my-orders-list">
+            <?php
+            foreach ( $customer_orders as $order ) {
+                echo '<li class="order-item">';
+                echo '<strong>Order #' . esc_html( $order->get_order_number() ) . '</strong><br>';
+                echo 'Tanggal: ' . esc_html( wc_format_datetime( $order->get_date_created() ) ) . '<br>';
+                echo 'Status: ' . esc_html( wc_get_order_status_name( $order->get_status() ) ) . '<br>';
+                echo '<a href="' . esc_url( $order->get_view_order_url() ) . '">Lihat Detail</a>';
+                echo '</li>';
+            }
+            ?>
+        </ul>
+        <?php else : ?>
+            <span class="my-order-no-order">
+                Your orders will appear here once placed
+            </span>
+        <?php endif; ?>
+
+
+        ?>
 
     </div>
 </main>

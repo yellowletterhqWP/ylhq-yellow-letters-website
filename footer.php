@@ -31,7 +31,7 @@
 			<section aria-labelledby="footer-quick-links">
 				<h4 class="footer-header">Quick Links</h4>
 				<ul class="footer-menu">
-				<li><a href="#">Home</a></li>
+				<li><a href="<?php echo site_url(); ?>">Home</a></li>
 				<li><a href="/about-us">About Us</a></li>
 				<li><a href="/blogs">Blogs</a></li>
 				<li><a href="/podio">Podio</a></li>

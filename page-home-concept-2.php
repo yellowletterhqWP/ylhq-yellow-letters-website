@@ -149,7 +149,7 @@ get_header();
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/home-concept2-campaign.png" />
             <div class="campaign-wrapper">
                 <span class="campaign-header-1">Start Your Campaign Today</span>
-                <span class="campaign-header-2">Yellow Letters makes direct mail marketing quic and easy</span>
+                <span class="campaign-header-2">Yellow Letters makes direct mail marketing quick and easy</span>
                 
                 <?php
                     get_template_part( 'template-parts/form-elements/button', null, array(

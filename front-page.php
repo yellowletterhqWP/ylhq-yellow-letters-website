@@ -69,7 +69,7 @@
                         'icon' => get_stylesheet_directory_uri() . '/public/external/letters-icon.png',
                         'title' => 'Letters',
                         'price' => '0.723',
-                        'link' => site_url('/index.php/letters')
+                        'link' => site_url('/letters-iteration-1')
                     ) );
                 ?>
                 <?php
@@ -77,7 +77,7 @@
                         'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
                         'title' => 'Postcards',
                         'price' => '0.509',
-                        'link' => site_url('/index.php/postcards/')
+                        'link' => site_url('/postcard-final/')
                     ) );
                 ?>
                 <?php
@@ -85,7 +85,7 @@
                         'icon' => get_stylesheet_directory_uri() . '/public/external/handwritten-icon.png',
                         'title' => 'Handwritten Cards',
                         'price' => '1.051',
-                        'link' => site_url('/index.php/handwritten-cards')
+                        'link' => site_url('/handwritten-cards/final')
                     ) );
                 ?>
                 <?php
@@ -93,7 +93,7 @@
                         'icon' => get_stylesheet_directory_uri() . '/public/external/custom-icon.png',
                         'title' => 'Custom Templates',
                         'price' => '1.051',
-                        'link' => site_url('/index.php/custom-templates')
+                        'link' => site_url('/custom-template-final')
                     ) );
                 ?>
             </div>
@@ -141,7 +141,7 @@
             </div>
             
             <span class="homepage-header-title2b">Start Your Campaign Today</span>
-            <span class="homepage-header-title4">Yellow Letters makes direct mail marketing quic and easy</span>
+            <span class="homepage-header-title4">Yellow Letters makes direct mail marketing quick and easy</span>
             
             <?php
                 /* get_template_part( 'template-parts/form-elements/button', null, array(
@@ -155,7 +155,7 @@
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/header2.svg" />
             <div class="campaign-wrapper">
                 <span class="campaign-header-1">Start Your Campaign Today</span>
-                <span class="campaign-header-2">Yellow Letters makes direct mail marketing quic and easy</span>
+                <span class="campaign-header-2">Yellow Letters makes direct mail marketing quick and easy</span>
                 
                 <?php
                     get_template_part( 'template-parts/form-elements/button', null, array(
