@@ -33,6 +33,10 @@
 	<?php /* ylhq_yellow_letter_website_post_thumbnail(); */ ?>
 	</div> -->
 
+	<p class="post-meta">
+	By <?php the_author(); ?> | <?php echo get_the_date(); ?>
+	</p>
+
 	<div class="entry-content">
 		<?php
 		the_content(
