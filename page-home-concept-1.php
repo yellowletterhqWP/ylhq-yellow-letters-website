@@ -1,44 +1,34 @@
-<?php
-/* Template Name: Home Concept 2 */
-get_header();
-?>
+<?php get_header(); ?>
 
 <main id="main" class="site-main">
-    <div class="register-hero-background"></div>
-
-    <div class="home-concept-2 global-page-wrapper">        
+    <div class="homepage-container-1 global-page-wrapper">
         
-        <img
-        alt="RightImage6672"
-        src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/rightimage6672-cck6-300w.png"
-        class="register-right-image"
-        />
-        <img
-        alt="LeftImage6672"
-        src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/leftimage6672-vfcz-300w.png"
-        class="register-left-image"
-        />
-
-        <div class="home-concept2-header-title-container">
-            <span class="home-concept2-header1">Tired of ineffective real estate campaigns? we've been there too</span>
-
-            <div class="frontpage-header-title">
-                <span class="homepage-header-title1">Premium,</span>                        
-                <span class="homepage-header-title2">cost-effective marketing</span>
-                <span class="homepage-header-title3">direct to sellers.</span>
+        <div class="homepage-container-1-inner">
+            <div class="homepage-header-image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/header-image.png" />
             </div>
-                
-            <span class="homepage-header-title4">We save your budget and your bandwidth with premium direct mail that drives immediate response.</span>
             
-            <?php
-                get_template_part( 'template-parts/form-elements/button', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/Vector.svg',
-                    'title' => 'See Mail Options',
-                ) );
-            ?>
+            <div class="frontpage-header-title-container-hero">
+                <span class="homepage-header1">Tired of ineffective real estate campaigns? we've been there too</span>
+                
+                <div class="frontpage-header-title">
+                    <span class="homepage-header-title1">Premium,&nbsp;</span>
+                    <span class="homepage-header-title2">cost-effective marketing&nbsp;</span>
+                    <span class="homepage-header-title3">direct to sellers.</span>              
+                </div>
+                    
+                <span class="homepage-header-title4">We save your budget and your bandwidth with premium direct mail that drives immediate response.</span>
+                
+                <?php
+                    get_template_part( 'template-parts/form-elements/button', null, array(
+                        'icon' => get_stylesheet_directory_uri() . '/public/external/Vector.svg',
+                        'title' => 'See Mail Options',
+                    ) );
+                ?>
+            </div>
         </div>
 
-        <div class="homepage-concept2-grid-header">
+        <div class="homepage-grid-header">
             <?php
                 get_template_part( 'template-parts/box', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/env-icon.svg',
@@ -62,7 +52,7 @@ get_header();
             ?>
         </div>
 
-        <div class="homepage-campaign2">
+        <div class="homepage-campaign">
             <?php
                 get_template_part( 'template-parts/form-elements/red-label', null, array(
                     'title' => 'Pick your mailer',
@@ -75,35 +65,35 @@ get_header();
 
             <div class="homepage-grid-product">
                 <?php
-                    get_template_part( 'template-parts/product-2', null, array(
-                        'icon' => get_stylesheet_directory_uri() . '/public/external/sealed_letter_and_paper.png',
+                    get_template_part( 'template-parts/product', null, array(
+                        'icon' => get_stylesheet_directory_uri() . '/public/external/letters-icon.png',
                         'title' => 'Letters',
                         'price' => '0.723',
-                        'link' => site_url('/index.php/letters')
+                        'link' => site_url('/letters-iteration-1')
                     ) );
                 ?>
                 <?php
-                    get_template_part( 'template-parts/product-2', null, array(
-                        'icon' => get_stylesheet_directory_uri() . '/public/external/82450680_9969987.png',
+                    get_template_part( 'template-parts/product', null, array(
+                        'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
                         'title' => 'Postcards',
                         'price' => '0.509',
-                        'link' => site_url('/index.php/postcards/')
+                        'link' => site_url('/postcard-final/')
                     ) );
                 ?>
                 <?php
-                    get_template_part( 'template-parts/product-2', null, array(
-                        'icon' => get_stylesheet_directory_uri() . '/public/external/envelope_on_table.png',
+                    get_template_part( 'template-parts/product', null, array(
+                        'icon' => get_stylesheet_directory_uri() . '/public/external/handwritten-icon.png',
                         'title' => 'Handwritten Cards',
                         'price' => '1.051',
-                        'link' => site_url('/index.php/handwritten-cards')
+                        'link' => site_url('/handwritten-cards/final')
                     ) );
                 ?>
                 <?php
-                    get_template_part( 'template-parts/product-2', null, array(
-                        'icon' => get_stylesheet_directory_uri() . '/public/external/envelope_and_stationery.png',
+                    get_template_part( 'template-parts/product', null, array(
+                        'icon' => get_stylesheet_directory_uri() . '/public/external/custom-icon.png',
                         'title' => 'Custom Templates',
                         'price' => '1.051',
-                        'link' => site_url('/index.php/custom-templates')
+                        'link' => site_url('/custom-template-final')
                     ) );
                 ?>
             </div>
@@ -144,9 +134,25 @@ get_header();
                 ?>
             </div>
         </div>
-        
-        <div class="homepage-concept2-header-image">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/home-concept2-campaign.png" />
+
+        <!-- <div class="homepage-container-1-inner inner2">
+            <div class="homepage-header-image">
+                <img src="<?php /* echo get_stylesheet_directory_uri(); */ ?>/public/external/header2.svg" />
+            </div>
+            
+            <span class="homepage-header-title2b">Start Your Campaign Today</span>
+            <span class="homepage-header-title4">Yellow Letters makes direct mail marketing quick and easy</span>
+            
+            <?php
+                /* get_template_part( 'template-parts/form-elements/button', null, array(
+                    'icon' => '',
+                    'title' => 'Get Started',
+                ) ); */
+            ?>
+        </div> -->
+
+        <div class="homepage-concept1-header-image">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/header2.svg" />
             <div class="campaign-wrapper">
                 <span class="campaign-header-1">Start Your Campaign Today</span>
                 <span class="campaign-header-2">Yellow Letters makes direct mail marketing quick and easy</span>
@@ -160,38 +166,29 @@ get_header();
             </div>
         </div>
 
-        <div class="testimony-helper">
-            <div class="testimony-background-wrapper">
-            <img
-                alt="Testimony"
-                src="<?php echo get_stylesheet_directory_uri(); ?>/public/external/testimony-background.png"
-                class="testimony-background-image"
-            />
+        <div class="homepage-campaign homepage-testimony-div">
+            <?php
+                get_template_part( 'template-parts/form-elements/button', null, array(
+                    'icon' => '',
+                    'title' => 'Rate us',
+                ) );
+            ?>
+            <?php
+                get_template_part( 'template-parts/form-elements/red-label', null, array(
+                    'title' => 'Happy Customers',
+                ) );
+            ?>
+            <div class="rating">
+                <span class="rating-score">5.0</span>
+                <span class="stars">★★★★★</span>
+                <span class="divider">|</span>
+                <span class="review-count">195 reviews</span>
             </div>
-            <div class="testimony-div">
-                <?php
-                    get_template_part( 'template-parts/form-elements/button', null, array(
-                        'icon' => '',
-                        'title' => 'Rate us',
-                    ) );
-                ?>
-                <?php
-                    get_template_part( 'template-parts/form-elements/red-label', null, array(
-                        'title' => 'Happy Customers',
-                    ) );
-                ?>
-                <div class="rating">
-                    <span class="rating-score">5.0</span>
-                    <span class="stars">★★★★★</span>
-                    <span class="divider">|</span>
-                    <span class="review-count">195 reviews</span>
-                </div>
-                <?php
-                    get_template_part( 'template-parts/testimonial', null, array(
-                        'title' => 'Happy Customers',
-                    ) );
-                ?>
-            </div>
+            <?php
+                get_template_part( 'template-parts/testimonial', null, array(
+                    'title' => 'Happy Customers',
+                ) );
+            ?>
         </div>
     </div>
 </main>

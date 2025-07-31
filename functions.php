@@ -408,16 +408,17 @@ function enable_company_field($fields) {
 }
 
 function ylhq_redirect_non_logged_users() {
-    if ( is_page() && !is_user_logged_in() ) {
+    if ( !is_user_logged_in() && is_page() && !is_front_page() ) {
         // Daftar halaman yang tetap bisa diakses meski belum login
-        $allowed_pages = array( '
-            index', 'handwritten-cards', 'about', 'forgot-password', 'contact-us', 'login', 
-            'register', 'privacy-policy', 'home-concept-2', 'shop-2', 'faq', 'blogs', 'terms-conditions',
+        $allowed_pages = array(
+            'index', 'handwritten-cards', 'about', 'forgot-password', 'contact-us', 'login', 
+            'register', 'privacy-policy', 'shop-2', 'faq', 'blogs', 'terms-conditions', 
             'letters-iteration-1', 'handwritten-cards-final', 'postcard-final', 'custom-template-final'
         );
 
+
         if ( !is_page( $allowed_pages ) ) {
-            wp_redirect( wp_login_url() ); // Atau redirect ke halaman custom login kamu
+            wp_redirect( home_url( '/index.php/login' ) ); // Atau redirect ke halaman custom login kamu
             exit;
         }
     }
