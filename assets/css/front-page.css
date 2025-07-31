@@ -224,6 +224,24 @@
     justify-content: center;
 }
 
+.privacy-policy-content {
+    padding: 50px;
+    font-size: clamp(24px, 2vw, 30px);
+    line-height: 40px;
+    color: #2D2D2DBD;
+    font-family: Helvetica;
+}
+
+.policy-term-wrapper.custom-register-wrapper h1 {
+    margin-top: 100px;
+    font-size: 85px;
+    margin-bottom: 150px;
+}
+
+.policy-term-wrapper .hero-header-title-blue {
+  font-size: 80px;
+}
+
 @media screen and (max-width: 768px) {
 
 .homepage-header1 {

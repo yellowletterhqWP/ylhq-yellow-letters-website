@@ -39,6 +39,10 @@
   position: relative;
 }
 
+.my-orders-list li {
+  text-align: left;
+}
+
 @media screen and (max-width: 768px) {
 
   .my-orders-page-wrapper {

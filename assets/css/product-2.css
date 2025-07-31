@@ -26,9 +26,14 @@
   opacity: 0;
 }
 
-.box-yellow-box img {
+/* .box-yellow-box img {
     margin-top: 90px;
     margin-bottom: 60px;
+} */
+.box-yellow-box img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
 }
 
 .box-yellow-overlay {

@@ -406,6 +406,196 @@ function enable_company_field($fields) {
     );
     return $fields;
 }
+
+function ylhq_redirect_non_logged_users() {
+    if ( is_page() && !is_user_logged_in() ) {
+        // Daftar halaman yang tetap bisa diakses meski belum login
+        $allowed_pages = array( '
+            index', 'handwritten-cards', 'about', 'forgot-password', 'contact-us', 'login', 
+            'register', 'privacy-policy', 'home-concept-2', 'shop-2', 'faq', 'blogs', 'terms-conditions',
+            'letters-iteration-1', 'handwritten-cards-final', 'postcard-final', 'custom-template-final'
+        );
+
+        if ( !is_page( $allowed_pages ) ) {
+            wp_redirect( wp_login_url() ); // Atau redirect ke halaman custom login kamu
+            exit;
+        }
+    }
+}
+add_action( 'template_redirect', 'ylhq_redirect_non_logged_users' );
+
+// 1. Register Custom Post Type
+function register_support_ticket_cpt() {
+    register_post_type('support_ticket', [
+        'label' => 'Support Tickets',
+        'public' => false,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'supports' => ['title', 'editor'],
+        'menu_icon' => 'dashicons-tickets-alt',
+    ]);
+}
+add_action('init', 'register_support_ticket_cpt');
+
+// 2. Add Meta Box
+function add_ticket_meta_boxes() {
+    add_meta_box(
+        'ticket_meta_box',
+        'Ticket Details',
+        'render_ticket_meta_box',
+        'support_ticket',
+        'normal',
+        'default'
+    );
+}
+add_action('add_meta_boxes', 'add_ticket_meta_boxes');
+
+// 3. Render Meta Box Fields
+function render_ticket_meta_box($post) {
+    $department = get_post_meta($post->ID, 'department', true);
+    $visibility = get_post_meta($post->ID, 'visibility', true);
+    $attachments = get_post_meta($post->ID, 'attachments', true) ?: [];
+
+    wp_nonce_field('save_ticket_meta_box', 'ticket_meta_box_nonce');
+    ?>
+    <p>
+        <label for="ticket_department">Department</label><br>
+        <select name="ticket_department" id="ticket_department">
+            <?php
+            $options = ['letter', 'handwritten', 'postcard', 'custom'];
+            foreach ($options as $opt) {
+                echo '<option value="' . esc_attr($opt) . '"' . selected($department, $opt, false) . '>' . ucfirst($opt) . '</option>';
+            }
+            ?>
+        </select>
+    </p>
+
+    <p>
+        <label>Visibility</label><br>
+        <label><input type="radio" name="ticket_visibility" value="public" <?php checked($visibility, 'public'); ?>> Public</label>
+        <label><input type="radio" name="ticket_visibility" value="private" <?php checked($visibility, 'private'); ?>> Private</label>
+    </p>
+
+    <p>
+        <label for="ticket_attachments">Upload Attachments</label><br>
+        <input type="file" name="ticket_attachments[]" multiple><br>
+        <?php if (!empty($attachments)) : ?>
+            <ul>
+                <?php foreach ($attachments as $file) : ?>
+                    <li><a href="<?php echo esc_url($file); ?>" target="_blank"><?php echo esc_html(basename($file)); ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
+    </p>
+    <?php
+}
+
+// 4. Save Meta Box Data
+function save_ticket_meta_box($post_id) {
+    if (!isset($_POST['ticket_meta_box_nonce']) || !wp_verify_nonce($_POST['ticket_meta_box_nonce'], 'save_ticket_meta_box')) return;
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return;
+    if (!current_user_can('edit_post', $post_id)) return;
+
+    if (isset($_POST['ticket_department'])) {
+        update_post_meta($post_id, 'department', sanitize_text_field($_POST['ticket_department']));
+    }
+    if (isset($_POST['ticket_visibility'])) {
+        update_post_meta($post_id, 'visibility', sanitize_text_field($_POST['ticket_visibility']));
+    }
+
+    if (!empty($_FILES['ticket_attachments']['name'][0])) {
+        $uploaded = [];
+        $files = $_FILES['ticket_attachments'];
+        for ($i = 0; $i < count($files['name']); $i++) {
+            $file = [
+                'name'     => $files['name'][$i],
+                'type'     => $files['type'][$i],
+                'tmp_name' => $files['tmp_name'][$i],
+                'error'    => $files['error'][$i],
+                'size'     => $files['size'][$i]
+            ];
+            $upload = wp_handle_upload($file, ['test_form' => false]);
+            if (!isset($upload['error'])) {
+                $uploaded[] = $upload['url'];
+            }
+        }
+        update_post_meta($post_id, 'attachments', $uploaded);
+    }
+}
+add_action('save_post_support_ticket', 'save_ticket_meta_box');
+
+// 5. Handle Form Submit (Frontend)
+add_action('admin_post_nopriv_submit_support_ticket', 'handle_submit_ticket');
+add_action('admin_post_submit_support_ticket', 'handle_submit_ticket');
+
+function handle_submit_ticket() {
+    if (!is_user_logged_in()) wp_die('Please login first.');
+
+    $subject     = sanitize_text_field($_POST['subject']);
+    $description = wp_kses_post($_POST['description']);
+    $department  = sanitize_text_field($_POST['department']);
+    $visibility  = sanitize_text_field($_POST['visibility']);
+
+    $uploaded_files = [];
+    if (!empty($_FILES['attachments']['name'][0])) {
+        $allowed_types = ['image/jpeg','image/png','image/gif','application/pdf','application/msword','application/zip','application/vnd.ms-excel','text/csv'];
+        $count = count($_FILES['attachments']['name']);
+        if ($count > 2) wp_die('Max 2 files only.');
+        for ($i = 0; $i < $count; $i++) {
+            if ($_FILES['attachments']['size'][$i] > 2 * 1024 * 1024) wp_die('Each file must be under 2MB.');
+            if (!in_array($_FILES['attachments']['type'][$i], $allowed_types)) wp_die('Invalid file type: ' . $_FILES['attachments']['name'][$i]);
+            $_file = [
+                'name'     => $_FILES['attachments']['name'][$i],
+                'type'     => $_FILES['attachments']['type'][$i],
+                'tmp_name' => $_FILES['attachments']['tmp_name'][$i],
+                'error'    => $_FILES['attachments']['error'][$i],
+                'size'     => $_FILES['attachments']['size'][$i]
+            ];
+            $upload = wp_handle_upload($_file, ['test_form' => false]);
+            if (!isset($upload['error'])) {
+                $uploaded_files[] = $upload['url'];
+            }
+        }
+    }
+
+    $post_id = wp_insert_post([
+        'post_title'   => $subject,
+        'post_content' => $description,
+        'post_type'    => 'support_ticket',
+        'post_status'  => 'publish',
+        'post_author'  => get_current_user_id(),
+        'meta_input'   => [
+            'department'  => $department,
+            'visibility'  => $visibility,
+            'attachments' => $uploaded_files
+        ]
+    ]);
+
+    wp_redirect(home_url('/thank-you'));
+    exit;
+}
+
+// 6. Batasi User Lihat Tiket Sendiri di Admin
+function restrict_ticket_list_to_author($query) {
+    global $pagenow;
+    if (!is_admin() || $pagenow !== 'edit.php') return;
+    if ($query->get('post_type') === 'support_ticket' && !current_user_can('manage_options')) {
+        $query->set('author', get_current_user_id());
+    }
+}
+add_action('pre_get_posts', 'restrict_ticket_list_to_author');
+
+// 7. Sembunyikan Kolom Author untuk User Biasa
+function remove_author_column_for_tickets($columns) {
+    if (!current_user_can('manage_options')) {
+        unset($columns['author']);
+    }
+    return $columns;
+}
+add_filter('manage_support_ticket_posts_columns', 'remove_author_column_for_tickets');
+
+
+
 /**
  * Implement the Custom Header feature.
  */

@@ -28,6 +28,7 @@ get_header();
             
                 get_template_part('template-parts/form-elements/table', null, array(
                     'title' => 'Letters',
+                    'subtitle' => 'First Class Postage adds $0.179 each',
                     'minimum' => '200/minimum',
                     'headers' => array(
                         'Quantity', '200-499', '500-999', '1000-2499', '2500-9999', '10000-∞'
@@ -73,7 +74,7 @@ get_header();
                 ) );
 
                 get_template_part( 'template-parts/choose-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/82450680_9969987.png',
                     'title' => 'Full View Letter',
                     'id'    => 'full-view-letter',
                     'name'  => 'template_product_choice'
@@ -108,14 +109,14 @@ get_header();
                 ) );
 
                 get_template_part( 'template-parts/choose-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/letters-icon.png',
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/sealed_letter_and_paper.png',
                     'title' => 'Sealed Letter',
                     'id'    => 'sealed-letter',
                     'name'  => 'template_product_choice'
                 ) );
 
                 get_template_part( 'template-parts/choose-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/custom-icon.png',
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/envelope_and_stationery.png',
                     'title' => 'All Templates',
                     'id'    => 'all-templates',
                     'name'  => 'template_product_choice'

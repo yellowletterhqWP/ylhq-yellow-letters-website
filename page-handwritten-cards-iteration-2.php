@@ -29,6 +29,7 @@
             
                  get_template_part('template-parts/form-elements/table', null, array(
                     'title' => 'Handwritten Cards',
+                    'subtitle' => 'First Class Postage adds $0.179 each',
                     'minimum' => '200/minimum',
                     'headers' => array(
                         'Quantity', '200-499', '500-999', '1000-2999', '3000-4999', '5000-9999', '10000-∞'
@@ -49,14 +50,14 @@
                 <div class="handwritten-page-radio2">
                 <?php
                 get_template_part( 'template-parts/radio-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/letters-icon.png',
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/sealed_letter_and_paper.png',
                     'title' => 'Handwritten Greeting Cards',
                     'id'    => 'greeting',
                     'name'  => 'template_choice'
                 ) );
 
                 get_template_part( 'template-parts/radio-product', null, array(
-                    'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
+                    'icon' => get_stylesheet_directory_uri() . '/public/external/82450680_9969987.png',
                     'title' => 'Handwritten Folded Notes',
                     'id'    => 'folded',
                     'name'  => 'template_choice'

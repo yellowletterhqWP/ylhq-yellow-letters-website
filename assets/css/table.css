@@ -1,9 +1,9 @@
-.pricing-table {
+.ylhq-table {
   font-family: Helvetica;
   font-size: 24px;  
 }
 
-.pricing-header {
+.ylhq-table-header {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -21,7 +21,7 @@
   text-decoration: none;
 }
 
-.pricing-grid {
+.ylhq-table-grid {
   border-collapse: collapse;
   width: 100%;
   border-radius: 8px;
@@ -29,36 +29,42 @@
   overflow: hidden;
 }
 
-.pricing-grid-row {
+.ylhq-table-grid-row {
   display: flex;
   width: 100%;
 }
 
-.pricing-grid-row.header {
+.ylhq-table-grid-row.header {
   background-color: #0D84D1;
   color: white;
   font-weight: bold;
 }
 
-.pricing-grid-row .cell {
+.ylhq-table-grid-row .cell {
   flex: 1;
   text-align: center;
   padding: 12px 8px;
 }
 
-.pricing-grid-row .cell:last-child {
+.ylhq-table-grid-row .cell:last-child {
   border-right: none;
 }
 
-.pricing-grid-row:not(.header) {
+.ylhq-table-grid-row:not(.header) {
   background-color: white;
 }
 
-.pricing-grid-row:not(.header) .label {
+.ylhq-table-grid-row:not(.header) .label {
   font-weight: 500;
 }
 
 .right-side-title {
   font-size: 24px;
   color: #505050;
+}
+
+@media screen and (max-width: 768px) {
+  .ylhq-table {
+    font-size: 10px;  
+  }
 }

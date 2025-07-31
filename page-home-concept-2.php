@@ -76,7 +76,7 @@ get_header();
             <div class="homepage-grid-product">
                 <?php
                     get_template_part( 'template-parts/product-2', null, array(
-                        'icon' => get_stylesheet_directory_uri() . '/public/external/letters-icon.png',
+                        'icon' => get_stylesheet_directory_uri() . '/public/external/sealed_letter_and_paper.png',
                         'title' => 'Letters',
                         'price' => '0.723',
                         'link' => site_url('/index.php/letters')
@@ -84,7 +84,7 @@ get_header();
                 ?>
                 <?php
                     get_template_part( 'template-parts/product-2', null, array(
-                        'icon' => get_stylesheet_directory_uri() . '/public/external/postcards-icon.png',
+                        'icon' => get_stylesheet_directory_uri() . '/public/external/82450680_9969987.png',
                         'title' => 'Postcards',
                         'price' => '0.509',
                         'link' => site_url('/index.php/postcards/')
@@ -92,7 +92,7 @@ get_header();
                 ?>
                 <?php
                     get_template_part( 'template-parts/product-2', null, array(
-                        'icon' => get_stylesheet_directory_uri() . '/public/external/handwritten-icon.png',
+                        'icon' => get_stylesheet_directory_uri() . '/public/external/envelope_on_table.png',
                         'title' => 'Handwritten Cards',
                         'price' => '1.051',
                         'link' => site_url('/index.php/handwritten-cards')
@@ -100,7 +100,7 @@ get_header();
                 ?>
                 <?php
                     get_template_part( 'template-parts/product-2', null, array(
-                        'icon' => get_stylesheet_directory_uri() . '/public/external/custom-icon.png',
+                        'icon' => get_stylesheet_directory_uri() . '/public/external/envelope_and_stationery.png',
                         'title' => 'Custom Templates',
                         'price' => '1.051',
                         'link' => site_url('/index.php/custom-templates')

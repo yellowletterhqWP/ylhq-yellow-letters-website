@@ -57,3 +57,37 @@ span.blue-simple-title {
     border: none;
     font-weight: normal;
 }
+
+@media screen and (max-width: 768px) {
+
+  .letter-iteration-page-container-1 {
+    gap: 0;
+  }
+
+  .letter-iteration-page-container-1 .letters-iteration-page-header-title-container {
+    height: 190px;
+  }
+
+  .letters-iteration-page-header-title-container .handwritten-page-header-title1 {
+    font-size: 40px;
+  }
+
+  .letters-iteration-page-header-title-container .handwritten-page-header-title3 {
+    font-size: 12px;
+    margin-top: 0;
+    width: 80%;
+    margin-bottom: 35px;
+  }
+
+  .pricing-div {
+    margin-top: 0;
+  }
+
+  .global-page-wrapper .hero-header-title-blue {
+    font-size: 40px;
+  }
+
+  .global-page-wrapper .hero-header-desc-black-mini {
+    font-size: 12px;
+  }
+}

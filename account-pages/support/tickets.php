@@ -37,13 +37,13 @@ get_header();
 
             <span class="my-account-content-title">My Tickets</span>
 
-            <div class="handwritten-page-divide2">
+            <div class="handwritten-page-divide2 tickets-button-wrapper">
             <?php
                 get_template_part( 'template-parts/form-elements/button', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/my-ticket-icon2.png',
-                    'title' => 'My Tickets',
+                    'title' => 'Submit Ticket',
                     'type' => 'link',
-                    'url' => site_url('/my-account/?section=support/tickets')
+                    'url' => site_url('/my-account/?section=support/submit-ticket')
                 ) );
                 get_template_part( 'template-parts/form-elements/whitebutton', null, array(
                     'icon' => get_stylesheet_directory_uri() . '/public/external/privacy-icon.png',
@@ -57,10 +57,58 @@ get_header();
 
         <hr />
 
-        <span class="my-order-no-order">
-            You haven’t submitted a ticket yet.&nbsp;
-            <a href="<?php echo site_url('/my-account/?section=support/submit-ticket'); ?>">Click here to submit your first ticket.</a>
-        </span>
+        <?php
+        $current_user_id = get_current_user_id();
+        $ticket_query = new WP_Query([
+            'post_type'      => 'support_ticket',
+            'post_status'    => 'publish',
+            'author'         => $current_user_id,
+            'posts_per_page' => -1,
+            'orderby'        => 'date',
+            'order'          => 'DESC'
+        ]);
+
+        $user_tickets = [];
+
+        if ($ticket_query->have_posts()) {
+            while ($ticket_query->have_posts()) {
+                $ticket_query->the_post();
+
+                $user_tickets[] = [
+                    'title'       => get_the_title(),
+                    'date'        => get_the_time('F j, Y'),
+                    'department'  => get_post_meta(get_the_ID(), 'department', true),
+                    'order'       => "-",
+                    'visibility'  => get_post_meta(get_the_ID(), 'visibility', true),
+                    'status' => "New",
+                ];
+            }
+            wp_reset_postdata();
+        }
+        ?>
+
+        <?php if ($ticket_query->have_posts()) : ?>
+
+            <div class="tickets-table-wrapper">
+            <?php
+            get_template_part('template-parts/form-elements/table', null, array(
+                'title' => '',
+                'minimum' => '',
+                'subtitle' => '',
+                'headers' => array(
+                    'Title', 'Date & Time', 'Department', 'Order', 'Public / Private', 'Status'
+                ),
+                'rows' => $user_tickets
+            ));
+            ?>
+            </div>
+
+        <?php else : ?>
+            <span class="my-order-no-order">
+                You haven’t submitted a ticket yet.&nbsp;
+                <a href="<?php echo site_url('/my-account/?section=support/submit-ticket'); ?>">Click here to submit your first ticket.</a>
+            </span>
+        <?php endif; ?>
 
     </div>
 </main>

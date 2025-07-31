@@ -177,14 +177,18 @@ span.help-message {
     height: 450px;
   }
 
-  .contact-us .hero-header-title-blue, .contact-us .hero-header-desc-black {
+/*   .contact-us .hero-header-title-blue, .contact-us .hero-header-desc-black {
     line-height: 20px;
     font-size: 16px;
     margin-top: 0;
+  } */
+  .contact-us .hero-header-desc-black {
+      font-size: 12px;
   }
   
   .contact-us-header-title-container {
     height: 160px;
+    padding-top: 0;
   }
 
   .contact-us .register-right-image {

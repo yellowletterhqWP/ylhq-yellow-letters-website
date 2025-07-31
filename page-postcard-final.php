@@ -28,6 +28,7 @@ get_header();
             
                 get_template_part('template-parts/form-elements/table', null, array(
                     'title' => 'Letters',
+                    'subtitle' => 'First Class Postage adds $0.179 each',
                     'minimum' => '200/minimum',
                     'headers' => array(
                         'Quantity', '200-499', '500-999', '1000-2499', '2500-9999', '10000-∞'

@@ -3,12 +3,13 @@
   display: flex;
   border: 1px solid #0D84D1;
   border-radius: 50px 50px 50px 50px;
-  padding: 10px 25px 10px 25px;
+  padding: 10px 20px;
   gap: 10px;
   width: max-content;
   z-index: 1;
   position: relative;
   align-items: center;
+  justify-content: center;
 }
 
 /* .homepage-header-white-button a {
@@ -60,8 +61,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   background: none;
   border: none;
   text-decoration: none;
@@ -104,5 +105,10 @@
 
   .homepage-header-white-button button {
     font-size: 14px;
+  }
+
+  .homepage-header-white-button button,
+  .homepage-header-white-button a {
+    font-size: 12px;
   }
 }

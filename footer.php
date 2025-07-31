@@ -143,8 +143,8 @@
 				<div class="footer-after-menu">
 					<span class="login-text30">© 2025 Yellowletters.com&nbsp;All rights reserved.</span>
 					<span class="login-text31">
-						<a href="#">Terms &amp; Conditions</a> | 
-						<a href="#">Privacy Policy</a>
+						<a href="/terms-conditions">Terms &amp; Conditions</a> | 
+						<a href="/privacy-policy">Privacy Policy</a>
 					</span>
 					<div class="login-social-handles-desktop">
 						<a href="#">

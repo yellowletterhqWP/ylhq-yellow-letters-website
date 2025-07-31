@@ -114,17 +114,19 @@
 }
 
 .register-left-image {
-  top: clamp(0px, 15vh, 50px);
+  /* top: clamp(0px, 15vh, 50px); */
   left: -24.97px;
-  width: clamp(200px, 20vw, 300px);
+  /* width: clamp(200px, 20vw, 300px); */
+  width: clamp(100px, 20vw, 250px);
   position: absolute;
   filter: grayscale(100%);
   opacity: 0.6;
 }
 
 .register-right-image {
-  top: clamp(0px, 15vh, 50px);
-  width: clamp(200px, 20vw, 300px);
+  /* top: clamp(0px, 15vh, 50px); */
+  /* width: clamp(200px, 20vw, 300px); */
+  width: clamp(100px, 20vw, 250px);
   position: absolute;
   right: 0;
   opacity: 0.6;

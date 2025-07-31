@@ -117,6 +117,16 @@
   border-radius: 4px;
 }
 
+.tickets-table-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 30px;
+}
+
+.tickets-button-wrapper .blue-default-button a {
+  font-size: 20px;
+}
+
 @media screen and (max-width: 768px) {
   .grid-box-3 {
     grid-template-columns: repeat(2, 1fr);
@@ -133,5 +143,9 @@
     justify-self: end;
     margin-top: -25px;
     margin-bottom: 25px;
+  }
+
+  .tickets-button-wrapper .blue-default-button a {
+    font-size: 12px;
   }
 }
