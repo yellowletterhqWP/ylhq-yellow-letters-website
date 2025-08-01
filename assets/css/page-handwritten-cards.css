@@ -154,6 +154,11 @@
 
 .product-radio-box.active .product-radio-box-title {
   color: #0D84D1;
+  font-weight: bold;
+}
+
+.product-radio-box.active .product-radio-box-img {
+  border: 3px solid #0D84D1;
 }
 
 .handwritten-radio1 {

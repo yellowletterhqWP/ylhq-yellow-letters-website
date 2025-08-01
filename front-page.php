@@ -74,6 +74,7 @@ get_header();
             </p>
 
             <div class="homepage-grid-product">
+                <div class="product-group-div">
                 <?php
                     get_template_part( 'template-parts/product-2', null, array(
                         'icon' => get_stylesheet_directory_uri() . '/public/external/sealed_letter_and_paper.png',
@@ -82,6 +83,7 @@ get_header();
                         'link' => site_url('/index.php/letters')
                     ) );
                 ?>
+                </div>
                 <?php
                     get_template_part( 'template-parts/product-2', null, array(
                         'icon' => get_stylesheet_directory_uri() . '/public/external/82450680_9969987.png',
