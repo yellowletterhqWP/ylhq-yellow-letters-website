@@ -123,6 +123,7 @@ a.wp-block-latest-posts__post-title, a.wp-block-latest-posts__post-title:visited
   border-radius: 20px;
   color: #FFF !important;
   margin-bottom: 5px;
+  display: inline-block;
 }
 
 .tags-title {

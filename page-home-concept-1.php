@@ -69,7 +69,7 @@
                         'icon' => get_stylesheet_directory_uri() . '/public/external/letters-icon.png',
                         'title' => 'Letters',
                         'price' => '0.723',
-                        'link' => site_url('/letters-iteration-1')
+                        'link' => site_url('/letters')
                     ) );
                 ?>
                 <?php

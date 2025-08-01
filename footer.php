@@ -41,7 +41,7 @@
 			<section aria-labelledby="footer-shop">
 				<h4 class="footer-header">Shop</h4>
 				<ul class="footer-menu">
-				<li><a href="/letters-iteration-1">Letters</a></li>
+				<li><a href="/letters">Letters</a></li>
 				<li><a href="/postcard-final">Postcards</a></li>
 				<li><a href="/handwritten-cards-final">Handwritten Cards</a></li>
 				<li><a href="/custom-template-final">Custom Template</a></li>

@@ -129,9 +129,19 @@ get_header();
         ?>
 
         <div class="faq-page-forms">
+            
             <div class="faq-page-grid-divide2">
+            <?php
+            $total = count($faq_items);
+            $half = ceil($total / 2);
+
+            $group1 = array_slice($faq_items, 0, $half);
+            $group2 = array_slice($faq_items, $half);
+            ?>
+
+            <div class="faq-page-grid-divide2-column">
                 <?php
-                foreach ($faq_items as $index => $item) {
+                foreach ($group1 as $index => $item) {
                     get_template_part('template-parts/form-elements/dropdown', 'faq', [
                         'title' => $item['title'],
                         'content' => $item['content'],
@@ -140,7 +150,22 @@ get_header();
                 }
                 ?>
             </div>
+
+            <div class="faq-page-grid-divide2-column">
+            <?php
+                foreach ($group2 as $index => $item) {
+                    get_template_part('template-parts/form-elements/dropdown', 'faq', [
+                        'title' => $item['title'],
+                        'content' => $item['content'],
+                        'id' => 'faq-' . ($index + 1 + $half)
+                    ]);
+                }
+            ?>
+            </div>
+            </div>
+
         </div>
+
     </div>
 </main>
 

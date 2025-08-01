@@ -14,6 +14,13 @@
   box-sizing: border-box;
 }
 
+.faq-page-grid-divide2-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 768px) {
   .faq-page-grid-divide2 {
     grid-template-columns: 1fr; /* Jadi 1 kolom di layar kecil */
