@@ -43,6 +43,21 @@
   text-align: left;
 }
 
+.order-status {
+  display: inline-block;
+  padding: 5px 14px;
+  border: 2px solid #007bff;
+  color: #007bff;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.my-orders-page-wrapper .ylhq-table {
+  margin-bottom: 30px;
+}
+
+
 @media screen and (max-width: 768px) {
 
   .my-orders-page-wrapper {

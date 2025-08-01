@@ -34,7 +34,17 @@ $rows    = $args['rows'] ?? [];
     <?php foreach ($rows as $row): ?>
       <div class="ylhq-table-grid-row">
         <?php foreach ($row as $cell): ?>
-          <div class="cell"><?php echo esc_html($cell); ?></div>
+          <!-- <div class="cell"><?php /* echo esc_html($cell); */ ?></div> -->
+          <div class="cell">
+          <?php
+            if (is_string($cell) && preg_match('/<a\s/i', $cell)) {
+              echo $cell;
+            } else {
+              echo esc_html($cell);
+            }
+          ?>
+        </div>
+
         <?php endforeach; ?>
       </div>
     <?php endforeach; ?>

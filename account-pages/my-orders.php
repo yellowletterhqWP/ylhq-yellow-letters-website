@@ -69,18 +69,25 @@ get_header();
         ?>
 
         <?php if ( ! empty( $customer_orders ) ) : ?>
-        <ul class="my-orders-list">
             <?php
+            $rows = [];
             foreach ( $customer_orders as $order ) {
-                echo '<li class="order-item">';
-                echo '<strong>Order #' . esc_html( $order->get_order_number() ) . '</strong><br>';
-                echo 'Tanggal: ' . esc_html( wc_format_datetime( $order->get_date_created() ) ) . '<br>';
-                echo 'Status: ' . esc_html( wc_get_order_status_name( $order->get_status() ) ) . '<br>';
-                echo '<a href="' . esc_url( $order->get_view_order_url() ) . '">Lihat Detail</a>';
-                echo '</li>';
+                $rows[] = array(
+                    '#' . $order->get_id(),
+                    $order->get_date_created()->date('F j, Y'),
+                    wc_get_order_status_name( $order->get_status() ),
+                    '<a class="order-status" href="' . esc_url( $order->get_view_order_url() ) . '">View</a>',
+                );
+
             }
+
+            get_template_part('template-parts/form-elements/table', null, array(
+                'headers' => array(
+                    'ID', 'Date', 'Status', 'View'
+                ),
+                'rows' => $rows
+            ));
             ?>
-        </ul>
         <?php else : ?>
             <span class="my-order-no-order">
                 Your orders will appear here once placed

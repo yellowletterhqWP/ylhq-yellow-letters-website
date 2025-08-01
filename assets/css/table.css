@@ -63,6 +63,24 @@
   color: #505050;
 }
 
+.cell a {
+  display: inline-block;
+  padding: 6px 16px;
+  border: 2px solid #007bff;
+  color: #007bff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.cell a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+
 @media screen and (max-width: 768px) {
   .ylhq-table {
     font-size: 10px;  
