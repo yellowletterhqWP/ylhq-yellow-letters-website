@@ -31,9 +31,9 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
-    gap: 35px;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    gap: 20px;
+    /* padding-left: 10vw;
+    padding-right: 10vw; */
 }
 
 .homepage-concept2-grid-header .header-grid-box {
